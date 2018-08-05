@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>183130722460-ttm9toue9fri2gudqvdm887koci1s2ur.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.183130722460-ttm9toue9fri2gudqvdm887koci1s2ur</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDr_4ajh13Vc5LKrm_OR8ugCjCRq__l8KA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>183130722460</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.samcreators.NodaTrainer</string>
+	<key>PROJECT_ID</key>
+	<string>nodatrainer</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nodatrainer.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:183130722460:ios:8af11ec4400fd5f1</string>
+	<key>DATABASE_URL</key>
+	<string>https://nodatrainer.firebaseio.com</string>
+</dict>
+</plist>
