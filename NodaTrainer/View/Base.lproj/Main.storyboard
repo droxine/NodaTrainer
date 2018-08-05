@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="97U-kK-mDQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="97U-kK-mDQ">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -397,12 +397,32 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="5O7-Gx-g8S" kind="relationship" relationship="viewControllers" id="3Tv-sp-T0T"/>
                         <segue destination="MPs-Wq-l8w" kind="relationship" relationship="viewControllers" id="q25-O7-7Kk"/>
+                        <segue destination="zXj-6n-CAi" kind="relationship" relationship="viewControllers" id="JoI-d9-MJ0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tpH-cX-x3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2828" y="-70"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Gfj-OO-18g">
+            <objects>
+                <viewController id="zXj-6n-CAi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tep-d7-5Yc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zQF-Tw-HZH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="eventos" selectedImage="eventosSelected" id="I8R-lE-BId">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-30"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrP-Pr-z98" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3910" y="273"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="SyB-pO-9iu">
@@ -486,8 +506,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="o7g-wL-ywq">
-                                <rect key="frame" x="150" y="44" width="74" height="87"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="o7g-wL-ywq">
+                                <rect key="frame" x="150" y="44" width="82" height="87"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wb0-Gi-BHR">
                                 <rect key="frame" x="128" y="131" width="120" height="30"/>
@@ -755,11 +775,31 @@
             </objects>
             <point key="canvasLocation" x="-412" y="-70"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
+        <scene sceneID="NyO-9t-vob">
+            <objects>
+                <viewController id="5O7-Gx-g8S" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OF7-U3-mIo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="y3d-0o-cOI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Inicio-1" selectedImage="InicioSelected" id="Fbl-bg-bsN">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-30"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="svk-wr-Gx2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3910" y="-1070"/>
+        </scene>
+        <!--Lections Navigation Controller-->
         <scene sceneID="vdN-YZ-q7F">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MPs-Wq-l8w" customClass="LectionsNavigationController" customModule="NodaTrainer" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Zix-eE-5cB"/>
+                    <tabBarItem key="tabBarItem" title="" image="My Music" selectedImage="My MusicSelected" id="Zix-eE-5cB">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-30"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8vK-Wd-H2a">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -785,9 +825,15 @@
         <image name="BTNVOLVER" width="242" height="52"/>
         <image name="CHECKBOX_CHECKED" width="46" height="46"/>
         <image name="CHECKBOX_UNCHECKED" width="46" height="46"/>
+        <image name="Inicio-1" width="24" height="40"/>
+        <image name="InicioSelected" width="24" height="38"/>
         <image name="MAGICIAN" width="59" height="101"/>
+        <image name="My Music" width="45" height="40"/>
+        <image name="My MusicSelected" width="45" height="40"/>
         <image name="TEXTFIELD-1" width="232" height="56"/>
         <image name="avatar" width="128" height="128"/>
+        <image name="eventos" width="36" height="42"/>
+        <image name="eventosSelected" width="36" height="42"/>
         <image name="nodaTrainerLogo" width="1492" height="1394"/>
         <image name="sesion_background" width="640" height="1136"/>
         <image name="sesion_background2" width="828" height="1472"/>
