@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -397,32 +398,73 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="5O7-Gx-g8S" kind="relationship" relationship="viewControllers" id="3Tv-sp-T0T"/>
+                        <segue destination="H8Q-Z9-dMa" kind="relationship" relationship="viewControllers" id="3Tv-sp-T0T"/>
                         <segue destination="MPs-Wq-l8w" kind="relationship" relationship="viewControllers" id="q25-O7-7Kk"/>
-                        <segue destination="zXj-6n-CAi" kind="relationship" relationship="viewControllers" id="JoI-d9-MJ0"/>
+                        <segue destination="FIn-aw-9Lg" kind="relationship" relationship="viewControllers" id="JoI-d9-MJ0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tpH-cX-x3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2828" y="-70"/>
         </scene>
-        <!--View Controller-->
+        <!--Events View Controller-->
         <scene sceneID="Gfj-OO-18g">
             <objects>
-                <viewController id="zXj-6n-CAi" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="zXj-6n-CAi" customClass="EventsViewController" customModule="NodaTrainer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tep-d7-5Yc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="sesion_background2" translatesAutoresizingMaskIntoConstraints="NO" id="9aZ-P4-zV8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3qd-Vr-1Fx">
+                                <rect key="frame" x="16" y="109" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Clases de Música"/>
+                                    <segment title="Venta de Instrumentos"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchEventsAction:" destination="zXj-6n-CAi" eventType="valueChanged" id="4Q8-6J-trd"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mxy-Zz-YAX">
+                                <rect key="frame" x="0.0" y="159" width="375" height="510"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="zXj-6n-CAi" id="XPq-R1-xa0"/>
+                                    <outlet property="delegate" destination="zXj-6n-CAi" id="giF-ur-bfZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3qd-Vr-1Fx" firstAttribute="top" secondItem="zQF-Tw-HZH" secondAttribute="top" constant="21" id="2l7-Jf-7Do"/>
+                            <constraint firstItem="Mxy-Zz-YAX" firstAttribute="top" secondItem="3qd-Vr-1Fx" secondAttribute="bottom" constant="22" id="791-vD-iuX"/>
+                            <constraint firstItem="zQF-Tw-HZH" firstAttribute="bottom" secondItem="Mxy-Zz-YAX" secondAttribute="bottom" constant="60" id="NBD-Xl-ixA"/>
+                            <constraint firstItem="Mxy-Zz-YAX" firstAttribute="leading" secondItem="tep-d7-5Yc" secondAttribute="leading" id="Tp7-Fm-UVg"/>
+                            <constraint firstItem="3qd-Vr-1Fx" firstAttribute="leading" secondItem="tep-d7-5Yc" secondAttribute="leadingMargin" id="hV7-yd-eJb"/>
+                            <constraint firstItem="Mxy-Zz-YAX" firstAttribute="leading" secondItem="9aZ-P4-zV8" secondAttribute="leading" id="iSF-sq-UXw"/>
+                            <constraint firstItem="Mxy-Zz-YAX" firstAttribute="trailing" secondItem="9aZ-P4-zV8" secondAttribute="trailing" id="kKG-ZC-l0J"/>
+                            <constraint firstItem="3qd-Vr-1Fx" firstAttribute="centerX" secondItem="Mxy-Zz-YAX" secondAttribute="centerX" id="mX2-Mp-nYu"/>
+                            <constraint firstAttribute="trailing" secondItem="Mxy-Zz-YAX" secondAttribute="trailing" id="niu-0w-2Yo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zQF-Tw-HZH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="eventos" selectedImage="eventosSelected" id="I8R-lE-BId">
-                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-30"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="G41-N9-2Ky">
+                        <barButtonItem key="rightBarButtonItem" title="Cerrar Sesión" id="QXk-aF-VBs">
+                            <connections>
+                                <action selector="logOutUser:" destination="zXj-6n-CAi" id="J1V-cp-YQz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Mxy-Zz-YAX" id="2bR-i7-sGA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrP-Pr-z98" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3910" y="273"/>
+            <point key="canvasLocation" x="4873" y="273"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="SyB-pO-9iu">
@@ -775,23 +817,33 @@
             </objects>
             <point key="canvasLocation" x="-412" y="-70"/>
         </scene>
-        <!--View Controller-->
+        <!--Init View Controller-->
         <scene sceneID="NyO-9t-vob">
             <objects>
-                <viewController id="5O7-Gx-g8S" sceneMemberID="viewController">
+                <viewController id="5O7-Gx-g8S" customClass="InitViewController" customModule="NodaTrainer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OF7-U3-mIo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sesion_background2" translatesAutoresizingMaskIntoConstraints="NO" id="GbX-fJ-0EF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="y3d-0o-cOI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Inicio-1" selectedImage="InicioSelected" id="Fbl-bg-bsN">
-                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-30"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="qhY-zm-lhF">
+                        <barButtonItem key="rightBarButtonItem" title="Cerrar Sesión" id="rlI-Ak-SDw">
+                            <connections>
+                                <action selector="logOutUser:" destination="5O7-Gx-g8S" id="Vfs-1G-9vO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svk-wr-Gx2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3910" y="-1070"/>
+            <point key="canvasLocation" x="4873" y="-1072"/>
         </scene>
         <!--Lections Navigation Controller-->
         <scene sceneID="vdN-YZ-q7F">
@@ -814,6 +866,48 @@
             </objects>
             <point key="canvasLocation" x="3898" y="-395"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6vf-lK-CD9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FIn-aw-9Lg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="eventos" selectedImage="eventosSelected" id="I8R-lE-BId">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-30"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R3R-rh-8l5">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zXj-6n-CAi" kind="relationship" relationship="rootViewController" id="bJR-6e-c1c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tK-io-xtk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3909.5999999999999" y="272.66009852216752"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ujz-AD-ioL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H8Q-Z9-dMa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Inicio-1" selectedImage="InicioSelected" id="Fbl-bg-bsN">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-30"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="knz-zN-0an">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5O7-Gx-g8S" kind="relationship" relationship="rootViewController" id="h37-5a-taj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9M-dd-RaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3909.5999999999999" y="-1071.4285714285716"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BTNINGRESAR" width="242" height="52"/>
@@ -828,7 +922,7 @@
         <image name="Inicio-1" width="24" height="40"/>
         <image name="InicioSelected" width="24" height="38"/>
         <image name="MAGICIAN" width="59" height="101"/>
-        <image name="My Music" width="45" height="40"/>
+        <image name="My Music" width="45" height="41"/>
         <image name="My MusicSelected" width="45" height="40"/>
         <image name="TEXTFIELD-1" width="232" height="56"/>
         <image name="avatar" width="128" height="128"/>

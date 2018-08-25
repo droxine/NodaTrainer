@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		7F1840FE7CDEEAD29373D358 /* Pods_NodaTrainerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4075C9BBA80B74ADDCB3A1D0 /* Pods_NodaTrainerTests.framework */; };
 		A6C622F8CC1EA5BB7365A05B /* Pods_NodaTrainerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82667419EEFCD76761E8D56A /* Pods_NodaTrainerUITests.framework */; };
+		D1533F7A2131D4CD00B2C785 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1533F792131D4CD00B2C785 /* EventsViewController.swift */; };
+		D1533F7C2131D60900B2C785 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1533F7B2131D60900B2C785 /* InitViewController.swift */; };
+		D1533F802131E91400B2C785 /* MusicClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1533F7E2131E91400B2C785 /* MusicClassCell.swift */; };
+		D1533F812131E91400B2C785 /* MusicClassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1533F7F2131E91400B2C785 /* MusicClassCell.xib */; };
 		D166D76220A2949F00C29E24 /* TestResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D166D76120A2949F00C29E24 /* TestResultsViewController.swift */; };
 		D1C946B9209E61290000757C /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D1C946B6209E61280000757C /* ProgressHUD.bundle */; };
 		D1C946BA209E61290000757C /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C946B8209E61290000757C /* ProgressHUD.m */; };
@@ -62,6 +66,10 @@
 		6D71D367AF179AA3AB0B24B3 /* Pods-NodaTrainerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NodaTrainerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NodaTrainerUITests/Pods-NodaTrainerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		82667419EEFCD76761E8D56A /* Pods_NodaTrainerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NodaTrainerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05F10EBBE55FE531DA7C360 /* Pods-NodaTrainerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NodaTrainerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NodaTrainerUITests/Pods-NodaTrainerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1533F792131D4CD00B2C785 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		D1533F7B2131D60900B2C785 /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
+		D1533F7E2131E91400B2C785 /* MusicClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClassCell.swift; sourceTree = "<group>"; };
+		D1533F7F2131E91400B2C785 /* MusicClassCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicClassCell.xib; sourceTree = "<group>"; };
 		D166D760209FE3FC00C29E24 /* NodaTrainer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NodaTrainer.entitlements; sourceTree = "<group>"; };
 		D166D76120A2949F00C29E24 /* TestResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultsViewController.swift; sourceTree = "<group>"; };
 		D1C946B5209E61270000757C /* NodaTrainer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NodaTrainer-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -136,6 +144,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D1533F7D2131E8BE00B2C785 /* MusicClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D1533F7E2131E91400B2C785 /* MusicClassCell.swift */,
+				D1533F7F2131E91400B2C785 /* MusicClassCell.xib */,
+			);
+			path = MusicClasses;
+			sourceTree = "<group>";
+		};
 		D1F5F70A2083D9D90045614E = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +220,8 @@
 				D1DA7509209D088F001AB742 /* TestViewController.swift */,
 				D1DA750B209D13FA001AB742 /* TestBeganViewController.swift */,
 				D166D76120A2949F00C29E24 /* TestResultsViewController.swift */,
+				D1533F792131D4CD00B2C785 /* EventsViewController.swift */,
+				D1533F7B2131D60900B2C785 /* InitViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,6 +253,7 @@
 		D1F5F74F20841EB40045614E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D1533F7D2131E8BE00B2C785 /* MusicClasses */,
 				D1DA7507209CFC10001AB742 /* UserProfile.swift */,
 				D1DA750F209D330E001AB742 /* Question.swift */,
 				D1DA7511209D38C1001AB742 /* QuestionBank.swift */,
@@ -376,6 +396,7 @@
 				D1F5F7472083DEFE0045614E /* GoogleService-Info.plist in Resources */,
 				D1F5F71E2083D9DA0045614E /* Assets.xcassets in Resources */,
 				D1C946B9209E61290000757C /* ProgressHUD.bundle in Resources */,
+				D1533F812131E91400B2C785 /* MusicClassCell.xib in Resources */,
 				D1F5F71C2083D9DA0045614E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,11 +548,14 @@
 				D1F5F7192083D9DA0045614E /* ViewController.swift in Sources */,
 				D166D76220A2949F00C29E24 /* TestResultsViewController.swift in Sources */,
 				D1DA7504209CEF7F001AB742 /* MainTabBarController.swift in Sources */,
+				D1533F7A2131D4CD00B2C785 /* EventsViewController.swift in Sources */,
 				D1F1387E20992DBC00A43D4B /* LectionsViewController.swift in Sources */,
 				D1F5F7172083D9DA0045614E /* AppDelegate.swift in Sources */,
+				D1533F802131E91400B2C785 /* MusicClassCell.swift in Sources */,
 				D1C946BA209E61290000757C /* ProgressHUD.m in Sources */,
 				D1DA7510209D330E001AB742 /* Question.swift in Sources */,
 				D1F1387A2096AD2300A43D4B /* RegisterViewController.swift in Sources */,
+				D1533F7C2131D60900B2C785 /* InitViewController.swift in Sources */,
 				D1DA7508209CFC10001AB742 /* UserProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
