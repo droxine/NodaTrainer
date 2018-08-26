@@ -12,8 +12,12 @@ import FBSDKLoginKit
 
 class InitViewController: UIViewController {
 
+    @IBOutlet weak var lblUser: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        lblUser.text = ""
+        loadUser()
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +28,34 @@ class InitViewController: UIViewController {
         print("button logOut pressed")
         try! Auth.auth().signOut()
         FBSDKLoginManager().logOut()
+    }
+    
+    func loadUser() {
+        guard let uid = Auth.auth().currentUser?.uid else { return lblUser.text = ""}
+        print(uid)
+        let email = Auth.auth().currentUser?.email
+        print(email!)
+        
+        let userProfileRef = Database.database().reference().child("users").child("profile").child(uid)
+        print(userProfileRef)
+        
+        var username: String = ""
+        userProfileRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let userDict = snapshot.value as? [String:Any] {
+                //Do not cast print it directly may be score is Int not string
+                print(userDict)
+                username = (userDict["username"] as? String)!
+                print(username)
+                
+                if !username.isEmpty {
+                    self.lblUser.text = username
+                }
+            }
+        })
+
+        if !(self.lblUser.text?.isEmpty)! {
+            self.lblUser.text = email
+        }
     }
 
 }

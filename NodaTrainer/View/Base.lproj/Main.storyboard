@@ -825,12 +825,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sesion_background2" translatesAutoresizingMaskIntoConstraints="NO" id="GbX-fJ-0EF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sesion_background2" translatesAutoresizingMaskIntoConstraints="NO" id="GbX-fJ-0EF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zn4-e2-1Xy">
+                                <rect key="frame" x="72" y="221" width="231" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Zw4-5v-bDS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.4941176471" green="0.76862745099999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="pSO-2c-wHo">
+                                <rect key="frame" x="146" y="97" width="82" height="87"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clic para cambiar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS6-zY-p5L">
+                                <rect key="frame" x="121" y="192" width="133" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ict-sz-CxW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MENUIMG_USER" translatesAutoresizingMaskIntoConstraints="NO" id="A3o-ce-3s1">
+                                <rect key="frame" x="214" y="256" width="35" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="VAR-Tt-8kg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxM-ME-oHo">
+                                <rect key="frame" x="126" y="264" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mejora como músico. Haz del entrenamiento auditivo tu nuevo hábito." textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQW-Fx-3TL">
+                                <rect key="frame" x="0.0" y="313" width="375" height="47"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.47058823529999999" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="xhV-Zk-clY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTv-zz-6jZ">
+                                <rect key="frame" x="16" y="380" width="104" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PYg-8v-9sz"/>
+                                </constraints>
+                                <state key="normal" title="Modificar Perfil"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pSO-2c-wHo" firstAttribute="leading" secondItem="y3d-0o-cOI" secondAttribute="leading" constant="146" id="1gq-Jw-lAI"/>
+                            <constraint firstItem="gxM-ME-oHo" firstAttribute="leading" secondItem="y3d-0o-cOI" secondAttribute="leading" constant="126" id="A8O-uf-oOq"/>
+                            <constraint firstItem="y3d-0o-cOI" firstAttribute="trailing" secondItem="gTv-zz-6jZ" secondAttribute="trailing" constant="255" id="Bq5-wl-bgk"/>
+                            <constraint firstItem="gTv-zz-6jZ" firstAttribute="leading" secondItem="OF7-U3-mIo" secondAttribute="leadingMargin" id="CDH-Qr-GPR"/>
+                            <constraint firstItem="bQW-Fx-3TL" firstAttribute="leading" secondItem="y3d-0o-cOI" secondAttribute="leading" id="Ecz-Lf-SVU"/>
+                            <constraint firstItem="GbX-fJ-0EF" firstAttribute="leading" secondItem="OF7-U3-mIo" secondAttribute="leading" id="JCW-aN-uT5"/>
+                            <constraint firstItem="zn4-e2-1Xy" firstAttribute="leading" secondItem="y3d-0o-cOI" secondAttribute="leading" constant="72" id="Jwp-oo-Vb2"/>
+                            <constraint firstItem="gxM-ME-oHo" firstAttribute="top" secondItem="zn4-e2-1Xy" secondAttribute="bottom" constant="22" id="P8v-40-TLf"/>
+                            <constraint firstItem="pSO-2c-wHo" firstAttribute="centerX" secondItem="HS6-zY-p5L" secondAttribute="centerX" id="PLt-uf-hyd"/>
+                            <constraint firstItem="bQW-Fx-3TL" firstAttribute="trailing" secondItem="GbX-fJ-0EF" secondAttribute="trailing" id="XTL-hi-4Yd"/>
+                            <constraint firstItem="zn4-e2-1Xy" firstAttribute="centerX" secondItem="bQW-Fx-3TL" secondAttribute="centerX" id="Z9u-PO-hQR"/>
+                            <constraint firstItem="pSO-2c-wHo" firstAttribute="top" secondItem="y3d-0o-cOI" secondAttribute="top" constant="9" id="e34-U6-iQS"/>
+                            <constraint firstItem="y3d-0o-cOI" firstAttribute="bottom" secondItem="gTv-zz-6jZ" secondAttribute="bottom" constant="319" id="jZp-nI-3Ec"/>
+                            <constraint firstItem="gTv-zz-6jZ" firstAttribute="leading" secondItem="y3d-0o-cOI" secondAttribute="leading" constant="16" id="kCC-Aj-1JS"/>
+                            <constraint firstItem="gxM-ME-oHo" firstAttribute="centerY" secondItem="A3o-ce-3s1" secondAttribute="centerY" id="kEq-Vk-rzT"/>
+                            <constraint firstItem="A3o-ce-3s1" firstAttribute="leading" secondItem="gxM-ME-oHo" secondAttribute="trailing" constant="4" id="kUI-EQ-EN2"/>
+                            <constraint firstItem="A3o-ce-3s1" firstAttribute="top" secondItem="zn4-e2-1Xy" secondAttribute="bottom" constant="14" id="mic-Kg-RF9"/>
+                            <constraint firstItem="HS6-zY-p5L" firstAttribute="centerX" secondItem="zn4-e2-1Xy" secondAttribute="centerX" id="mqF-IK-PzW"/>
+                            <constraint firstItem="GbX-fJ-0EF" firstAttribute="top" secondItem="OF7-U3-mIo" secondAttribute="top" id="oZO-8W-IaI"/>
+                            <constraint firstItem="HS6-zY-p5L" firstAttribute="top" secondItem="pSO-2c-wHo" secondAttribute="bottom" constant="8" symbolic="YES" id="oeH-S1-m4g"/>
+                            <constraint firstItem="bQW-Fx-3TL" firstAttribute="trailing" secondItem="y3d-0o-cOI" secondAttribute="trailing" id="p8h-HI-tzy"/>
+                            <constraint firstItem="gTv-zz-6jZ" firstAttribute="top" secondItem="bQW-Fx-3TL" secondAttribute="bottom" constant="20" id="shI-xR-SXh"/>
+                            <constraint firstAttribute="trailing" secondItem="bQW-Fx-3TL" secondAttribute="trailing" id="xco-dj-EdL"/>
+                            <constraint firstItem="zn4-e2-1Xy" firstAttribute="top" secondItem="HS6-zY-p5L" secondAttribute="bottom" constant="8" symbolic="YES" id="yAX-ls-6MR"/>
+                            <constraint firstItem="bQW-Fx-3TL" firstAttribute="top" secondItem="A3o-ce-3s1" secondAttribute="bottom" constant="21" id="zGN-Hx-G81"/>
+                            <constraint firstAttribute="bottom" secondItem="GbX-fJ-0EF" secondAttribute="bottom" id="zS7-4R-B4w"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="y3d-0o-cOI"/>
                     </view>
                     <navigationItem key="navigationItem" id="qhY-zm-lhF">
@@ -840,10 +917,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="lblUser" destination="zn4-e2-1Xy" id="zFC-M0-uFM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svk-wr-Gx2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4873" y="-1072"/>
+            <point key="canvasLocation" x="4872.8000000000002" y="-1072.1674876847292"/>
         </scene>
         <!--Lections Navigation Controller-->
         <scene sceneID="vdN-YZ-q7F">
@@ -922,6 +1002,7 @@
         <image name="Inicio-1" width="24" height="40"/>
         <image name="InicioSelected" width="24" height="38"/>
         <image name="MAGICIAN" width="59" height="101"/>
+        <image name="MENUIMG_USER" width="50" height="50"/>
         <image name="My Music" width="45" height="41"/>
         <image name="My MusicSelected" width="45" height="40"/>
         <image name="TEXTFIELD-1" width="232" height="56"/>
