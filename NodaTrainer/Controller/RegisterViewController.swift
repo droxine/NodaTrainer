@@ -195,7 +195,7 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
     }
     
-    func saveProfile(username: String, imgProfileURL: URL, instrumentValue: String, completion: @escaping ((_ success: Bool) -> ())) {
+    func saveProfile(username: String, imgProfileURL: URL, instrumentValue: String, completion: @escaping ((_ success: Bool) -> ()) ) -> Void{
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
         let databaseRef = Database.database().reference()
@@ -226,9 +226,9 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                             "/profiles/\(keyBusiness)": profileBusiness,
                             "/user-profiles/\(uid)/\(keyBusiness)/": profileBusiness,
                             "users/profile/\(uid)": userObject]
-        databaseRef.updateChildValues(childUpdates) { error, ref in
+        databaseRef.updateChildValues(childUpdates, withCompletionBlock: { (error, ref) in
             completion(error == nil)
-        }
+        })
         
     }
     

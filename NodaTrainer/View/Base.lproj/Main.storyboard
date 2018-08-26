@@ -840,7 +840,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="pSO-2c-wHo">
                                 <rect key="frame" x="146" y="97" width="82" height="87"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MENUIMG_USER" translatesAutoresizingMaskIntoConstraints="NO" id="A3o-ce-3s1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MENUIMG_USERCLICKED" translatesAutoresizingMaskIntoConstraints="NO" id="A3o-ce-3s1">
                                 <rect key="frame" x="214" y="256" width="35" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="nhY-2N-Htk"/>
@@ -878,21 +878,31 @@
                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59n-3y-Kkz">
+                                <rect key="frame" x="250" y="119" width="43" height="42"/>
+                                <state key="normal" backgroundImage="uploadIcon"/>
+                                <connections>
+                                    <action selector="updateImage:" destination="5O7-Gx-g8S" eventType="touchUpInside" id="QA7-jh-0Hj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zn4-e2-1Xy" firstAttribute="leading" secondItem="y3d-0o-cOI" secondAttribute="leading" constant="72" id="03X-gr-bPC"/>
                             <constraint firstItem="y3d-0o-cOI" firstAttribute="trailing" secondItem="gTv-zz-6jZ" secondAttribute="trailing" constant="255" id="0B1-9L-aR9"/>
                             <constraint firstItem="A3o-ce-3s1" firstAttribute="leading" secondItem="gxM-ME-oHo" secondAttribute="trailing" constant="4" id="0Og-bU-1Ij"/>
+                            <constraint firstItem="y3d-0o-cOI" firstAttribute="trailing" secondItem="59n-3y-Kkz" secondAttribute="trailing" constant="82" id="1ow-mg-CcU"/>
                             <constraint firstItem="zn4-e2-1Xy" firstAttribute="top" secondItem="pSO-2c-wHo" secondAttribute="bottom" constant="37" id="3I9-Uu-nXI"/>
                             <constraint firstItem="uQN-3J-aT3" firstAttribute="top" secondItem="y3d-0o-cOI" secondAttribute="top" constant="95" id="4Rk-BX-C5v"/>
                             <constraint firstItem="pSO-2c-wHo" firstAttribute="centerX" secondItem="uQN-3J-aT3" secondAttribute="centerX" id="6Ke-uE-SPE"/>
+                            <constraint firstItem="59n-3y-Kkz" firstAttribute="top" secondItem="y3d-0o-cOI" secondAttribute="top" constant="31" id="7TC-U0-Maw"/>
                             <constraint firstItem="A3o-ce-3s1" firstAttribute="top" secondItem="zn4-e2-1Xy" secondAttribute="bottom" constant="14" id="7nS-j1-En0"/>
                             <constraint firstItem="bQW-Fx-3TL" firstAttribute="top" secondItem="A3o-ce-3s1" secondAttribute="bottom" constant="21" id="Cig-8V-ZPj"/>
                             <constraint firstItem="gxM-ME-oHo" firstAttribute="centerY" secondItem="A3o-ce-3s1" secondAttribute="centerY" id="Gnk-B0-bQP"/>
                             <constraint firstItem="gTv-zz-6jZ" firstAttribute="top" secondItem="bQW-Fx-3TL" secondAttribute="bottom" constant="20" id="I16-Pq-hZK"/>
                             <constraint firstItem="y3d-0o-cOI" firstAttribute="bottom" secondItem="gTv-zz-6jZ" secondAttribute="bottom" constant="319" id="J1M-Nq-J8i"/>
                             <constraint firstItem="GbX-fJ-0EF" firstAttribute="leading" secondItem="OF7-U3-mIo" secondAttribute="leading" id="JCW-aN-uT5"/>
+                            <constraint firstItem="59n-3y-Kkz" firstAttribute="leading" secondItem="pSO-2c-wHo" secondAttribute="trailing" constant="22" id="KER-S2-Iql"/>
                             <constraint firstItem="gTv-zz-6jZ" firstAttribute="leading" secondItem="OF7-U3-mIo" secondAttribute="leadingMargin" id="PAV-9A-uTe"/>
                             <constraint firstItem="gxM-ME-oHo" firstAttribute="leading" secondItem="y3d-0o-cOI" secondAttribute="leading" constant="126" id="Paa-Ge-Abh"/>
                             <constraint firstItem="bQW-Fx-3TL" firstAttribute="leading" secondItem="y3d-0o-cOI" secondAttribute="leading" id="R22-Z6-1vz"/>
@@ -903,6 +913,7 @@
                             <constraint firstItem="uQN-3J-aT3" firstAttribute="centerX" secondItem="zn4-e2-1Xy" secondAttribute="centerX" id="k7I-EZ-yji"/>
                             <constraint firstItem="pSO-2c-wHo" firstAttribute="top" secondItem="y3d-0o-cOI" secondAttribute="top" constant="9" id="mGV-CF-eR6"/>
                             <constraint firstAttribute="trailing" secondItem="bQW-Fx-3TL" secondAttribute="trailing" id="mOg-J3-4fn"/>
+                            <constraint firstItem="59n-3y-Kkz" firstAttribute="centerY" secondItem="pSO-2c-wHo" secondAttribute="centerY" id="nvl-8y-82s"/>
                             <constraint firstItem="GbX-fJ-0EF" firstAttribute="top" secondItem="OF7-U3-mIo" secondAttribute="top" id="oZO-8W-IaI"/>
                             <constraint firstItem="bQW-Fx-3TL" firstAttribute="trailing" secondItem="y3d-0o-cOI" secondAttribute="trailing" id="uNv-uh-ak0"/>
                             <constraint firstItem="zn4-e2-1Xy" firstAttribute="centerX" secondItem="bQW-Fx-3TL" secondAttribute="centerX" id="ycF-S1-m7o"/>
@@ -919,6 +930,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="btnImgProfile" destination="uQN-3J-aT3" id="oor-o5-aOG"/>
+                        <outlet property="btnUpload" destination="59n-3y-Kkz" id="flt-hK-k0f"/>
                         <outlet property="imgProfile" destination="pSO-2c-wHo" id="mB1-Vf-mcF"/>
                         <outlet property="lblUser" destination="zn4-e2-1Xy" id="zFC-M0-uFM"/>
                     </connections>
@@ -1004,7 +1016,7 @@
         <image name="Inicio-1" width="24" height="40"/>
         <image name="InicioSelected" width="24" height="38"/>
         <image name="MAGICIAN" width="59" height="101"/>
-        <image name="MENUIMG_USER" width="50" height="50"/>
+        <image name="MENUIMG_USERCLICKED" width="50" height="50"/>
         <image name="My Music" width="45" height="41"/>
         <image name="My MusicSelected" width="45" height="40"/>
         <image name="TEXTFIELD-1" width="232" height="56"/>
@@ -1014,5 +1026,6 @@
         <image name="nodaTrainerLogo" width="1492" height="1394"/>
         <image name="sesion_background" width="640" height="1136"/>
         <image name="sesion_background2" width="828" height="1472"/>
+        <image name="uploadIcon" width="720" height="720"/>
     </resources>
 </document>
