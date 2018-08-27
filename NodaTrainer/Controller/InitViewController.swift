@@ -87,16 +87,19 @@ class InitViewController: UIViewController, UIPickerViewDelegate {
                     self.lblUser.text = username
                 }
                 
-                let url = URL(string: photoURL)
-                
-                DispatchQueue.global().async {
-                    let data = try? Data(contentsOf: url!)
-                    if data != nil {
-                        DispatchQueue.main.async {
-                            self.imgProfile.image = UIImage(data: data!)
+                if !photoURL.isEmpty {
+                    let url = URL(string: photoURL)
+                    
+                    DispatchQueue.global().async {
+                        let data = try? Data(contentsOf: url!)
+                        if data != nil {
+                            DispatchQueue.main.async {
+                                self.imgProfile.image = UIImage(data: data!)
+                            }
                         }
                     }
                 }
+                
             }
         })}
 

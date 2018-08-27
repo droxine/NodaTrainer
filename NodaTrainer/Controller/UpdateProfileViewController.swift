@@ -170,6 +170,7 @@ class UpdateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
     //To disappear the keyboard on touch
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         txtUsername.resignFirstResponder()
+        txtFavoriteInstrument.resignFirstResponder()
         pickerFavoriteInstrument.resignFirstResponder()
     }
     

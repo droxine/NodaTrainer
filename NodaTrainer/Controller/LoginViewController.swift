@@ -28,7 +28,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
     //Creating and configuring the Google Sign In Button
     fileprivate func setupGoogleButton() {
         let googleButton = GIDSignInButton()
-        googleButton.frame = CGRect(x: 124, y: 477, width: 71, height: 30)
+        googleButton.frame = CGRect(x: 162, y: 477, width: 71, height: 30)
         googleButton.style = GIDSignInButtonStyle.iconOnly
         view.addSubview(googleButton)
         
