@@ -199,7 +199,7 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
         let databaseRef = Database.database().reference()
-        let keyMusician = databaseRef.child("profiles").childByAutoId().key
+        /*let keyMusician = databaseRef.child("profiles").childByAutoId().key
         let profileMusician = [
             "uid": uid,
             "name": "Músico",
@@ -215,16 +215,17 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let instrument = [
             "uid": uid,
             "name": instrumentValue
+            ] as [String:Any]*/
+        let userProfile = [
+            "enabledMusician": profileMusicanChecked,
+            "enabledBusiness": profileBusinessChecked,
+            "favoriteInstrument": instrumentValue
             ] as [String:Any]
         let userObject = [
             "username": username,
             "photoURL": imgProfileURL.absoluteString
         ] as [String:Any]
-        let childUpdates = ["/profiles/\(keyMusician)": profileMusician,
-                            "/instruments/\(keyInstruments)": instrument,
-                            "/user-profiles/\(uid)/\(keyMusician)/": profileMusician,
-                            "/profiles/\(keyBusiness)": profileBusiness,
-                            "/user-profiles/\(uid)/\(keyBusiness)/": profileBusiness,
+        let childUpdates = ["/user-profiles/\(uid)/": userProfile,
                             "users/profile/\(uid)": userObject]
         databaseRef.updateChildValues(childUpdates, withCompletionBlock: { (error, ref) in
             completion(error == nil)

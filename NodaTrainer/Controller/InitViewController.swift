@@ -43,6 +43,11 @@ class InitViewController: UIViewController, UIPickerViewDelegate {
         imagePicker.delegate = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loadUser()
+    }
+    
     @objc func openImagePicker(_ sender: Any) {
         self.present(imagePicker, animated: true, completion: nil)
     }
