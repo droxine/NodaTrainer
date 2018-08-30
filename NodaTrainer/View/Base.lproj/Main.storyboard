@@ -436,6 +436,13 @@
                                     <outlet property="delegate" destination="zXj-6n-CAi" id="giF-ur-bfZ"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIf-OR-gSe">
+                                <rect key="frame" x="337" y="686" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="goToForm:" destination="zXj-6n-CAi" eventType="touchUpInside" id="IUm-wa-4l6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -459,12 +466,99 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="btnAdd" destination="LIf-OR-gSe" id="cld-04-EWP"/>
                         <outlet property="tableView" destination="Mxy-Zz-YAX" id="2bR-i7-sGA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrP-Pr-z98" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4873" y="273"/>
+        </scene>
+        <!--Music Class Form View Controller-->
+        <scene sceneID="vWz-NI-aMl">
+            <objects>
+                <viewController storyboardIdentifier="musicClassForm" id="KO0-uA-dmG" customClass="MusicClassFormViewController" customModule="NodaTrainer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bY0-w1-sBs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sesion_background2" translatesAutoresizingMaskIntoConstraints="NO" id="sic-k3-dVQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clases de Música" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXf-Mg-vn2">
+                                <rect key="frame" x="120" y="58" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64y-Zg-4wf">
+                                <rect key="frame" x="153" y="727" width="69" height="30"/>
+                                <state key="normal" title="AGREGAR"/>
+                                <connections>
+                                    <action selector="addMusicClass:" destination="KO0-uA-dmG" eventType="touchUpInside" id="Ad4-9j-QMM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tma-MO-sd3" firstAttribute="bottom" secondItem="64y-Zg-4wf" secondAttribute="bottom" constant="21" id="KCG-rQ-3La"/>
+                            <constraint firstItem="sic-k3-dVQ" firstAttribute="trailing" secondItem="tma-MO-sd3" secondAttribute="trailing" id="LMW-6Y-J1z"/>
+                            <constraint firstAttribute="bottom" secondItem="sic-k3-dVQ" secondAttribute="bottom" id="NIg-BI-VQU"/>
+                            <constraint firstItem="sic-k3-dVQ" firstAttribute="top" secondItem="bY0-w1-sBs" secondAttribute="top" id="Pf3-YI-vb6"/>
+                            <constraint firstItem="64y-Zg-4wf" firstAttribute="centerX" secondItem="tXf-Mg-vn2" secondAttribute="centerX" id="V3G-1d-sKY"/>
+                            <constraint firstItem="tXf-Mg-vn2" firstAttribute="centerX" secondItem="sic-k3-dVQ" secondAttribute="centerX" id="Vqp-bS-VSq"/>
+                            <constraint firstItem="sic-k3-dVQ" firstAttribute="leading" secondItem="tma-MO-sd3" secondAttribute="leading" id="sQy-HD-OGE"/>
+                            <constraint firstItem="tXf-Mg-vn2" firstAttribute="top" secondItem="tma-MO-sd3" secondAttribute="top" constant="14" id="zMF-Jc-A9R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tma-MO-sd3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfb-W1-BHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5701.6000000000004" y="272.66009852216752"/>
+        </scene>
+        <!--Instrument Form View Controller-->
+        <scene sceneID="i7m-g4-BXd">
+            <objects>
+                <viewController storyboardIdentifier="instrumentForm" id="NgK-Sj-c9E" customClass="InstrumentFormViewController" customModule="NodaTrainer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LLj-bS-aCh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sesion_background2" translatesAutoresizingMaskIntoConstraints="NO" id="Oes-mO-HVJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venta de Instrumentos Musicales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxt-Qy-To1">
+                                <rect key="frame" x="60" y="66" width="254" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5M-a4-r58">
+                                <rect key="frame" x="153" y="732" width="69" height="30"/>
+                                <state key="normal" title="AGREGAR"/>
+                                <connections>
+                                    <action selector="addInstrument:" destination="NgK-Sj-c9E" eventType="touchUpInside" id="G28-Fb-t1o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oes-mO-HVJ" firstAttribute="top" secondItem="LLj-bS-aCh" secondAttribute="top" id="1WD-Cu-xrE"/>
+                            <constraint firstItem="x5M-a4-r58" firstAttribute="centerX" secondItem="Oes-mO-HVJ" secondAttribute="centerX" id="2Il-rL-Vjj"/>
+                            <constraint firstItem="Oes-mO-HVJ" firstAttribute="trailing" secondItem="qhQ-HC-uGo" secondAttribute="trailing" id="BAe-Bf-Luu"/>
+                            <constraint firstItem="nxt-Qy-To1" firstAttribute="top" secondItem="qhQ-HC-uGo" secondAttribute="top" constant="22" id="NjQ-cP-PAm"/>
+                            <constraint firstItem="nxt-Qy-To1" firstAttribute="centerX" secondItem="x5M-a4-r58" secondAttribute="centerX" id="XVg-3T-FOc"/>
+                            <constraint firstItem="qhQ-HC-uGo" firstAttribute="bottom" secondItem="x5M-a4-r58" secondAttribute="bottom" constant="16" id="Yly-97-aCi"/>
+                            <constraint firstItem="Oes-mO-HVJ" firstAttribute="leading" secondItem="qhQ-HC-uGo" secondAttribute="leading" id="pgS-Z5-buu"/>
+                            <constraint firstAttribute="bottom" secondItem="Oes-mO-HVJ" secondAttribute="bottom" id="yDy-wp-hmR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qhQ-HC-uGo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUz-ou-GlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5701.6000000000004" y="950.98522167487693"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="SyB-pO-9iu">

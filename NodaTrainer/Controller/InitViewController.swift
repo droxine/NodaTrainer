@@ -86,7 +86,6 @@ class InitViewController: UIViewController, UIPickerViewDelegate {
                 if !username.isEmpty {
                     self.lblUser.text = username
                 }
-                
                 if !photoURL.isEmpty {
                     let url = URL(string: photoURL)
                     
@@ -145,7 +144,7 @@ class InitViewController: UIViewController, UIPickerViewDelegate {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         let storageRef = Storage.storage().reference().child("user/\(uid)")
         
-        guard let imageData = UIImageJPEGRepresentation(image, 0.75) else { return }
+        guard let imageData = UIImageJPEGRepresentation(image, 0.15) else { return }
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpg"
         

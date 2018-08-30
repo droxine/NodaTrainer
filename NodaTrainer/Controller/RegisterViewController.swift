@@ -169,10 +169,9 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         guard let uid = Auth.auth().currentUser?.uid else { return }
         let storageRef = Storage.storage().reference().child("user/\(uid)")
         
-        guard let imageData = UIImageJPEGRepresentation(image, 0.75) else { return }
+        guard let imageData = UIImageJPEGRepresentation(image, 0.15) else { return }
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpg"
-        
         storageRef.putData(imageData, metadata: metaData) { metaData, error in
             if error == nil, metaData != nil {
                 storageRef.downloadURL { url, error in

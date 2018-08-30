@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7F1840FE7CDEEAD29373D358 /* Pods_NodaTrainerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4075C9BBA80B74ADDCB3A1D0 /* Pods_NodaTrainerTests.framework */; };
 		A6C622F8CC1EA5BB7365A05B /* Pods_NodaTrainerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82667419EEFCD76761E8D56A /* Pods_NodaTrainerUITests.framework */; };
+		D141F1542137A1140053F661 /* MusicClassFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141F1532137A1140053F661 /* MusicClassFormViewController.swift */; };
+		D141F1562137A13F0053F661 /* InstrumentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141F1552137A13F0053F661 /* InstrumentFormViewController.swift */; };
 		D1533F7A2131D4CD00B2C785 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1533F792131D4CD00B2C785 /* EventsViewController.swift */; };
 		D1533F7C2131D60900B2C785 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1533F7B2131D60900B2C785 /* InitViewController.swift */; };
 		D1533F802131E91400B2C785 /* MusicClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1533F7E2131E91400B2C785 /* MusicClassCell.swift */; };
@@ -67,6 +69,8 @@
 		6D71D367AF179AA3AB0B24B3 /* Pods-NodaTrainerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NodaTrainerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NodaTrainerUITests/Pods-NodaTrainerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		82667419EEFCD76761E8D56A /* Pods_NodaTrainerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NodaTrainerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05F10EBBE55FE531DA7C360 /* Pods-NodaTrainerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NodaTrainerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NodaTrainerUITests/Pods-NodaTrainerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D141F1532137A1140053F661 /* MusicClassFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClassFormViewController.swift; sourceTree = "<group>"; };
+		D141F1552137A13F0053F661 /* InstrumentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentFormViewController.swift; sourceTree = "<group>"; };
 		D1533F792131D4CD00B2C785 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		D1533F7B2131D60900B2C785 /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
 		D1533F7E2131E91400B2C785 /* MusicClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClassCell.swift; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 				D1533F792131D4CD00B2C785 /* EventsViewController.swift */,
 				D1533F7B2131D60900B2C785 /* InitViewController.swift */,
 				D1533F8221338C7700B2C785 /* UpdateProfileViewController.swift */,
+				D141F1532137A1140053F661 /* MusicClassFormViewController.swift */,
+				D141F1552137A13F0053F661 /* InstrumentFormViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -553,7 +559,9 @@
 				D166D76220A2949F00C29E24 /* TestResultsViewController.swift in Sources */,
 				D1DA7504209CEF7F001AB742 /* MainTabBarController.swift in Sources */,
 				D1533F7A2131D4CD00B2C785 /* EventsViewController.swift in Sources */,
+				D141F1542137A1140053F661 /* MusicClassFormViewController.swift in Sources */,
 				D1F1387E20992DBC00A43D4B /* LectionsViewController.swift in Sources */,
+				D141F1562137A13F0053F661 /* InstrumentFormViewController.swift in Sources */,
 				D1F5F7172083D9DA0045614E /* AppDelegate.swift in Sources */,
 				D1533F802131E91400B2C785 /* MusicClassCell.swift in Sources */,
 				D1C946BA209E61290000757C /* ProgressHUD.m in Sources */,

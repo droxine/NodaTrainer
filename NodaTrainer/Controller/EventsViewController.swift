@@ -12,6 +12,7 @@ import FBSDKLoginKit
 
 class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var btnAdd: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     var data = [
@@ -36,13 +37,21 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     ]
     
     var index: Int!
+    var business: Bool = false
     
     override func viewDidLoad() {
+        print("viewDidLoad")
         super.viewDidLoad()
         let nib = UINib(nibName: "MusicClassCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "musicClassCell")
         tableView.backgroundColor = UIColor.darkGray
         index = 0
+        btnAdd.isHidden = true
+        //loadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +64,29 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         FBSDKLoginManager().logOut()
     }
     
+    func loadData() {
+        guard let uid = Auth.auth().currentUser?.uid else { return}
+        print(uid)
+        
+        let userprofilesRef = Database.database().reference().child("user-profiles").child(uid)
+        print(userprofilesRef)
+        
+        DispatchQueue.global().async {
+            userprofilesRef.observeSingleEvent(of: .value, with: { (snapshot) in
+                if let userDict = snapshot.value as? [String:Any] {
+                    print(userDict)
+                    self.business = (userDict["enabledBusiness"] as? Bool)!
+                    print(self.business)
+                    if self.business {
+                        print("business is true")
+                        self.btnAdd.isHidden = false
+                    } else {
+                        self.btnAdd.isHidden = true
+                    }
+                }
+        })}
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data[index].count
     }
@@ -65,6 +97,19 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.musicClassInit(item1: value[0], item2: value[1], item3: value[2])
         return cell
     }
+    
+    @IBAction func goToForm(_ sender: Any) {
+        if(index == 0) {
+            if let controllerTravel = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "musicClassForm") as? MusicClassFormViewController {
+                present(controllerTravel, animated: true, completion: nil)
+            }
+        } else {
+            if let controllerTravel = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "instrumentForm") as? InstrumentFormViewController {
+                present(controllerTravel, animated: true, completion: nil)
+            }
+        }
+    }
+    
 
     @IBAction func switchEventsAction(_ sender: UISegmentedControl) {
         index = sender.selectedSegmentIndex
