@@ -9,8 +9,9 @@
 import UIKit
 import Firebase
 import FBSDKLoginKit
+import Photos
 
-class InitViewController: UIViewController, UIPickerViewDelegate {
+class InitViewController: UIViewController {
 
     @IBOutlet weak var lblUser: UILabel!
     @IBOutlet weak var imgProfile: UIImageView!
@@ -18,6 +19,7 @@ class InitViewController: UIViewController, UIPickerViewDelegate {
     @IBOutlet weak var btnUpload: UIButton!
     
     var imagePicker: UIImagePickerController!
+    var isImagePickerAllowEditing: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,27 +31,55 @@ class InitViewController: UIViewController, UIPickerViewDelegate {
         btnUpload.isHidden = false
         imgProfile.isHidden = false
         lblUser.isHidden = false
-        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
+        //let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
         imgProfile.isUserInteractionEnabled = true
-        imgProfile.addGestureRecognizer(imageTap)
+        //imgProfile.addGestureRecognizer(imageTap)
         imgProfile.layer.cornerRadius = imgProfile.bounds.height / 2
         imgProfile.clipsToBounds = true
         
-        btnImgProfile.addTarget(self, action: #selector(openImagePicker), for: .touchUpInside)
-        
-        imagePicker = UIImagePickerController()
-        imagePicker.allowsEditing = true
-        imagePicker.sourceType = .photoLibrary
-        imagePicker.delegate = self
+        checkPermission {
+            self.btnImgProfile.addTarget(self, action: #selector(self.openImagePicker), for: .touchUpInside)
+            let imageTap = UITapGestureRecognizer(target: self, action: #selector(self.openImagePicker))
+
+            self.imgProfile.addGestureRecognizer(imageTap)
+            self.imagePicker = UIImagePickerController()
+            self.imagePicker.delegate = self
+            self.imagePicker.allowsEditing = true
+            self.imagePicker.sourceType = .photoLibrary
+            self.imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        loadUser()
+    }
+    
+    func checkPermission(hanler: @escaping () -> Void) {
+        let photoAuthorizationStatus = PHPhotoLibrary.authorizationStatus()
+        switch photoAuthorizationStatus {
+            case .authorized:
+                // Access is already granted by user
+                isImagePickerAllowEditing = true
+                hanler()
+            case .notDetermined:
+                PHPhotoLibrary.requestAuthorization { (newStatus) in
+                    if newStatus == PHAuthorizationStatus.authorized {
+                        // Access is granted by user
+                        self.isImagePickerAllowEditing = true
+                        hanler()
+                    }
+                }
+            default:
+                print("Error: no access to photo album.")
+        }
     }
     
     @objc func openImagePicker(_ sender: Any) {
         self.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    @IBAction func refreshUser(_ sender: Any) {
+        loadUser()
     }
 
     override func didReceiveMemoryWarning() {
@@ -210,14 +240,22 @@ class InitViewController: UIViewController, UIPickerViewDelegate {
 }
 
 extension InitViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    @objc internal func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let pickedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
-            imgProfile.image = pickedImage
+    @objc internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let sourceImage: UIImage
+        if isImagePickerAllowEditing {
+            sourceImage = (info[UIImagePickerControllerEditedImage] as? UIImage)!
+        } else {
+            sourceImage = (info[UIImagePickerControllerOriginalImage] as? UIImage)!
         }
+        //if let pickedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
+            //self.imgProfile.image = pickedImage
+        //}
+        
+        self.imgProfile.image = sourceImage
         picker.dismiss(animated: true, completion: nil)
     }
 }

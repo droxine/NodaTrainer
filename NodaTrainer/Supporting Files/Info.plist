@@ -71,5 +71,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>Privacy - Photo Library Usage Description</key>
+	<string>$(PRODUCT_NAME) photo use</string>
 </dict>
 </plist>

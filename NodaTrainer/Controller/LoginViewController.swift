@@ -55,21 +55,22 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
         print("Login with Facebook successfully, proceding with the credentials")
         
         let token = FBSDKAccessToken.current()
-        let credential = FacebookAuthProvider.credential(withAccessToken: (token?.tokenString)!)
-        Auth.auth().signIn(with: credential) { (user, error) in
-            if error != nil {
-                print("No se asoció el usuario de Google con Firebase", error)
-                ProgressHUD.showError(error?.localizedDescription)
-                FBSDKAccessToken.setCurrent(nil)
-                FBSDKLoginManager().logOut()
-                return
+        if token != nil {
+            let credential = FacebookAuthProvider.credential(withAccessToken: (token?.tokenString)!)
+            Auth.auth().signIn(with: credential) { (user, error) in
+                if error != nil {
+                    print("No se asoció el usuario de Google con Firebase", error!)
+                    ProgressHUD.showError(error?.localizedDescription)
+                    FBSDKAccessToken.setCurrent(nil)
+                    FBSDKLoginManager().logOut()
+                    return
+                }
+                
+                guard let uid = user?.uid else {return}
+                print("Facebook asociado con Firebase, para el usuario", uid)
+                ProgressHUD.showSuccess("Conectado con Facebook")
             }
-            
-            guard let uid = user?.uid else {return}
-            print("Facebook asociado con Firebase, para el usuario", uid)
-            ProgressHUD.showSuccess("Conectado con Facebook")
         }
-
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
