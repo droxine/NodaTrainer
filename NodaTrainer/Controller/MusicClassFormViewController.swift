@@ -22,8 +22,15 @@ class MusicClassFormViewController: UIViewController {
     
     
     @IBAction func addMusicClass(_ sender: Any) {
+        //guardar firebase
+        
         self.dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func goBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
 
 }
