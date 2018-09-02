@@ -46,7 +46,6 @@ class MusicClassFormViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    
     @IBAction func addMusicClass(_ sender: Any) {
         //guardar firebase
         let title = txtTitle.text

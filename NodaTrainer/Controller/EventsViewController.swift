@@ -15,30 +15,8 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var btnAdd: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
-    let databaseRef = Database.database().reference()
-    
     var musicClasses = [MusicClass]()
     var instruments = [Instrument]()
-    var data = [
-        ["Clase de Piano@40/h@Augusto Leguía",
-         "Clase de Piano@25/h@Roberto Locke",
-         "Clase de Piano@25/h@Roberto Locke",
-        "Clase de Piano@25/h@Roberto Locke",
-        "Clase de Piano@25/h@Roberto Locke"],
-        ["Piano Roland FP-60@S/.5400@Nuevo",
-         "Piano Kawai BI 51@S/.11190.43@Usado/Nuevo",
-         "Piano Roland FP-60@S/.5400@Nuevo",
-         "Piano Roland FP-60@S/.5400@Nuevo",
-         "Piano Roland FP-60@S/.5400@Nuevo",
-         "Piano Roland FP-60@S/.5400@Nuevo",
-         "Piano Roland FP-60@S/.5400@Nuevo",
-         "Piano Roland FP-60@S/.5400@Nuevo",
-         "Piano Roland FP-60@S/.5400@Nuevo",
-         "Piano Roland FP-60@S/.5400@Nuevo",
-         "Piano Roland FP-60@S/.5400@Nuevo",
-         "Piano Roland FP-60@S/.5400@Nuevo",
-         "Piano Roland FP-60@S/.5400@Nuevo"]
-    ]
     
     var index: Int!
     var business: Bool = false
@@ -53,16 +31,19 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         btnAdd.isHidden = true
         tableView.dataSource = self
         loadMusicClasses()
-        //loadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        print("viewDidAppear")
+        //tableView.reloadData()
         loadData()
     }
     
     func loadMusicClasses() {
+        print("loadMusicClasses")
         self.musicClasses.removeAll()
-        databaseRef.child("classes").observe(.childAdded, with: {(snapshot) in
+        Database.database().reference().child("classes").observe(.childAdded, with: {(snapshot) in
+            print("observer")
             if let dict = snapshot.value as? [String:Any] {
                 print(dict)
                 let titleText = dict["title"] as! String
@@ -74,31 +55,60 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 let imageURL = dict["image"] as! String
                 let musicClass = MusicClass(titleText: titleText, priceText: priceText, professorText: professorText, phoneText: phoneText, descriptionText: descriptionText, commentsText: commentsText, imageURL: imageURL)
                 self.musicClasses.append(musicClass)
+            }
+            
+            DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         })
     }
     
     func loadInstruments() {
+        print("loadInstruments")
         self.instruments.removeAll()
-        databaseRef.child("instruments").observe(.childAdded, with: {(snapshot) in
-            if let dict = snapshot.value as? [String:Any] {
-                print(dict)
-                let nameText = dict["name"] as! String
-                let stockText = dict["stock"] as! String
-                let priceText = dict["price"] as! String
-                let phoneText = dict["phone"] as! String
-                let discountText = dict["discount"] as! String
-                let descriptionText = dict["description"] as! String
-                let commentsText = dict["comments"] as! String
-                let imageURL = dict["image"] as! String
-                let instrument = Instrument(nameText: nameText, stockText: stockText, priceText: priceText, phoneText: phoneText, discountText: discountText, descriptionText: descriptionText, commentsText: commentsText, imageURL: imageURL)
-                self.instruments.append(instrument)
-                self.tableView.reloadData()
-            }
-        })
+        Database.database().reference().child("instruments").observe(.childAdded, with: {(snapshot) in
+                print("observer")
+                    if let dict = snapshot.value as? [String:Any] {
+                        print(dict)
+                        let nameText = dict["name"] as! String
+                        let stockText = dict["stock"] as! String
+                        let priceText = dict["price"] as! String
+                        let phoneText = dict["phone"] as! String
+                        let discountText = dict["discount"] as! String
+                        let descriptionText = dict["description"] as! String
+                        let commentsText = dict["comments"] as! String
+                        let imageURL = dict["image"] as! String
+                        let instrument = Instrument(nameText: nameText, stockText: stockText, priceText: priceText, phoneText: phoneText, discountText: discountText, descriptionText: descriptionText, commentsText: commentsText, imageURL: imageURL)
+                        self.instruments.append(instrument)
+                    }
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            })
     }
-
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print("viewDidDisappear")
+        Database.database().reference().removeAllObservers()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("viewWillAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("viewWillDisappear")
+        Database.database().reference().removeAllObservers()
+        Database.database().reference().child("classes").removeAllObservers()
+        Database.database().reference().child("instruments").removeAllObservers()
+        if index == 0 {
+            loadMusicClasses()
+        } else {
+            loadInstruments()
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -113,7 +123,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         guard let uid = Auth.auth().currentUser?.uid else { return}
         print(uid)
         
-        let userprofilesRef = databaseRef.child("user-profiles").child(uid)
+        let userprofilesRef = Database.database().reference().child("user-profiles").child(uid)
         print(userprofilesRef)
         
         DispatchQueue.global().async {
@@ -133,22 +143,24 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("tableView counting")
         if index == 0 {
             return musicClasses.count
         } else {
-            //return data[index].count
             return instruments.count
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("tableView setting cell")
+        print(indexPath.row)
         let cell = tableView.dequeueReusableCell(withIdentifier: "musicClassCell") as! MusicClassCell
         if index == 0 {
+            print(musicClasses.count)
             let value = musicClasses[indexPath.row]
             cell.musicClassInit(item1: value.title, item2: value.price, item3: value.professor)
         } else {
-            //let value = data[index][indexPath.row].components(separatedBy: "@")
-            //cell.musicClassInit(item1: value[0], item2: value[1], item3: value[2])
+            print(instruments.count)
             let value = instruments[indexPath.row]
             cell.musicClassInit(item1: value.name, item2: value.price, item3: value.phone)
         }
@@ -158,10 +170,12 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func goToForm(_ sender: Any) {
         if(index == 0) {
             if let controllerTravel = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "musicClassForm") as? MusicClassFormViewController {
+                controllerTravel.view.layoutIfNeeded()
                 present(controllerTravel, animated: true, completion: nil)
             }
         } else {
             if let controllerTravel = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "instrumentForm") as? InstrumentFormViewController {
+                controllerTravel.view.layoutIfNeeded()
                 present(controllerTravel, animated: true, completion: nil)
             }
         }
@@ -169,8 +183,8 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
 
     @IBAction func switchEventsAction(_ sender: UISegmentedControl) {
+        print("switchEventsAction")
         index = sender.selectedSegmentIndex
-        //tableView.reloadData()
         if index == 0 {
             loadMusicClasses()
         } else {

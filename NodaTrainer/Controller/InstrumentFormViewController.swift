@@ -39,6 +39,10 @@ class InstrumentFormViewController: UIViewController {
         imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.view.layoutIfNeeded()
+    }
+    
     @objc func openImagePicker(_ sender: Any) {
         self.present(imagePicker, animated: true, completion: nil)
     }
