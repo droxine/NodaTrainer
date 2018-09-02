@@ -15,6 +15,10 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var btnAdd: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
+    let databaseRef = Database.database().reference()
+    
+    var musicClasses = [MusicClass]()
+    var instruments = [Instrument]()
     var data = [
         ["Clase de Piano@40/h@Augusto Leguía",
          "Clase de Piano@25/h@Roberto Locke",
@@ -47,11 +51,52 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.backgroundColor = UIColor.darkGray
         index = 0
         btnAdd.isHidden = true
+        tableView.dataSource = self
+        loadMusicClasses()
         //loadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         loadData()
+    }
+    
+    func loadMusicClasses() {
+        self.musicClasses.removeAll()
+        databaseRef.child("classes").observe(.childAdded, with: {(snapshot) in
+            if let dict = snapshot.value as? [String:Any] {
+                print(dict)
+                let titleText = dict["title"] as! String
+                let priceText = dict["price"] as! String
+                let professorText = dict["professor"] as! String
+                let phoneText = dict["phone"] as! String
+                let descriptionText = dict["description"] as! String
+                let commentsText = dict["comments"] as! String
+                let imageURL = dict["image"] as! String
+                let musicClass = MusicClass(titleText: titleText, priceText: priceText, professorText: professorText, phoneText: phoneText, descriptionText: descriptionText, commentsText: commentsText, imageURL: imageURL)
+                self.musicClasses.append(musicClass)
+                self.tableView.reloadData()
+            }
+        })
+    }
+    
+    func loadInstruments() {
+        self.instruments.removeAll()
+        databaseRef.child("instruments").observe(.childAdded, with: {(snapshot) in
+            if let dict = snapshot.value as? [String:Any] {
+                print(dict)
+                let nameText = dict["name"] as! String
+                let stockText = dict["stock"] as! String
+                let priceText = dict["price"] as! String
+                let phoneText = dict["phone"] as! String
+                let discountText = dict["discount"] as! String
+                let descriptionText = dict["description"] as! String
+                let commentsText = dict["comments"] as! String
+                let imageURL = dict["image"] as! String
+                let instrument = Instrument(nameText: nameText, stockText: stockText, priceText: priceText, phoneText: phoneText, discountText: discountText, descriptionText: descriptionText, commentsText: commentsText, imageURL: imageURL)
+                self.instruments.append(instrument)
+                self.tableView.reloadData()
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,7 +113,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         guard let uid = Auth.auth().currentUser?.uid else { return}
         print(uid)
         
-        let userprofilesRef = Database.database().reference().child("user-profiles").child(uid)
+        let userprofilesRef = databaseRef.child("user-profiles").child(uid)
         print(userprofilesRef)
         
         DispatchQueue.global().async {
@@ -88,13 +133,25 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data[index].count
+        if index == 0 {
+            return musicClasses.count
+        } else {
+            //return data[index].count
+            return instruments.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "musicClassCell") as! MusicClassCell
-        let value = data[index][indexPath.row].components(separatedBy: "@")
-        cell.musicClassInit(item1: value[0], item2: value[1], item3: value[2])
+        if index == 0 {
+            let value = musicClasses[indexPath.row]
+            cell.musicClassInit(item1: value.title, item2: value.price, item3: value.professor)
+        } else {
+            //let value = data[index][indexPath.row].components(separatedBy: "@")
+            //cell.musicClassInit(item1: value[0], item2: value[1], item3: value[2])
+            let value = instruments[indexPath.row]
+            cell.musicClassInit(item1: value.name, item2: value.price, item3: value.phone)
+        }
         return cell
     }
     
@@ -113,6 +170,11 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBAction func switchEventsAction(_ sender: UISegmentedControl) {
         index = sender.selectedSegmentIndex
-        tableView.reloadData()
+        //tableView.reloadData()
+        if index == 0 {
+            loadMusicClasses()
+        } else {
+            loadInstruments()
+        }
     }
 }
