@@ -52,8 +52,9 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 let phoneText = dict["phone"] as! String
                 let descriptionText = dict["description"] as! String
                 let commentsText = dict["comments"] as! String
+                let typeIndex = dict["type"] as! Int
                 let imageURL = dict["image"] as! String
-                let musicClass = MusicClass(titleText: titleText, priceText: priceText, professorText: professorText, phoneText: phoneText, descriptionText: descriptionText, commentsText: commentsText, imageURL: imageURL)
+                let musicClass = MusicClass(titleText: titleText, priceText: priceText, professorText: professorText, phoneText: phoneText, descriptionText: descriptionText, commentsText: commentsText, typeIndex: typeIndex, imageURL: imageURL)
                 self.musicClasses.append(musicClass)
             }
             
@@ -77,8 +78,9 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
                         let discountText = dict["discount"] as! String
                         let descriptionText = dict["description"] as! String
                         let commentsText = dict["comments"] as! String
+                        let stateIndex = dict["state"] as! Int
                         let imageURL = dict["image"] as! String
-                        let instrument = Instrument(nameText: nameText, stockText: stockText, priceText: priceText, phoneText: phoneText, discountText: discountText, descriptionText: descriptionText, commentsText: commentsText, imageURL: imageURL)
+                        let instrument = Instrument(nameText: nameText, stockText: stockText, priceText: priceText, phoneText: phoneText, discountText: discountText, descriptionText: descriptionText, commentsText: commentsText, stateIndex: stateIndex, imageURL: imageURL)
                         self.instruments.append(instrument)
                     }
                 
@@ -90,7 +92,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidDisappear(_ animated: Bool) {
         print("viewDidDisappear")
-        Database.database().reference().removeAllObservers()
+        //Database.database().reference().removeAllObservers()
     }
     
     override func viewWillAppear(_ animated: Bool) {

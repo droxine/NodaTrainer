@@ -684,6 +684,7 @@
                     <connections>
                         <outlet property="btnPublish" destination="64y-Zg-4wf" id="WPV-UN-Ifh"/>
                         <outlet property="imgClass" destination="R0F-vf-X77" id="H2d-Bd-Yco"/>
+                        <outlet property="scType" destination="4fC-CU-QDd" id="aLG-kF-cTl"/>
                         <outlet property="txtComments" destination="J49-GU-8zp" id="oWg-jI-KCO"/>
                         <outlet property="txtDescription" destination="oJI-qq-ELf" id="d0V-C0-Ihs"/>
                         <outlet property="txtPhone" destination="OUk-i7-KXt" id="qea-xG-e9I"/>
@@ -920,6 +921,7 @@
                     <connections>
                         <outlet property="btnPublish" destination="x5M-a4-r58" id="JpZ-Yb-Vmg"/>
                         <outlet property="imgInstrument" destination="Zh2-cd-697" id="mfo-eo-EAL"/>
+                        <outlet property="scState" destination="CVY-gg-s2o" id="4a7-cJ-TeW"/>
                         <outlet property="txtComments" destination="p16-TI-ZA2" id="srn-22-70a"/>
                         <outlet property="txtDescription" destination="KjR-4E-Mzv" id="bEy-Y6-ku0"/>
                         <outlet property="txtDiscount" destination="nZF-j6-jt8" id="dlo-6q-9aw"/>

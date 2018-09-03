@@ -19,6 +19,7 @@ class MusicClassFormViewController: UIViewController {
     @IBOutlet weak var txtComments: UITextView!
     @IBOutlet weak var imgClass: UIImageView!
     @IBOutlet weak var btnPublish: UIButton!
+    @IBOutlet weak var scType: UISegmentedControl!
     
     var imagePicker: UIImagePickerController!
     var indexType: Int!
@@ -42,6 +43,8 @@ class MusicClassFormViewController: UIViewController {
         imagePicker.sourceType = .photoLibrary
         imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
         btnPublish.isHidden = false
+        scType.selectedSegmentIndex = 0
+        indexType = 0
         if musicClassPassed != nil {
             print("musicClassPassed != nil, " + musicClassPassed.title)
             loadSelected()
@@ -65,6 +68,8 @@ class MusicClassFormViewController: UIViewController {
         txtPhone.text = musicClassPassed.phone
         txtDescription.text = musicClassPassed.description
         txtComments.text = musicClassPassed.comments
+        scType.selectedSegmentIndex = musicClassPassed.type
+        indexType = scType.selectedSegmentIndex
         let url = URL(string: musicClassPassed.image)
         let data = try? Data(contentsOf: url!)
         if data != nil {
@@ -141,6 +146,7 @@ class MusicClassFormViewController: UIViewController {
             "phone": phoneValue,
             "description": descriptionValue,
             "comments": commentsValue,
+            "type": indexType,
             "image": imageURL.absoluteString
             ] as [String:Any]
         let childUpdates = ["/classes/\(musicClassId)/": classesObject]

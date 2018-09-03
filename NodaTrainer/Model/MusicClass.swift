@@ -14,15 +14,17 @@ class MusicClass {
     var phone: String
     var description: String
     var comments: String
+    var type: Int
     var image: String
     
-    init(titleText: String, priceText: String, professorText: String, phoneText: String, descriptionText: String, commentsText: String, imageURL: String) {
+    init(titleText: String, priceText: String, professorText: String, phoneText: String, descriptionText: String, commentsText: String, typeIndex: Int, imageURL: String) {
         title = titleText
         price = priceText
         professor = professorText
         phone = phoneText
         description = descriptionText
         comments = commentsText
+        type = typeIndex
         image = imageURL
     }
 }

@@ -20,6 +20,7 @@ class InstrumentFormViewController: UIViewController {
     @IBOutlet weak var txtComments: UITextView!
     @IBOutlet weak var imgInstrument: UIImageView!
     @IBOutlet weak var btnPublish: UIButton!
+    @IBOutlet weak var scState: UISegmentedControl!
     
     var imagePicker: UIImagePickerController!
     var indexState: Int!
@@ -41,6 +42,8 @@ class InstrumentFormViewController: UIViewController {
         imagePicker.sourceType = .photoLibrary
         imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
         btnPublish.isHidden = false
+        scState.selectedSegmentIndex = 0
+        indexState = 0
         if instrumentPassed != nil {
             print("instrumentPassed != nil, " + instrumentPassed.name)
             loadSelected()
@@ -69,6 +72,8 @@ class InstrumentFormViewController: UIViewController {
         txtDiscount.text = instrumentPassed.discount
         txtDescription.text = instrumentPassed.description
         txtComments.text = instrumentPassed.comments
+        scState.selectedSegmentIndex = instrumentPassed.state
+        indexState = scState.selectedSegmentIndex
         let url = URL(string: instrumentPassed.image)
         let data = try? Data(contentsOf: url!)
         if data != nil {
@@ -149,6 +154,7 @@ class InstrumentFormViewController: UIViewController {
             "discount": discountValue,
             "description": descriptionValue,
             "comments": commentsValue,
+            "state": indexState,
             "image": imageURL.absoluteString
             ] as [String:Any]
         let childUpdates = ["/instruments/\(instrumentId)/": instrumentObject]

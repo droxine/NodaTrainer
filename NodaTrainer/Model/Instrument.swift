@@ -16,9 +16,10 @@ class Instrument {
     var discount: String
     var description: String
     var comments: String
+    var state: Int
     var image: String
     
-    init(nameText: String, stockText: String, priceText: String, phoneText: String, discountText: String, descriptionText: String, commentsText: String, imageURL: String) {
+    init(nameText: String, stockText: String, priceText: String, phoneText: String, discountText: String, descriptionText: String, commentsText: String, stateIndex: Int, imageURL: String) {
         name = nameText
         stock = stockText
         price = priceText
@@ -26,6 +27,7 @@ class Instrument {
         discount = discountText
         description = descriptionText
         comments = commentsText
+        state = stateIndex
         image = imageURL
     }
 }
