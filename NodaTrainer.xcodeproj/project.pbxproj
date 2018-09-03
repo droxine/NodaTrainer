@@ -18,6 +18,7 @@
 		D1533F8321338C7700B2C785 /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1533F8221338C7700B2C785 /* UpdateProfileViewController.swift */; };
 		D1574C5D213C442D00078616 /* MusicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1574C5C213C442D00078616 /* MusicClass.swift */; };
 		D1574C5F213C5B9500078616 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1574C5E213C5B9500078616 /* Instrument.swift */; };
+		D1574C62213CED2700078616 /* Lection0ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1574C61213CED2700078616 /* Lection0ViewController.swift */; };
 		D166D76220A2949F00C29E24 /* TestResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D166D76120A2949F00C29E24 /* TestResultsViewController.swift */; };
 		D1C946B9209E61290000757C /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D1C946B6209E61280000757C /* ProgressHUD.bundle */; };
 		D1C946BA209E61290000757C /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C946B8209E61290000757C /* ProgressHUD.m */; };
@@ -80,6 +81,7 @@
 		D1533F8221338C7700B2C785 /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
 		D1574C5C213C442D00078616 /* MusicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClass.swift; sourceTree = "<group>"; };
 		D1574C5E213C5B9500078616 /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
+		D1574C61213CED2700078616 /* Lection0ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection0ViewController.swift; sourceTree = "<group>"; };
 		D166D760209FE3FC00C29E24 /* NodaTrainer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NodaTrainer.entitlements; sourceTree = "<group>"; };
 		D166D76120A2949F00C29E24 /* TestResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultsViewController.swift; sourceTree = "<group>"; };
 		D1C946B5209E61270000757C /* NodaTrainer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NodaTrainer-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -163,6 +165,14 @@
 			path = MusicClasses;
 			sourceTree = "<group>";
 		};
+		D1574C60213CD1F600078616 /* Lecciones */ = {
+			isa = PBXGroup;
+			children = (
+				D1574C61213CED2700078616 /* Lection0ViewController.swift */,
+			);
+			path = Lecciones;
+			sourceTree = "<group>";
+		};
 		D1F5F70A2083D9D90045614E = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +229,7 @@
 		D1F5F74A20841D430045614E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D1574C60213CD1F600078616 /* Lecciones */,
 				D1F5F7162083D9DA0045614E /* AppDelegate.swift */,
 				D1F5F7182083D9DA0045614E /* ViewController.swift */,
 				D1F138772096AD1300A43D4B /* LoginViewController.swift */,
@@ -566,6 +577,7 @@
 				D1DA7504209CEF7F001AB742 /* MainTabBarController.swift in Sources */,
 				D1533F7A2131D4CD00B2C785 /* EventsViewController.swift in Sources */,
 				D141F1542137A1140053F661 /* MusicClassFormViewController.swift in Sources */,
+				D1574C62213CED2700078616 /* Lection0ViewController.swift in Sources */,
 				D1F1387E20992DBC00A43D4B /* LectionsViewController.swift in Sources */,
 				D141F1562137A13F0053F661 /* InstrumentFormViewController.swift in Sources */,
 				D1F5F7172083D9DA0045614E /* AppDelegate.swift in Sources */,
