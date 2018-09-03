@@ -682,6 +682,7 @@
                         <viewLayoutGuide key="safeArea" id="tma-MO-sd3"/>
                     </view>
                     <connections>
+                        <outlet property="btnPublish" destination="64y-Zg-4wf" id="WPV-UN-Ifh"/>
                         <outlet property="imgClass" destination="R0F-vf-X77" id="H2d-Bd-Yco"/>
                         <outlet property="txtComments" destination="J49-GU-8zp" id="oWg-jI-KCO"/>
                         <outlet property="txtDescription" destination="oJI-qq-ELf" id="d0V-C0-Ihs"/>
@@ -917,6 +918,7 @@
                         <viewLayoutGuide key="safeArea" id="qhQ-HC-uGo"/>
                     </view>
                     <connections>
+                        <outlet property="btnPublish" destination="x5M-a4-r58" id="JpZ-Yb-Vmg"/>
                         <outlet property="imgInstrument" destination="Zh2-cd-697" id="mfo-eo-EAL"/>
                         <outlet property="txtComments" destination="p16-TI-ZA2" id="srn-22-70a"/>
                         <outlet property="txtDescription" destination="KjR-4E-Mzv" id="bEy-Y6-ku0"/>

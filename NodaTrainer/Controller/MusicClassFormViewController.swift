@@ -18,6 +18,7 @@ class MusicClassFormViewController: UIViewController {
     @IBOutlet weak var txtDescription: UITextView!
     @IBOutlet weak var txtComments: UITextView!
     @IBOutlet weak var imgClass: UIImageView!
+    @IBOutlet weak var btnPublish: UIButton!
     
     var imagePicker: UIImagePickerController!
     var indexType: Int!
@@ -25,7 +26,11 @@ class MusicClassFormViewController: UIViewController {
     let databaseRef = Database.database().reference()
     var musicClassId: String!
     
+    var musicClassPassed: MusicClass!
+    
     override func viewDidLoad() {
+        print("MusicClassController")
+        print("viewDidLoad")
         super.viewDidLoad()
         let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
         imgClass.isUserInteractionEnabled = true
@@ -36,6 +41,11 @@ class MusicClassFormViewController: UIViewController {
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
         imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        btnPublish.isHidden = false
+        if musicClassPassed != nil {
+            print("musicClassPassed != nil, " + musicClassPassed.title)
+            loadSelected()
+        }
     }
     
     @objc func openImagePicker(_ sender: Any) {
@@ -44,6 +54,22 @@ class MusicClassFormViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func loadSelected() {
+        print("loadSelected")
+        btnPublish.isHidden = true
+        txtTitle.text = musicClassPassed.title
+        txtPrice.text = musicClassPassed.price
+        txtProfessor.text = musicClassPassed.professor
+        txtPhone.text = musicClassPassed.phone
+        txtDescription.text = musicClassPassed.description
+        txtComments.text = musicClassPassed.comments
+        let url = URL(string: musicClassPassed.image)
+        let data = try? Data(contentsOf: url!)
+        if data != nil {
+            imgClass.image = UIImage(data: data!)
+        }
     }
     
     @IBAction func addMusicClass(_ sender: Any) {

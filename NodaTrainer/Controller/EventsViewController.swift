@@ -143,7 +143,6 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("tableView counting")
         if index == 0 {
             return musicClasses.count
         } else {
@@ -152,19 +151,28 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("tableView setting cell")
-        print(indexPath.row)
         let cell = tableView.dequeueReusableCell(withIdentifier: "musicClassCell") as! MusicClassCell
         if index == 0 {
-            print(musicClasses.count)
             let value = musicClasses[indexPath.row]
             cell.musicClassInit(item1: value.title, item2: value.price, item3: value.professor)
         } else {
-            print(instruments.count)
             let value = instruments[indexPath.row]
             cell.musicClassInit(item1: value.name, item2: value.price, item3: value.phone)
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if(index == 0) {
+            let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "musicClassForm") as! MusicClassFormViewController
+            controllerTravel.musicClassPassed = musicClasses[indexPath.row]
+            present(controllerTravel, animated: true, completion: nil)
+        } else {
+            let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "instrumentForm") as! InstrumentFormViewController
+            controllerTravel.instrumentPassed = instruments[indexPath.row]
+            present(controllerTravel, animated: true, completion: nil)
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     @IBAction func goToForm(_ sender: Any) {

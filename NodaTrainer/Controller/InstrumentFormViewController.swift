@@ -19,12 +19,15 @@ class InstrumentFormViewController: UIViewController {
     @IBOutlet weak var txtDescription: UITextView!
     @IBOutlet weak var txtComments: UITextView!
     @IBOutlet weak var imgInstrument: UIImageView!
+    @IBOutlet weak var btnPublish: UIButton!
     
     var imagePicker: UIImagePickerController!
     var indexState: Int!
     
     let databaseRef = Database.database().reference()
     var instrumentId: String!
+    
+    var instrumentPassed: Instrument!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +40,11 @@ class InstrumentFormViewController: UIViewController {
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
         imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        btnPublish.isHidden = false
+        if instrumentPassed != nil {
+            print("instrumentPassed != nil, " + instrumentPassed.name)
+            loadSelected()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,6 +57,23 @@ class InstrumentFormViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func loadSelected() {
+        print("loadSelected")
+        btnPublish.isHidden = true
+        txtName.text = instrumentPassed.name
+        txtStock.text = instrumentPassed.stock
+        txtPrice.text = instrumentPassed.price
+        txtPhone.text = instrumentPassed.phone
+        txtDiscount.text = instrumentPassed.discount
+        txtDescription.text = instrumentPassed.description
+        txtComments.text = instrumentPassed.comments
+        let url = URL(string: instrumentPassed.image)
+        let data = try? Data(contentsOf: url!)
+        if data != nil {
+            imgInstrument.image = UIImage(data: data!)
+        }
     }
     
     @IBAction func addInstrument(_ sender: Any) {
