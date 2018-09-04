@@ -13,12 +13,13 @@ import FBSDKLoginKit
 class LectionsViewController: UIViewController {
     @IBOutlet weak var imgLection0: UIImageView!
     
+    var withoutLessons: Bool = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden=false
         
-        if true {
+        if withoutLessons {
             self.performSegue(withIdentifier: "goTest", sender: self)
         }
         

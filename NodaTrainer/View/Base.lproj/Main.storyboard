@@ -911,9 +911,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gD3-6v-Phh">
-                                <rect key="frame" x="110" y="728" width="155" height="30"/>
+                                <rect key="frame" x="109" y="728" width="157" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="VOLVER AL PRINCIPIO"/>
+                                <state key="normal" title="VOLVER A LECCIONES"/>
                                 <connections>
                                     <action selector="goLessons:" destination="t0Y-KW-5Tt" eventType="touchUpInside" id="7aJ-oU-biX"/>
                                 </connections>

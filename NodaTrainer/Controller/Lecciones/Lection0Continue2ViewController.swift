@@ -36,7 +36,9 @@ class Lection0Continue2ViewController: UIViewController {
     
     
     @IBAction func goLessons(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
+        controllerTravel.selectedIndex = 1
+        present(controllerTravel, animated: true, completion: nil)
     }
     
 
