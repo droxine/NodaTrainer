@@ -33,6 +33,9 @@
 		D1F1387A2096AD2300A43D4B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F138792096AD2300A43D4B /* RegisterViewController.swift */; };
 		D1F1387C2096ADA600A43D4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1387B2096ADA600A43D4B /* HomeViewController.swift */; };
 		D1F1387E20992DBC00A43D4B /* LectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1387D20992DBC00A43D4B /* LectionsViewController.swift */; };
+		D1F2F4F4213E43450030E2AE /* Lection0Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F2F4F3213E43450030E2AE /* Lection0Continue1ViewController.swift */; };
+		D1F2F4F7213E4CEE0030E2AE /* 0001notas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1F2F4F6213E4CEE0030E2AE /* 0001notas.mp3 */; };
+		D1F2F4F9213E4D1A0030E2AE /* Lection0Continue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F2F4F8213E4D1A0030E2AE /* Lection0Continue2ViewController.swift */; };
 		D1F5F7172083D9DA0045614E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5F7162083D9DA0045614E /* AppDelegate.swift */; };
 		D1F5F7192083D9DA0045614E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5F7182083D9DA0045614E /* ViewController.swift */; };
 		D1F5F71C2083D9DA0045614E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F5F71A2083D9DA0045614E /* Main.storyboard */; };
@@ -99,6 +102,9 @@
 		D1F138792096AD2300A43D4B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D1F1387B2096ADA600A43D4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D1F1387D20992DBC00A43D4B /* LectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectionsViewController.swift; sourceTree = "<group>"; };
+		D1F2F4F3213E43450030E2AE /* Lection0Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection0Continue1ViewController.swift; sourceTree = "<group>"; };
+		D1F2F4F6213E4CEE0030E2AE /* 0001notas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0001notas.mp3; sourceTree = "<group>"; };
+		D1F2F4F8213E4D1A0030E2AE /* Lection0Continue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection0Continue2ViewController.swift; sourceTree = "<group>"; };
 		D1F5F7132083D9DA0045614E /* NodaTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NodaTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F5F7162083D9DA0045614E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1F5F7182083D9DA0045614E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -169,8 +175,18 @@
 			isa = PBXGroup;
 			children = (
 				D1574C61213CED2700078616 /* Lection0ViewController.swift */,
+				D1F2F4F3213E43450030E2AE /* Lection0Continue1ViewController.swift */,
+				D1F2F4F8213E4D1A0030E2AE /* Lection0Continue2ViewController.swift */,
 			);
 			path = Lecciones;
+			sourceTree = "<group>";
+		};
+		D1F2F4F5213E4CD70030E2AE /* SoundFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D1F2F4F6213E4CEE0030E2AE /* 0001notas.mp3 */,
+			);
+			path = SoundFiles;
 			sourceTree = "<group>";
 		};
 		D1F5F70A2083D9D90045614E = {
@@ -198,6 +214,7 @@
 		D1F5F7152083D9DA0045614E /* NodaTrainer */ = {
 			isa = PBXGroup;
 			children = (
+				D1F2F4F5213E4CD70030E2AE /* SoundFiles */,
 				D166D760209FE3FC00C29E24 /* NodaTrainer.entitlements */,
 				D1F5F74F20841EB40045614E /* Model */,
 				D1F5F74B20841E240045614E /* View */,
@@ -420,6 +437,7 @@
 			files = (
 				D1F5F7212083D9DA0045614E /* LaunchScreen.storyboard in Resources */,
 				D1F5F7472083DEFE0045614E /* GoogleService-Info.plist in Resources */,
+				D1F2F4F7213E4CEE0030E2AE /* 0001notas.mp3 in Resources */,
 				D1F5F71E2083D9DA0045614E /* Assets.xcassets in Resources */,
 				D1C946B9209E61290000757C /* ProgressHUD.bundle in Resources */,
 				D1533F812131E91400B2C785 /* MusicClassCell.xib in Resources */,
@@ -575,6 +593,7 @@
 				D1F5F7192083D9DA0045614E /* ViewController.swift in Sources */,
 				D166D76220A2949F00C29E24 /* TestResultsViewController.swift in Sources */,
 				D1DA7504209CEF7F001AB742 /* MainTabBarController.swift in Sources */,
+				D1F2F4F9213E4D1A0030E2AE /* Lection0Continue2ViewController.swift in Sources */,
 				D1533F7A2131D4CD00B2C785 /* EventsViewController.swift in Sources */,
 				D141F1542137A1140053F661 /* MusicClassFormViewController.swift in Sources */,
 				D1574C62213CED2700078616 /* Lection0ViewController.swift in Sources */,
@@ -588,6 +607,7 @@
 				D1574C5D213C442D00078616 /* MusicClass.swift in Sources */,
 				D1F1387A2096AD2300A43D4B /* RegisterViewController.swift in Sources */,
 				D1533F7C2131D60900B2C785 /* InitViewController.swift in Sources */,
+				D1F2F4F4213E43450030E2AE /* Lection0Continue1ViewController.swift in Sources */,
 				D1DA7508209CFC10001AB742 /* UserProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
