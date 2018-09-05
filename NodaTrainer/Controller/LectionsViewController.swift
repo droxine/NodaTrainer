@@ -17,12 +17,11 @@ class LectionsViewController: UIViewController {
     var withoutLessons: Bool = true
 
     override func viewDidLoad() {
+        print("viewDidLoad")
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden=false
         
-        if withoutLessons {
-            self.performSegue(withIdentifier: "goTest", sender: self)
-        }
+        loadLessonsDone()
         
         //lessons navigation
         let imageTap = UITapGestureRecognizer(target: self, action: #selector(goLection0))
@@ -34,6 +33,28 @@ class LectionsViewController: UIViewController {
         imgLection1.isUserInteractionEnabled = true
         imgLection1.addGestureRecognizer(imageTap1)
         imgLection1.clipsToBounds = true
+    }
+    
+    func loadLessonsDone() {
+        print("loadLessonsDone")
+        guard let uid = Auth.auth().currentUser?.uid else { return}
+        print(uid)
+        
+        let lessonsRef = Database.database().reference().child("lessons").child(uid)
+        print(lessonsRef)
+
+        lessonsRef.observeSingleEvent(of: .value, with: { (snapshot) in
+                if let userDict = snapshot.value as? [String:Any] {
+                    print(userDict)
+                    self.withoutLessons = !(userDict["done"] as? Bool)!
+                    print("done: ",(userDict["done"] as? Bool)!)
+                    print("!done: ",!(userDict["done"] as? Bool)!)
+                    print("withoutLessons: ",self.withoutLessons)
+                }
+            if self.withoutLessons {
+                self.performSegue(withIdentifier: "goTest", sender: self)
+            }
+        })
     }
     
     @objc func goLection0(_ sender: Any) {

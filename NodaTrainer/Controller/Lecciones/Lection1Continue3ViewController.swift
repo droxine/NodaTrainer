@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 import AVFoundation
 
 class Lection1Continue3ViewController: UIViewController {
@@ -199,10 +200,26 @@ class Lection1Continue3ViewController: UIViewController {
     
     //Complete Lesson
     @IBAction func goBack(_ sender: Any) {
+        saveLessonsDone() { success in
+            if !success {
+                print("Error: No se pudo actualizar el fin de la leccion")
+            }
+        }
+        
         let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
         controllerTravel.selectedIndex = 1
         present(controllerTravel, animated: true, completion: nil)
     }
     
-
+    func saveLessonsDone(completion: @escaping ((_ success: Bool) -> ()) ) -> Void{
+        guard let uid = Auth.auth().currentUser?.uid else { return}
+        print(uid)
+        let lessonsObject = [
+            "done": true
+            ] as [String:Any]
+        let childUpdates = ["/lessons/\(uid)/": lessonsObject]
+        Database.database().reference().updateChildValues(childUpdates, withCompletionBlock: { (error, ref) in
+            completion(error == nil)
+        })
+    }
 }

@@ -109,6 +109,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         } else {
             loadInstruments()
         }
+        self.tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -158,8 +159,14 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let value = musicClasses[indexPath.row]
             cell.musicClassInit(item1: value.title, item2: value.price, item3: value.professor)
         } else {
-            let value = instruments[indexPath.row]
-            cell.musicClassInit(item1: value.name, item2: value.price, item3: value.phone)
+            print("indexPath.row", indexPath.row)
+            print("instruments.count", instruments.count)
+            if(indexPath.row <= instruments.count) {
+                let value = instruments[indexPath.row]
+                cell.musicClassInit(item1: value.name, item2: value.price, item3: value.phone)
+            } else {
+                print("INSTRUMENT INDEX AGAIN")
+            }
         }
         return cell
     }
@@ -200,5 +207,6 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         } else {
             loadInstruments()
         }
+        self.tableView.reloadData()
     }
 }
