@@ -36,12 +36,17 @@ class Lection1Continue2ViewController: UIViewController {
         setBorder(btnSol)
         setBorder(btnLa)
         setBorder(btnTi)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         imgResult.isHidden = true
         labelResult.isHidden = true
         labelResult2.isHidden = true
         btnReload.isHidden = true
         btnNext.isEnabled = false
         notesPressed.removeAll()
+        btnDo.backgroundColor = UIColor.white
+        btnMi.backgroundColor = UIColor.white
     }
     
     func setBorder(_ button: UIButton) {
@@ -136,6 +141,9 @@ class Lection1Continue2ViewController: UIViewController {
         } catch {
             print(error)
         }
+        if audioPlayer.isPlaying {
+            audioPlayer.stop()
+        }
         audioPlayer.play()
     }
     
@@ -195,6 +203,11 @@ class Lection1Continue2ViewController: UIViewController {
     
     @IBAction func goBack(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func goNext(_ sender: Any) {
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection1Continue3") as! Lection1Continue3ViewController
+        present(controllerTravel, animated: true, completion: nil)
     }
     
 }

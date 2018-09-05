@@ -36,12 +36,17 @@ class Lection1ViewController: UIViewController {
         setBorder(btnSol)
         setBorder(btnLa)
         setBorder(btnTi)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         imgResult.isHidden = true
         labelResult.isHidden = true
         labelResult2.isHidden = true
         btnReload.isHidden = true
         btnNext.isEnabled = false
         notesPressed.removeAll()
+        btnDo.backgroundColor = UIColor.white
+        btnMi.backgroundColor = UIColor.white
     }
     
     func setBorder(_ button: UIButton) {
@@ -135,6 +140,9 @@ class Lection1ViewController: UIViewController {
             audioPlayer = try AVAudioPlayer(contentsOf: resource)
         } catch {
             print(error)
+        }
+        if audioPlayer.isPlaying {
+            audioPlayer.stop()
         }
         audioPlayer.play()
     }
