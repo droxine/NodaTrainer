@@ -1,4 +1,3 @@
-//
 //  Lection0ViewController.swift
 //  NodaTrainer
 //
@@ -25,7 +24,7 @@ class Lection0ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection0Comtinue1") as! Lection0Continue1ViewController
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection0Continue1") as! Lection0Continue1ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
     

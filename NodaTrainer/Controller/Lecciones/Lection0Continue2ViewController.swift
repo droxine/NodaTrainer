@@ -1,4 +1,3 @@
-//
 //  Lection0Continue2ViewController.swift
 //  NodaTrainer
 //
@@ -30,7 +29,6 @@ class Lection0Continue2ViewController: UIViewController {
         } catch {
             print(error)
         }
-        
         audioPlayer.play()
     }
     

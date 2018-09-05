@@ -9,6 +9,23 @@
 /* Begin PBXBuildFile section */
 		7F1840FE7CDEEAD29373D358 /* Pods_NodaTrainerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4075C9BBA80B74ADDCB3A1D0 /* Pods_NodaTrainerTests.framework */; };
 		A6C622F8CC1EA5BB7365A05B /* Pods_NodaTrainerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82667419EEFCD76761E8D56A /* Pods_NodaTrainerUITests.framework */; };
+		D108AD8E214021C900CAA2C4 /* Lection1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108AD8D214021C900CAA2C4 /* Lection1ViewController.swift */; };
+		D108AD922140229800CAA2C4 /* 0003 Do, mi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108AD912140229800CAA2C4 /* 0003 Do, mi.mp3 */; };
+		D108AD94214022A900CAA2C4 /* 0003 Do, mi 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108AD93214022A900CAA2C4 /* 0003 Do, mi 1.mp3 */; };
+		D108AD96214022BC00CAA2C4 /* 0003 Do, mi 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108AD95214022BC00CAA2C4 /* 0003 Do, mi 2.mp3 */; };
+		D108AD98214022CD00CAA2C4 /* 0003 Do, mi 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108AD97214022CD00CAA2C4 /* 0003 Do, mi 3.mp3 */; };
+		D108AD9A2140231100CAA2C4 /* Do.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108AD992140231100CAA2C4 /* Do.mp3 */; };
+		D108AD9C2140232200CAA2C4 /* Do#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108AD9B2140232200CAA2C4 /* Do#.mp3 */; };
+		D108AD9E2140233900CAA2C4 /* Re.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108AD9D2140233800CAA2C4 /* Re.mp3 */; };
+		D108ADA02140234600CAA2C4 /* Re#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108AD9F2140234600CAA2C4 /* Re#.mp3 */; };
+		D108ADA22140235000CAA2C4 /* Mi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108ADA12140235000CAA2C4 /* Mi.mp3 */; };
+		D108ADA6214023B400CAA2C4 /* Fa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108ADA5214023B400CAA2C4 /* Fa.mp3 */; };
+		D108ADA8214023C200CAA2C4 /* Fa#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108ADA7214023C200CAA2C4 /* Fa#.mp3 */; };
+		D108ADAA214023D300CAA2C4 /* Sol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108ADA9214023D300CAA2C4 /* Sol.mp3 */; };
+		D108ADAC214023E400CAA2C4 /* Sol#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108ADAB214023E400CAA2C4 /* Sol#.mp3 */; };
+		D108ADAE214023FD00CAA2C4 /* La.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108ADAD214023FD00CAA2C4 /* La.mp3 */; };
+		D108ADB02140240F00CAA2C4 /* La#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108ADAF2140240F00CAA2C4 /* La#.mp3 */; };
+		D108ADB22140242300CAA2C4 /* Si.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108ADB12140242200CAA2C4 /* Si.mp3 */; };
 		D141F1542137A1140053F661 /* MusicClassFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141F1532137A1140053F661 /* MusicClassFormViewController.swift */; };
 		D141F1562137A13F0053F661 /* InstrumentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141F1552137A13F0053F661 /* InstrumentFormViewController.swift */; };
 		D1533F7A2131D4CD00B2C785 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1533F792131D4CD00B2C785 /* EventsViewController.swift */; };
@@ -75,6 +92,23 @@
 		6D71D367AF179AA3AB0B24B3 /* Pods-NodaTrainerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NodaTrainerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NodaTrainerUITests/Pods-NodaTrainerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		82667419EEFCD76761E8D56A /* Pods_NodaTrainerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NodaTrainerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05F10EBBE55FE531DA7C360 /* Pods-NodaTrainerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NodaTrainerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NodaTrainerUITests/Pods-NodaTrainerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D108AD8D214021C900CAA2C4 /* Lection1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection1ViewController.swift; sourceTree = "<group>"; };
+		D108AD912140229800CAA2C4 /* 0003 Do, mi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0003 Do, mi.mp3"; sourceTree = "<group>"; };
+		D108AD93214022A900CAA2C4 /* 0003 Do, mi 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0003 Do, mi 1.mp3"; sourceTree = "<group>"; };
+		D108AD95214022BC00CAA2C4 /* 0003 Do, mi 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0003 Do, mi 2.mp3"; sourceTree = "<group>"; };
+		D108AD97214022CD00CAA2C4 /* 0003 Do, mi 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0003 Do, mi 3.mp3"; sourceTree = "<group>"; };
+		D108AD992140231100CAA2C4 /* Do.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Do.mp3; sourceTree = "<group>"; };
+		D108AD9B2140232200CAA2C4 /* Do#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Do#.mp3"; sourceTree = "<group>"; };
+		D108AD9D2140233800CAA2C4 /* Re.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Re.mp3; sourceTree = "<group>"; };
+		D108AD9F2140234600CAA2C4 /* Re#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Re#.mp3"; sourceTree = "<group>"; };
+		D108ADA12140235000CAA2C4 /* Mi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mi.mp3; sourceTree = "<group>"; };
+		D108ADA5214023B400CAA2C4 /* Fa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fa.mp3; sourceTree = "<group>"; };
+		D108ADA7214023C200CAA2C4 /* Fa#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fa#.mp3"; sourceTree = "<group>"; };
+		D108ADA9214023D300CAA2C4 /* Sol.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sol.mp3; sourceTree = "<group>"; };
+		D108ADAB214023E400CAA2C4 /* Sol#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sol#.mp3"; sourceTree = "<group>"; };
+		D108ADAD214023FD00CAA2C4 /* La.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = La.mp3; sourceTree = "<group>"; };
+		D108ADAF2140240F00CAA2C4 /* La#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "La#.mp3"; sourceTree = "<group>"; };
+		D108ADB12140242200CAA2C4 /* Si.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Si.mp3; sourceTree = "<group>"; };
 		D141F1532137A1140053F661 /* MusicClassFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClassFormViewController.swift; sourceTree = "<group>"; };
 		D141F1552137A13F0053F661 /* InstrumentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentFormViewController.swift; sourceTree = "<group>"; };
 		D1533F792131D4CD00B2C785 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +196,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D108AD8F2140224600CAA2C4 /* Lection1 */ = {
+			isa = PBXGroup;
+			children = (
+				D108AD97214022CD00CAA2C4 /* 0003 Do, mi 3.mp3 */,
+				D108AD95214022BC00CAA2C4 /* 0003 Do, mi 2.mp3 */,
+				D108AD93214022A900CAA2C4 /* 0003 Do, mi 1.mp3 */,
+				D108AD912140229800CAA2C4 /* 0003 Do, mi.mp3 */,
+			);
+			path = Lection1;
+			sourceTree = "<group>";
+		};
+		D108AD902140225700CAA2C4 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				D108ADB12140242200CAA2C4 /* Si.mp3 */,
+				D108ADAF2140240F00CAA2C4 /* La#.mp3 */,
+				D108ADAD214023FD00CAA2C4 /* La.mp3 */,
+				D108ADAB214023E400CAA2C4 /* Sol#.mp3 */,
+				D108ADA9214023D300CAA2C4 /* Sol.mp3 */,
+				D108ADA7214023C200CAA2C4 /* Fa#.mp3 */,
+				D108ADA5214023B400CAA2C4 /* Fa.mp3 */,
+				D108ADA12140235000CAA2C4 /* Mi.mp3 */,
+				D108AD9F2140234600CAA2C4 /* Re#.mp3 */,
+				D108AD9D2140233800CAA2C4 /* Re.mp3 */,
+				D108AD9B2140232200CAA2C4 /* Do#.mp3 */,
+				D108AD992140231100CAA2C4 /* Do.mp3 */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
 		D1533F7D2131E8BE00B2C785 /* MusicClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +241,7 @@
 				D1574C61213CED2700078616 /* Lection0ViewController.swift */,
 				D1F2F4F3213E43450030E2AE /* Lection0Continue1ViewController.swift */,
 				D1F2F4F8213E4D1A0030E2AE /* Lection0Continue2ViewController.swift */,
+				D108AD8D214021C900CAA2C4 /* Lection1ViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -184,6 +249,8 @@
 		D1F2F4F5213E4CD70030E2AE /* SoundFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D108AD902140225700CAA2C4 /* Notes */,
+				D108AD8F2140224600CAA2C4 /* Lection1 */,
 				D1F2F4F6213E4CEE0030E2AE /* 0001notas.mp3 */,
 			);
 			path = SoundFiles;
@@ -438,10 +505,26 @@
 				D1F5F7212083D9DA0045614E /* LaunchScreen.storyboard in Resources */,
 				D1F5F7472083DEFE0045614E /* GoogleService-Info.plist in Resources */,
 				D1F2F4F7213E4CEE0030E2AE /* 0001notas.mp3 in Resources */,
+				D108ADA8214023C200CAA2C4 /* Fa#.mp3 in Resources */,
+				D108ADB22140242300CAA2C4 /* Si.mp3 in Resources */,
+				D108AD9A2140231100CAA2C4 /* Do.mp3 in Resources */,
+				D108AD9C2140232200CAA2C4 /* Do#.mp3 in Resources */,
 				D1F5F71E2083D9DA0045614E /* Assets.xcassets in Resources */,
+				D108ADAC214023E400CAA2C4 /* Sol#.mp3 in Resources */,
+				D108ADA02140234600CAA2C4 /* Re#.mp3 in Resources */,
+				D108AD98214022CD00CAA2C4 /* 0003 Do, mi 3.mp3 in Resources */,
 				D1C946B9209E61290000757C /* ProgressHUD.bundle in Resources */,
+				D108AD96214022BC00CAA2C4 /* 0003 Do, mi 2.mp3 in Resources */,
+				D108ADA22140235000CAA2C4 /* Mi.mp3 in Resources */,
+				D108ADAE214023FD00CAA2C4 /* La.mp3 in Resources */,
+				D108AD9E2140233900CAA2C4 /* Re.mp3 in Resources */,
+				D108AD922140229800CAA2C4 /* 0003 Do, mi.mp3 in Resources */,
 				D1533F812131E91400B2C785 /* MusicClassCell.xib in Resources */,
+				D108ADB02140240F00CAA2C4 /* La#.mp3 in Resources */,
+				D108ADAA214023D300CAA2C4 /* Sol.mp3 in Resources */,
 				D1F5F71C2083D9DA0045614E /* Main.storyboard in Resources */,
+				D108ADA6214023B400CAA2C4 /* Fa.mp3 in Resources */,
+				D108AD94214022A900CAA2C4 /* 0003 Do, mi 1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +671,7 @@
 				D1DA7512209D38C1001AB742 /* QuestionBank.swift in Sources */,
 				D1F1387C2096ADA600A43D4B /* HomeViewController.swift in Sources */,
 				D1DA750C209D13FA001AB742 /* TestBeganViewController.swift in Sources */,
+				D108AD8E214021C900CAA2C4 /* Lection1ViewController.swift in Sources */,
 				D1F138782096AD1300A43D4B /* LoginViewController.swift in Sources */,
 				D1DA7506209CF7E4001AB742 /* LectionsNavigationController.swift in Sources */,
 				D1F5F7192083D9DA0045614E /* ViewController.swift in Sources */,
