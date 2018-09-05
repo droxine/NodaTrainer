@@ -812,8 +812,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yT-ho-6dw">
                                 <rect key="frame" x="23" y="97" width="328" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Escucha atentamente, y trata de identificar la nota, presionando la que corresponde en el pequeño teclado que se muestra. A continuación, presiona el check para mostrarte el resultado y resaltar las notas involucradas en el teclado. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">Escucha atentamente, y trata de identificar las notas, presionando las que corresponden en el pequeño teclado que se muestra. A continuación, presiona el check para mostrarte el resultado y resaltar las notas involucradas en el teclado. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -932,6 +932,14 @@
                                     <action selector="playSolSharp:" destination="KNU-ve-gnZ" eventType="touchUpInside" id="vv4-PT-fbS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIF-ba-3Fo">
+                                <rect key="frame" x="282" y="541" width="30" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="playLaSharp:" destination="KNU-ve-gnZ" eventType="touchUpInside" id="Ezr-Tz-gWi"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1K-3C-4o2">
                                 <rect key="frame" x="164" y="675" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -958,12 +966,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIF-ba-3Fo">
-                                <rect key="frame" x="282" y="541" width="30" height="68"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JP-mA-NNP">
+                                <rect key="frame" x="164" y="455" width="51" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button" image="RELOAD"/>
                                 <connections>
-                                    <action selector="playLaSharp:" destination="KNU-ve-gnZ" eventType="touchUpInside" id="Ezr-Tz-gWi"/>
+                                    <action selector="reloadLesson:" destination="KNU-ve-gnZ" eventType="touchUpInside" id="S9d-ce-HHa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -975,7 +983,9 @@
                         <outlet property="btnFa" destination="0dV-ns-pmM" id="kdu-zA-OOk"/>
                         <outlet property="btnLa" destination="kZs-QN-mrN" id="Jus-Z3-Sie"/>
                         <outlet property="btnMi" destination="aQT-SR-22U" id="xUA-E9-4hi"/>
+                        <outlet property="btnNext" destination="fHX-lG-Lrn" id="Yne-d6-3Yb"/>
                         <outlet property="btnRe" destination="JOH-xq-dhM" id="HVt-NF-So1"/>
+                        <outlet property="btnReload" destination="4JP-mA-NNP" id="yRX-QK-yZ9"/>
                         <outlet property="btnSol" destination="KDg-Qt-c8z" id="lZY-Kv-Vl7"/>
                         <outlet property="btnTi" destination="bzm-K0-6LG" id="TMK-bj-Y3S"/>
                         <outlet property="imgResult" destination="vkF-Ru-guH" id="UZv-Mv-Ib5"/>
@@ -2434,6 +2444,7 @@
         <image name="My Music" width="45" height="41"/>
         <image name="My MusicSelected" width="45" height="40"/>
         <image name="PLAY" width="256" height="256"/>
+        <image name="RELOAD" width="256" height="256"/>
         <image name="TEXTFIELD-1" width="232" height="56"/>
         <image name="avatar" width="128" height="128"/>
         <image name="eventos" width="36" height="42"/>
