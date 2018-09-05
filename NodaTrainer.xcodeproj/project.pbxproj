@@ -26,6 +26,8 @@
 		D108ADAE214023FD00CAA2C4 /* La.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108ADAD214023FD00CAA2C4 /* La.mp3 */; };
 		D108ADB02140240F00CAA2C4 /* La#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108ADAF2140240F00CAA2C4 /* La#.mp3 */; };
 		D108ADB22140242300CAA2C4 /* Si.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D108ADB12140242200CAA2C4 /* Si.mp3 */; };
+		D108ADB4214049A200CAA2C4 /* Lection1Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108ADB3214049A200CAA2C4 /* Lection1Continue1ViewController.swift */; };
+		D108ADB62140595B00CAA2C4 /* Lection1Continue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108ADB52140595B00CAA2C4 /* Lection1Continue2ViewController.swift */; };
 		D141F1542137A1140053F661 /* MusicClassFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141F1532137A1140053F661 /* MusicClassFormViewController.swift */; };
 		D141F1562137A13F0053F661 /* InstrumentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141F1552137A13F0053F661 /* InstrumentFormViewController.swift */; };
 		D1533F7A2131D4CD00B2C785 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1533F792131D4CD00B2C785 /* EventsViewController.swift */; };
@@ -109,6 +111,8 @@
 		D108ADAD214023FD00CAA2C4 /* La.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = La.mp3; sourceTree = "<group>"; };
 		D108ADAF2140240F00CAA2C4 /* La#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "La#.mp3"; sourceTree = "<group>"; };
 		D108ADB12140242200CAA2C4 /* Si.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Si.mp3; sourceTree = "<group>"; };
+		D108ADB3214049A200CAA2C4 /* Lection1Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection1Continue1ViewController.swift; sourceTree = "<group>"; };
+		D108ADB52140595B00CAA2C4 /* Lection1Continue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection1Continue2ViewController.swift; sourceTree = "<group>"; };
 		D141F1532137A1140053F661 /* MusicClassFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClassFormViewController.swift; sourceTree = "<group>"; };
 		D141F1552137A13F0053F661 /* InstrumentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentFormViewController.swift; sourceTree = "<group>"; };
 		D1533F792131D4CD00B2C785 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 				D1F2F4F3213E43450030E2AE /* Lection0Continue1ViewController.swift */,
 				D1F2F4F8213E4D1A0030E2AE /* Lection0Continue2ViewController.swift */,
 				D108AD8D214021C900CAA2C4 /* Lection1ViewController.swift */,
+				D108ADB3214049A200CAA2C4 /* Lection1Continue1ViewController.swift */,
+				D108ADB52140595B00CAA2C4 /* Lection1Continue2ViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -678,9 +684,11 @@
 				D166D76220A2949F00C29E24 /* TestResultsViewController.swift in Sources */,
 				D1DA7504209CEF7F001AB742 /* MainTabBarController.swift in Sources */,
 				D1F2F4F9213E4D1A0030E2AE /* Lection0Continue2ViewController.swift in Sources */,
+				D108ADB4214049A200CAA2C4 /* Lection1Continue1ViewController.swift in Sources */,
 				D1533F7A2131D4CD00B2C785 /* EventsViewController.swift in Sources */,
 				D141F1542137A1140053F661 /* MusicClassFormViewController.swift in Sources */,
 				D1574C62213CED2700078616 /* Lection0ViewController.swift in Sources */,
+				D108ADB62140595B00CAA2C4 /* Lection1Continue2ViewController.swift in Sources */,
 				D1F1387E20992DBC00A43D4B /* LectionsViewController.swift in Sources */,
 				D141F1562137A13F0053F661 /* InstrumentFormViewController.swift in Sources */,
 				D1F5F7172083D9DA0045614E /* AppDelegate.swift in Sources */,

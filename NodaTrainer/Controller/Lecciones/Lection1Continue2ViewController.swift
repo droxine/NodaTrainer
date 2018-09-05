@@ -1,4 +1,4 @@
-//  Lection1ViewController.swift
+//  Lection1Continue2ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/5/18.
@@ -8,8 +8,8 @@
 import UIKit
 import AVFoundation
 
-class Lection1ViewController: UIViewController {
-
+class Lection1Continue2ViewController: UIViewController {
+    
     var audioPlayer: AVAudioPlayer!
     
     @IBOutlet weak var btnDo: UIButton!
@@ -26,7 +26,7 @@ class Lection1ViewController: UIViewController {
     @IBOutlet weak var btnReload: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     var notesPressed: Array<String> = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setBorder(btnDo)
@@ -54,7 +54,7 @@ class Lection1ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0003 Do, mi 1", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0003 Do, mi 3", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -147,7 +147,7 @@ class Lection1ViewController: UIViewController {
         btnNext.isEnabled = true
         btnDo.backgroundColor = UIColor.green
         btnMi.backgroundColor = UIColor.green
-        let result = "DoMiDoDo"
+        let result = "MiMiDoMi"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -170,8 +170,7 @@ class Lection1ViewController: UIViewController {
         btnDo.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
     }
-    
-    
+
     //Alert message. Receives the message as a parameter
     func displayAlertMessage(message:String) {
         let alert = UIAlertController(title: "Vuelva a Intentar", message: message, preferredStyle: UIAlertControllerStyle.alert);
@@ -198,10 +197,4 @@ class Lection1ViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection1Continue1") as! Lection1Continue1ViewController
-        present(controllerTravel, animated: true, completion: nil)
-    }
-    
-
 }

@@ -1,4 +1,4 @@
-//  Lection1ViewController.swift
+//  Lection1Continue1ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/5/18.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class Lection1ViewController: UIViewController {
+class Lection1Continue1ViewController: UIViewController {
 
     var audioPlayer: AVAudioPlayer!
     
@@ -54,7 +54,7 @@ class Lection1ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0003 Do, mi 1", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0003 Do, mi 2", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -147,7 +147,7 @@ class Lection1ViewController: UIViewController {
         btnNext.isEnabled = true
         btnDo.backgroundColor = UIColor.green
         btnMi.backgroundColor = UIColor.green
-        let result = "DoMiDoDo"
+        let result = "MiDoMiDo"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -170,7 +170,6 @@ class Lection1ViewController: UIViewController {
         btnDo.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
     }
-    
     
     //Alert message. Receives the message as a parameter
     func displayAlertMessage(message:String) {
@@ -199,7 +198,7 @@ class Lection1ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection1Continue1") as! Lection1Continue1ViewController
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection1Continue2") as! Lection1Continue2ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
     
