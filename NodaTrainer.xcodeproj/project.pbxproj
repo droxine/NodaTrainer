@@ -29,6 +29,7 @@
 		D108ADB4214049A200CAA2C4 /* Lection1Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108ADB3214049A200CAA2C4 /* Lection1Continue1ViewController.swift */; };
 		D108ADB62140595B00CAA2C4 /* Lection1Continue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108ADB52140595B00CAA2C4 /* Lection1Continue2ViewController.swift */; };
 		D108ADB8214074C000CAA2C4 /* Lection1Continue3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108ADB7214074C000CAA2C4 /* Lection1Continue3ViewController.swift */; };
+		D111E2C2215980A100E4405C /* Lection2Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111E2C1215980A100E4405C /* Lection2Continue1ViewController.swift */; };
 		D141F1542137A1140053F661 /* MusicClassFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141F1532137A1140053F661 /* MusicClassFormViewController.swift */; };
 		D141F1562137A13F0053F661 /* InstrumentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141F1552137A13F0053F661 /* InstrumentFormViewController.swift */; };
 		D1533F7A2131D4CD00B2C785 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1533F792131D4CD00B2C785 /* EventsViewController.swift */; };
@@ -66,6 +67,13 @@
 		D1F5F7472083DEFE0045614E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F5F7462083DEFE0045614E /* GoogleService-Info.plist */; };
 		D1F5F7482083DEFE0045614E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F5F7462083DEFE0045614E /* GoogleService-Info.plist */; };
 		D1F5F7492083DEFE0045614E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F5F7462083DEFE0045614E /* GoogleService-Info.plist */; };
+		D1FD48D2214ED90B00A1B204 /* 0004 Do, mi, sol, 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FD48D1214ED90B00A1B204 /* 0004 Do, mi, sol, 1.mp3 */; };
+		D1FD48D4214ED91B00A1B204 /* 0004 Do, mi, sol, 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FD48D3214ED91B00A1B204 /* 0004 Do, mi, sol, 2.mp3 */; };
+		D1FD48D6214ED92600A1B204 /* 0004 Do, mi, sol, 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FD48D5214ED92600A1B204 /* 0004 Do, mi, sol, 3.mp3 */; };
+		D1FD48D8214ED93200A1B204 /* 0004 Do, mi, sol, 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FD48D7214ED93200A1B204 /* 0004 Do, mi, sol, 4.mp3 */; };
+		D1FD48DA214ED93D00A1B204 /* 0004 Do, mi, sol, 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FD48D9214ED93D00A1B204 /* 0004 Do, mi, sol, 5.mp3 */; };
+		D1FD48DC214ED94700A1B204 /* 0004 Do, mi, sol, 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FD48DB214ED94700A1B204 /* 0004 Do, mi, sol, 6.mp3 */; };
+		D1FD48DE214EDDC200A1B204 /* Lection2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD48DD214EDDC200A1B204 /* Lection2ViewController.swift */; };
 		F4DB95A53285AF078CF731F4 /* Pods_NodaTrainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F550206C1358D2FEDCA9C29A /* Pods_NodaTrainer.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +123,7 @@
 		D108ADB3214049A200CAA2C4 /* Lection1Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection1Continue1ViewController.swift; sourceTree = "<group>"; };
 		D108ADB52140595B00CAA2C4 /* Lection1Continue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection1Continue2ViewController.swift; sourceTree = "<group>"; };
 		D108ADB7214074C000CAA2C4 /* Lection1Continue3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection1Continue3ViewController.swift; sourceTree = "<group>"; };
+		D111E2C1215980A100E4405C /* Lection2Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection2Continue1ViewController.swift; sourceTree = "<group>"; };
 		D141F1532137A1140053F661 /* MusicClassFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClassFormViewController.swift; sourceTree = "<group>"; };
 		D141F1552137A13F0053F661 /* InstrumentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentFormViewController.swift; sourceTree = "<group>"; };
 		D1533F792131D4CD00B2C785 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +170,13 @@
 		D1F5F7462083DEFE0045614E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D1F5F74D20841E680045614E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D1F5F74E20841E950045614E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1FD48D1214ED90B00A1B204 /* 0004 Do, mi, sol, 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0004 Do, mi, sol, 1.mp3"; sourceTree = "<group>"; };
+		D1FD48D3214ED91B00A1B204 /* 0004 Do, mi, sol, 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0004 Do, mi, sol, 2.mp3"; sourceTree = "<group>"; };
+		D1FD48D5214ED92600A1B204 /* 0004 Do, mi, sol, 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0004 Do, mi, sol, 3.mp3"; sourceTree = "<group>"; };
+		D1FD48D7214ED93200A1B204 /* 0004 Do, mi, sol, 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0004 Do, mi, sol, 4.mp3"; sourceTree = "<group>"; };
+		D1FD48D9214ED93D00A1B204 /* 0004 Do, mi, sol, 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0004 Do, mi, sol, 5.mp3"; sourceTree = "<group>"; };
+		D1FD48DB214ED94700A1B204 /* 0004 Do, mi, sol, 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0004 Do, mi, sol, 6.mp3"; sourceTree = "<group>"; };
+		D1FD48DD214EDDC200A1B204 /* Lection2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection2ViewController.swift; sourceTree = "<group>"; };
 		F550206C1358D2FEDCA9C29A /* Pods_NodaTrainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NodaTrainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -251,6 +267,8 @@
 				D108ADB3214049A200CAA2C4 /* Lection1Continue1ViewController.swift */,
 				D108ADB52140595B00CAA2C4 /* Lection1Continue2ViewController.swift */,
 				D108ADB7214074C000CAA2C4 /* Lection1Continue3ViewController.swift */,
+				D1FD48DD214EDDC200A1B204 /* Lection2ViewController.swift */,
+				D111E2C1215980A100E4405C /* Lection2Continue1ViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -258,6 +276,7 @@
 		D1F2F4F5213E4CD70030E2AE /* SoundFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D1FD48D0214ED8C700A1B204 /* Lection2 */,
 				D108AD902140225700CAA2C4 /* Notes */,
 				D108AD8F2140224600CAA2C4 /* Lection1 */,
 				D1F2F4F6213E4CEE0030E2AE /* 0001notas.mp3 */,
@@ -380,6 +399,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D1FD48D0214ED8C700A1B204 /* Lection2 */ = {
+			isa = PBXGroup;
+			children = (
+				D1FD48D1214ED90B00A1B204 /* 0004 Do, mi, sol, 1.mp3 */,
+				D1FD48D3214ED91B00A1B204 /* 0004 Do, mi, sol, 2.mp3 */,
+				D1FD48D5214ED92600A1B204 /* 0004 Do, mi, sol, 3.mp3 */,
+				D1FD48D7214ED93200A1B204 /* 0004 Do, mi, sol, 4.mp3 */,
+				D1FD48D9214ED93D00A1B204 /* 0004 Do, mi, sol, 5.mp3 */,
+				D1FD48DB214ED94700A1B204 /* 0004 Do, mi, sol, 6.mp3 */,
+			);
+			path = Lection2;
+			sourceTree = "<group>";
+		};
 		DAF4BC8B4B666BA08CFEE873 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,11 +508,13 @@
 					};
 					D1F5F7262083D9DA0045614E = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D1F5F7122083D9DA0045614E;
 					};
 					D1F5F7312083D9DA0045614E = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D1F5F7122083D9DA0045614E;
 					};
@@ -512,11 +546,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1F5F7212083D9DA0045614E /* LaunchScreen.storyboard in Resources */,
+				D1FD48DA214ED93D00A1B204 /* 0004 Do, mi, sol, 5.mp3 in Resources */,
 				D1F5F7472083DEFE0045614E /* GoogleService-Info.plist in Resources */,
 				D1F2F4F7213E4CEE0030E2AE /* 0001notas.mp3 in Resources */,
 				D108ADA8214023C200CAA2C4 /* Fa#.mp3 in Resources */,
 				D108ADB22140242300CAA2C4 /* Si.mp3 in Resources */,
+				D1FD48D8214ED93200A1B204 /* 0004 Do, mi, sol, 4.mp3 in Resources */,
+				D1FD48D2214ED90B00A1B204 /* 0004 Do, mi, sol, 1.mp3 in Resources */,
 				D108AD9A2140231100CAA2C4 /* Do.mp3 in Resources */,
+				D1FD48D6214ED92600A1B204 /* 0004 Do, mi, sol, 3.mp3 in Resources */,
 				D108AD9C2140232200CAA2C4 /* Do#.mp3 in Resources */,
 				D1F5F71E2083D9DA0045614E /* Assets.xcassets in Resources */,
 				D108ADAC214023E400CAA2C4 /* Sol#.mp3 in Resources */,
@@ -528,8 +566,10 @@
 				D108ADAE214023FD00CAA2C4 /* La.mp3 in Resources */,
 				D108AD9E2140233900CAA2C4 /* Re.mp3 in Resources */,
 				D108AD922140229800CAA2C4 /* 0003 Do, mi.mp3 in Resources */,
+				D1FD48D4214ED91B00A1B204 /* 0004 Do, mi, sol, 2.mp3 in Resources */,
 				D1533F812131E91400B2C785 /* MusicClassCell.xib in Resources */,
 				D108ADB02140240F00CAA2C4 /* La#.mp3 in Resources */,
+				D1FD48DC214ED94700A1B204 /* 0004 Do, mi, sol, 6.mp3 in Resources */,
 				D108ADAA214023D300CAA2C4 /* Sol.mp3 in Resources */,
 				D1F5F71C2083D9DA0045614E /* Main.storyboard in Resources */,
 				D108ADA6214023B400CAA2C4 /* Fa.mp3 in Resources */,
@@ -696,10 +736,12 @@
 				D108ADB8214074C000CAA2C4 /* Lection1Continue3ViewController.swift in Sources */,
 				D141F1562137A13F0053F661 /* InstrumentFormViewController.swift in Sources */,
 				D1F5F7172083D9DA0045614E /* AppDelegate.swift in Sources */,
+				D111E2C2215980A100E4405C /* Lection2Continue1ViewController.swift in Sources */,
 				D1574C5F213C5B9500078616 /* Instrument.swift in Sources */,
 				D1533F802131E91400B2C785 /* MusicClassCell.swift in Sources */,
 				D1C946BA209E61290000757C /* ProgressHUD.m in Sources */,
 				D1DA7510209D330E001AB742 /* Question.swift in Sources */,
+				D1FD48DE214EDDC200A1B204 /* Lection2ViewController.swift in Sources */,
 				D1574C5D213C442D00078616 /* MusicClass.swift in Sources */,
 				D1F1387A2096AD2300A43D4B /* RegisterViewController.swift in Sources */,
 				D1533F7C2131D60900B2C785 /* InitViewController.swift in Sources */,
@@ -880,13 +922,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MUK6A5UTQT;
 				INFOPLIST_FILE = "$(SRCROOT)/NodaTrainer/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samcreators.NodaTrainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "NodaTrainer/Supporting Files/NodaTrainer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -900,12 +943,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MUK6A5UTQT;
 				INFOPLIST_FILE = "$(SRCROOT)/NodaTrainer/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samcreators.NodaTrainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "NodaTrainer/Supporting Files/NodaTrainer-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -921,7 +965,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samcreators.NodaTrainerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NodaTrainer.app/NodaTrainer";
 			};
@@ -939,7 +983,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samcreators.NodaTrainerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NodaTrainer.app/NodaTrainer";
 			};
@@ -956,7 +1000,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samcreators.NodaTrainerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = NodaTrainer;
 			};
@@ -973,7 +1017,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samcreators.NodaTrainerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = NodaTrainer;
 			};

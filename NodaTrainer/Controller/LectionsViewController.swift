@@ -13,6 +13,7 @@ import FBSDKLoginKit
 class LectionsViewController: UIViewController {
     @IBOutlet weak var imgLection0: UIImageView!
     @IBOutlet weak var imgLection1: UIImageView!
+    @IBOutlet weak var imgLection2: UIImageView!
     
     var withoutLessons: Bool = true
 
@@ -33,6 +34,11 @@ class LectionsViewController: UIViewController {
         imgLection1.isUserInteractionEnabled = true
         imgLection1.addGestureRecognizer(imageTap1)
         imgLection1.clipsToBounds = true
+        
+        let imageTap2 = UITapGestureRecognizer(target: self, action: #selector(goLection2))
+        imgLection2.isUserInteractionEnabled = true
+        imgLection2.addGestureRecognizer(imageTap2)
+        imgLection2.clipsToBounds = true
     }
     
     func loadLessonsDone() {
@@ -64,6 +70,11 @@ class LectionsViewController: UIViewController {
     
     @objc func goLection1(_ sender: Any) {
         let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection1") as! Lection1ViewController
+        present(controllerTravel, animated: true, completion: nil)
+    }
+    
+    @objc func goLection2(_ sender: Any) {
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection2") as! Lection2ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
 

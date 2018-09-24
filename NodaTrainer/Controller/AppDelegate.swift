@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         //Handling Auth State: For Later
-        let authlistener = Auth.auth().addStateDidChangeListener { auth, user in
+        _ = Auth.auth().addStateDidChangeListener { auth, user in
             self.userFlow(signedIn: user != nil)
             //let storyboard = UIStoryboard(name: "Main", bundle: nil)
             /*if user != nil {
@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let err = error {
+        if error != nil {
             print("Error al iniciar con Google", error)
             return
         }
@@ -86,11 +86,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         }
     }
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        let signInMethod = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String?, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        let signInMethod = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String?, annotation: options[UIApplication.OpenURLOptionsKey.annotation])
         
         GIDSignIn.sharedInstance().handle(url,
-                                                 sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                          sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
                                                  annotation: [:])
         return signInMethod
     }

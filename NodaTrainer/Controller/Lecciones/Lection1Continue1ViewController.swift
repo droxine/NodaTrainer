@@ -181,9 +181,9 @@ class Lection1Continue1ViewController: UIViewController {
     
     //Alert message. Receives the message as a parameter
     func displayAlertMessage(message:String) {
-        let alert = UIAlertController(title: "Vuelva a Intentar", message: message, preferredStyle: UIAlertControllerStyle.alert);
+        let alert = UIAlertController(title: "Vuelva a Intentar", message: message, preferredStyle: UIAlertController.Style.alert);
         
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil);
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil);
         
         alert.addAction(okAction);
         
@@ -192,9 +192,9 @@ class Lection1Continue1ViewController: UIViewController {
     
     //Alert message. Receives the message as a parameter
     func displayAlertMessageSuccess(message:String) {
-        let alert = UIAlertController(title: "Querido músico:", message: message, preferredStyle: UIAlertControllerStyle.alert);
+        let alert = UIAlertController(title: "Querido músico:", message: message, preferredStyle: UIAlertController.Style.alert);
         
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil);
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil);
         
         alert.addAction(okAction);
         

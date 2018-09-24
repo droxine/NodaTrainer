@@ -1,15 +1,15 @@
-//  Lection1ViewController.swift
+//  Lection2ViewController.swift
 //  NodaTrainer
 //
-//  Created by sangeles on 9/5/18.
+//  Created by sangeles on 9/16/18.
 //  Copyright © 2018 SAM Creators. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class Lection1ViewController: UIViewController {
-
+class Lection2ViewController: UIViewController {
+    
     var audioPlayer: AVAudioPlayer!
     
     @IBOutlet weak var btnDo: UIButton!
@@ -47,19 +47,32 @@ class Lection1ViewController: UIViewController {
         notesPressed.removeAll()
         btnDo.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
-    }
-    
-    func setBorder(_ button: UIButton) {
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.black.cgColor
+        btnSol.backgroundColor = UIColor.white
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    func setBorder(_ button: UIButton) {
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.black.cgColor
+    }
+    
+    func reproduceSound(_ resource: URL) {
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: resource)
+        } catch {
+            print(error)
+        }
+        if audioPlayer.isPlaying {
+            audioPlayer.stop()
+        }
+        audioPlayer.play()
+    }
+    
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0003 Do, mi 1", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0004 Do, mi, sol, 1", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -135,18 +148,6 @@ class Lection1ViewController: UIViewController {
         notesPressed.append("Si")
     }
     
-    func reproduceSound(_ resource: URL) {
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: resource)
-        } catch {
-            print(error)
-        }
-        if audioPlayer.isPlaying {
-            audioPlayer.stop()
-        }
-        audioPlayer.play()
-    }
-    
     @IBAction func showResults(_ sender: Any) {
         imgResult.isHidden = false
         labelResult.isHidden = false
@@ -155,7 +156,8 @@ class Lection1ViewController: UIViewController {
         btnNext.isEnabled = true
         btnDo.backgroundColor = UIColor.green
         btnMi.backgroundColor = UIColor.green
-        let result = "DoMiDoDo"
+        btnSol.backgroundColor = UIColor.green
+        let result = "DoMiSolMi"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -168,6 +170,7 @@ class Lection1ViewController: UIViewController {
         }
     }
     
+    
     @IBAction func reloadLesson(_ sender: Any) {
         notesPressed.removeAll()
         imgResult.isHidden = true
@@ -177,6 +180,7 @@ class Lection1ViewController: UIViewController {
         btnNext.isEnabled = true
         btnDo.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
+        btnSol.backgroundColor = UIColor.white
     }
     
     
@@ -207,9 +211,8 @@ class Lection1ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection1Continue1") as! Lection1Continue1ViewController
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection2Continue1") as! Lection2Continue1ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
     
-
 }

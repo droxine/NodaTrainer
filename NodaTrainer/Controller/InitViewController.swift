@@ -174,7 +174,9 @@ class InitViewController: UIViewController {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         let storageRef = Storage.storage().reference().child("user/\(uid)")
         
-        guard let imageData = UIImageJPEGRepresentation(image, 0.15) else { return }
+        //guard let imageData = UIImageJPEGRepresentation(image, 0.15) else { return }
+        guard let imageData = image.jpegData(compressionQuality: 0.75) else { return }
+
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpg"
         
@@ -217,9 +219,9 @@ class InitViewController: UIViewController {
     
     //Alert message. Receives the message as a parameter
     func displayAlertMessage(message:String) {
-        let alert = UIAlertController(title: "Vuelva a Intentar", message: message, preferredStyle: UIAlertControllerStyle.alert);
+        let alert = UIAlertController(title: "Vuelva a Intentar", message: message, preferredStyle: UIAlertController.Style.alert);
         
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil);
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil);
         
         alert.addAction(okAction);
         
@@ -228,9 +230,9 @@ class InitViewController: UIViewController {
     
     //Alert message. Receives the message as a parameter
     func displayAlertMessageSuccess(message:String) {
-        let alert = UIAlertController(title: "Querido músico:", message: message, preferredStyle: UIAlertControllerStyle.alert);
+        let alert = UIAlertController(title: "Querido músico:", message: message, preferredStyle: UIAlertController.Style.alert);
         
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil);
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil);
         
         alert.addAction(okAction);
         
@@ -244,12 +246,13 @@ extension InitViewController: UIImagePickerControllerDelegate, UINavigationContr
         picker.dismiss(animated: true, completion: nil)
     }
     
-    @objc internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    @objc internal func imagePickerController(_ picker: UIImagePickerController,
+                                              didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let sourceImage: UIImage
         if isImagePickerAllowEditing {
-            sourceImage = (info[UIImagePickerControllerEditedImage] as? UIImage)!
+            sourceImage = (info[.originalImage] as? UIImage)!
         } else {
-            sourceImage = (info[UIImagePickerControllerOriginalImage] as? UIImage)!
+            sourceImage = (info[.originalImage] as? UIImage)!
         }
         //if let pickedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
             //self.imgProfile.image = pickedImage

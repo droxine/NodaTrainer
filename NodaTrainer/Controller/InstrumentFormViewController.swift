@@ -118,9 +118,11 @@ class InstrumentFormViewController: UIViewController {
     //uploadImage to Firebase Storage
     func uploadInstrumentImage(_ image: UIImage, completion: @escaping ((_ url:URL?) -> ())) {
         instrumentId = databaseRef.child("instruments").childByAutoId().key
-        let storageRef = Storage.storage().reference().child("instruments/\(instrumentId)")
+        let storageRef = Storage.storage().reference().child("instruments/\(String(describing: instrumentId))")
         
-        guard let imageData = UIImageJPEGRepresentation(image, 0.15) else { return }
+        //guard let imageData = UIImageJPEGRepresentation(image, 0.15) else { return }
+        guard let imageData = image.jpegData(compressionQuality: 0.15) else { return }
+
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpg"
         storageRef.putData(imageData, metadata: metaData) { metaData, error in
@@ -157,7 +159,7 @@ class InstrumentFormViewController: UIViewController {
             "state": indexState,
             "image": imageURL.absoluteString
             ] as [String:Any]
-        let childUpdates = ["/instruments/\(instrumentId)/": instrumentObject]
+        let childUpdates = ["/instruments/\(String(describing: instrumentId))/": instrumentObject]
         databaseRef.updateChildValues(childUpdates, withCompletionBlock: { (error, ref) in
             completion(error == nil)
         })
@@ -169,9 +171,9 @@ class InstrumentFormViewController: UIViewController {
     
     //Alert message. Receives the message as a parameter
     func displayAlertMessage(message:String) {
-        let alert = UIAlertController(title: "Vuelva a Intentar", message: message, preferredStyle: UIAlertControllerStyle.alert);
+        let alert = UIAlertController(title: "Vuelva a Intentar", message: message, preferredStyle: UIAlertController.Style.alert);
         
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil);
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil);
         
         alert.addAction(okAction);
         
@@ -199,8 +201,9 @@ extension InstrumentFormViewController: UIImagePickerControllerDelegate, UINavig
         picker.dismiss(animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let pickedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[.originalImage] as? UIImage {
             imgInstrument.image = pickedImage
         }
         picker.dismiss(animated: true, completion: nil)
