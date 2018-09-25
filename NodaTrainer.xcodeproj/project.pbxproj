@@ -48,6 +48,7 @@
 		D15DA02C215AA01100F04065 /* 0005 Do, re,  mi, sol, 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D15DA02B215AA01100F04065 /* 0005 Do, re,  mi, sol, 3.mp3 */; };
 		D15DA02E215AA01A00F04065 /* 0005 Do, re,  mi, sol, 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D15DA02D215AA01A00F04065 /* 0005 Do, re,  mi, sol, 4.mp3 */; };
 		D15DA030215AA3E400F04065 /* Lection3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15DA02F215AA3E400F04065 /* Lection3ViewController.swift */; };
+		D15DA032215AAF8B00F04065 /* Lection3Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15DA031215AAF8B00F04065 /* Lection3Continue1ViewController.swift */; };
 		D166D76220A2949F00C29E24 /* TestResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D166D76120A2949F00C29E24 /* TestResultsViewController.swift */; };
 		D1C946B9209E61290000757C /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D1C946B6209E61280000757C /* ProgressHUD.bundle */; };
 		D1C946BA209E61290000757C /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C946B8209E61290000757C /* ProgressHUD.m */; };
@@ -150,6 +151,7 @@
 		D15DA02B215AA01100F04065 /* 0005 Do, re,  mi, sol, 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0005 Do, re,  mi, sol, 3.mp3"; sourceTree = "<group>"; };
 		D15DA02D215AA01A00F04065 /* 0005 Do, re,  mi, sol, 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0005 Do, re,  mi, sol, 4.mp3"; sourceTree = "<group>"; };
 		D15DA02F215AA3E400F04065 /* Lection3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection3ViewController.swift; sourceTree = "<group>"; };
+		D15DA031215AAF8B00F04065 /* Lection3Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection3Continue1ViewController.swift; sourceTree = "<group>"; };
 		D166D760209FE3FC00C29E24 /* NodaTrainer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NodaTrainer.entitlements; sourceTree = "<group>"; };
 		D166D76120A2949F00C29E24 /* TestResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultsViewController.swift; sourceTree = "<group>"; };
 		D1C946B5209E61270000757C /* NodaTrainer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NodaTrainer-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				D15DA022215A8D7100F04065 /* Lection2Continue3ViewController.swift */,
 				D15DA024215A94F000F04065 /* Lection2Continue4ViewController.swift */,
 				D15DA02F215AA3E400F04065 /* Lection3ViewController.swift */,
+				D15DA031215AAF8B00F04065 /* Lection3Continue1ViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -766,6 +769,7 @@
 				D1F2F4F9213E4D1A0030E2AE /* Lection0Continue2ViewController.swift in Sources */,
 				D108ADB4214049A200CAA2C4 /* Lection1Continue1ViewController.swift in Sources */,
 				D1533F7A2131D4CD00B2C785 /* EventsViewController.swift in Sources */,
+				D15DA032215AAF8B00F04065 /* Lection3Continue1ViewController.swift in Sources */,
 				D141F1542137A1140053F661 /* MusicClassFormViewController.swift in Sources */,
 				D1574C62213CED2700078616 /* Lection0ViewController.swift in Sources */,
 				D108ADB62140595B00CAA2C4 /* Lection1Continue2ViewController.swift in Sources */,
