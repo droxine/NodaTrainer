@@ -208,7 +208,8 @@ class Lection4Continue2ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection4Continue3") as! Lection4Continue3ViewController
+        present(controllerTravel, animated: true, completion: nil)
     }
     
 

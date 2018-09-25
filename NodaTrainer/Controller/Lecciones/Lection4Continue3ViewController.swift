@@ -1,4 +1,4 @@
-//  Lection4ViewController.swift
+//  Lection4Continue3ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/25/18.
@@ -8,8 +8,8 @@
 import UIKit
 import AVFoundation
 
-class Lection4ViewController: UIViewController {
-
+class Lection4Continue3ViewController: UIViewController {
+    
     var audioPlayer: AVAudioPlayer!
     
     @IBOutlet weak var btnDo: UIButton!
@@ -26,7 +26,7 @@ class Lection4ViewController: UIViewController {
     @IBOutlet weak var btnReload: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     var notesPressed: Array<String> = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setBorder(btnDo)
@@ -45,7 +45,6 @@ class Lection4ViewController: UIViewController {
         btnReload.isHidden = true
         btnNext.isEnabled = false
         notesPressed.removeAll()
-        btnDo.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
         btnRe.backgroundColor = UIColor.white
         btnFa.backgroundColor = UIColor.white
@@ -57,7 +56,7 @@ class Lection4ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0006 Do, re,  mi, fa,sol, 1", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0006 Do, re,  mi, fa,sol, 4", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -139,11 +138,10 @@ class Lection4ViewController: UIViewController {
         labelResult2.isHidden = false
         btnReload.isHidden = false
         btnNext.isEnabled = true
-        btnDo.backgroundColor = UIColor.green
         btnMi.backgroundColor = UIColor.green
         btnRe.backgroundColor = UIColor.green
         btnFa.backgroundColor = UIColor.green
-        let result = "DoReMiFa"
+        let result = "MiFaMiRe"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -163,7 +161,6 @@ class Lection4ViewController: UIViewController {
         labelResult2.isHidden = true
         btnReload.isHidden = true
         btnNext.isEnabled = true
-        btnDo.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
         btnRe.backgroundColor = UIColor.white
         btnFa.backgroundColor = UIColor.white
@@ -202,14 +199,14 @@ class Lection4ViewController: UIViewController {
         
         self.present(alert, animated: true, completion: nil);
     }
-    
+
     @IBAction func goBack(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection4Continue1") as! Lection4Continue1ViewController
-        present(controllerTravel, animated: true, completion: nil)
+        
     }
+    
 
 }
