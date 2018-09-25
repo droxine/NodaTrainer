@@ -1,4 +1,4 @@
-//  Lection4Continue3ViewController.swift
+//  Lection4Continue4ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/25/18.
@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import Firebase
 import AVFoundation
 
-class Lection4Continue3ViewController: UIViewController {
+class Lection4Continue4ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -24,7 +25,7 @@ class Lection4Continue3ViewController: UIViewController {
     @IBOutlet weak var labelResult2: UILabel!
     
     @IBOutlet weak var btnReload: UIButton!
-    @IBOutlet weak var btnNext: UIButton!
+    @IBOutlet weak var btnFinish: UIButton!
     var notesPressed: Array<String> = []
 
     override func viewDidLoad() {
@@ -43,11 +44,12 @@ class Lection4Continue3ViewController: UIViewController {
         labelResult.isHidden = true
         labelResult2.isHidden = true
         btnReload.isHidden = true
-        btnNext.isEnabled = false
+        btnFinish.isEnabled = false
         notesPressed.removeAll()
+        btnDo.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
+        btnSol.backgroundColor = UIColor.white
         btnRe.backgroundColor = UIColor.white
-        btnFa.backgroundColor = UIColor.white
     }
     
     func setBorder(_ button: UIButton) {
@@ -56,7 +58,7 @@ class Lection4Continue3ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0006 Do, re,  mi, fa,sol, 4", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0006 Do, re,  mi, fa,sol, 5", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -137,11 +139,12 @@ class Lection4Continue3ViewController: UIViewController {
         labelResult.isHidden = false
         labelResult2.isHidden = false
         btnReload.isHidden = false
-        btnNext.isEnabled = true
+        btnFinish.isEnabled = true
+        btnDo.backgroundColor = UIColor.green
         btnMi.backgroundColor = UIColor.green
+        btnSol.backgroundColor = UIColor.green
         btnRe.backgroundColor = UIColor.green
-        btnFa.backgroundColor = UIColor.green
-        let result = "MiFaMiRe"
+        let result = "MiReDoSol"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -154,16 +157,18 @@ class Lection4Continue3ViewController: UIViewController {
         }
     }
     
+    
     @IBAction func reloadLesson(_ sender: Any) {
         notesPressed.removeAll()
         imgResult.isHidden = true
         labelResult.isHidden = true
         labelResult2.isHidden = true
         btnReload.isHidden = true
-        btnNext.isEnabled = true
+        btnFinish.isEnabled = true
+        btnDo.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
+        btnSol.backgroundColor = UIColor.white
         btnRe.backgroundColor = UIColor.white
-        btnFa.backgroundColor = UIColor.white
     }
     
     func reproduceSound(_ resource: URL) {
@@ -199,14 +204,29 @@ class Lection4Continue3ViewController: UIViewController {
         
         self.present(alert, animated: true, completion: nil);
     }
-
-    @IBAction func goBack(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+    
+    @IBAction func completeLesson(_ sender: Any) {
+        saveLessonsDone() { success in
+            if !success {
+                print("Error: No se pudo actualizar el fin de la leccion")
+            }
+        }
+        
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
+        controllerTravel.selectedIndex = 1
+        present(controllerTravel, animated: true, completion: nil)
     }
     
-    @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection4Continue4") as! Lection4Continue4ViewController
-        present(controllerTravel, animated: true, completion: nil)
+    func saveLessonsDone(completion: @escaping ((_ success: Bool) -> ()) ) -> Void{
+        guard let uid = Auth.auth().currentUser?.uid else { return}
+        print(uid)
+        let lessonsObject = [
+            "done": true
+            ] as [String:Any]
+        let childUpdates = ["/lessons/\(uid)/": lessonsObject]
+        Database.database().reference().updateChildValues(childUpdates, withCompletionBlock: { (error, ref) in
+            completion(error == nil)
+        })
     }
     
 
