@@ -1,4 +1,4 @@
-//  Lection2Continue3ViewController.swift
+//  Lection2Continue4ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/25/18.
@@ -6,12 +6,12 @@
 //
 
 import UIKit
+import Firebase
 import AVFoundation
 
-class Lection2Continue3ViewController: UIViewController {
+class Lection2Continue4ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
-    
     @IBOutlet weak var btnDo: UIButton!
     @IBOutlet weak var btnRe: UIButton!
     @IBOutlet weak var btnMi: UIButton!
@@ -24,9 +24,9 @@ class Lection2Continue3ViewController: UIViewController {
     @IBOutlet weak var labelResult2: UILabel!
     
     @IBOutlet weak var btnReload: UIButton!
-    @IBOutlet weak var btnNext: UIButton!
+    @IBOutlet weak var btnFinish: UIButton!
     var notesPressed: Array<String> = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setBorder(btnDo)
@@ -43,7 +43,7 @@ class Lection2Continue3ViewController: UIViewController {
         labelResult.isHidden = true
         labelResult2.isHidden = true
         btnReload.isHidden = true
-        btnNext.isEnabled = false
+        btnFinish.isEnabled = false
         notesPressed.removeAll()
         btnDo.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
@@ -56,7 +56,7 @@ class Lection2Continue3ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0004 Do, mi, sol, 5", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0004 Do, mi, sol, 6", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -137,11 +137,11 @@ class Lection2Continue3ViewController: UIViewController {
         labelResult.isHidden = false
         labelResult2.isHidden = false
         btnReload.isHidden = false
-        btnNext.isEnabled = true
+        btnFinish.isEnabled = true
         btnDo.backgroundColor = UIColor.green
         btnMi.backgroundColor = UIColor.green
         btnSol.backgroundColor = UIColor.green
-        let result = "SolMiSolDo"
+        let result = "MiSolMiDo"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -160,7 +160,7 @@ class Lection2Continue3ViewController: UIViewController {
         labelResult.isHidden = true
         labelResult2.isHidden = true
         btnReload.isHidden = true
-        btnNext.isEnabled = true
+        btnFinish.isEnabled = true
         btnDo.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
         btnSol.backgroundColor = UIColor.white
@@ -200,13 +200,28 @@ class Lection2Continue3ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil);
     }
     
-    @IBAction func goBack(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+    @IBAction func completeLesson(_ sender: Any) {
+        saveLessonsDone() { success in
+            if !success {
+                print("Error: No se pudo actualizar el fin de la leccion")
+            }
+        }
+        
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
+        controllerTravel.selectedIndex = 1
+        present(controllerTravel, animated: true, completion: nil)
     }
     
-    @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection2Continue4") as! Lection2Continue4ViewController
-        present(controllerTravel, animated: true, completion: nil)
+    func saveLessonsDone(completion: @escaping ((_ success: Bool) -> ()) ) -> Void{
+        guard let uid = Auth.auth().currentUser?.uid else { return}
+        print(uid)
+        let lessonsObject = [
+            "done": true
+            ] as [String:Any]
+        let childUpdates = ["/lessons/\(uid)/": lessonsObject]
+        Database.database().reference().updateChildValues(childUpdates, withCompletionBlock: { (error, ref) in
+            completion(error == nil)
+        })
     }
 
 }
