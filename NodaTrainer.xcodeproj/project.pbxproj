@@ -79,6 +79,7 @@
 		D1E5FBE9215BE16600B7AA12 /* 0007 Remando suavemente 17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1E5FBE8215BE16600B7AA12 /* 0007 Remando suavemente 17.mp3 */; };
 		D1E5FBEC215BEA4400B7AA12 /* Song1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5FBEB215BEA4400B7AA12 /* Song1ViewController.swift */; };
 		D1E5FBEE215BF54500B7AA12 /* Song1Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5FBED215BF54500B7AA12 /* Song1Continue1ViewController.swift */; };
+		D1E5FBF0215BFCD900B7AA12 /* Song1Continue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5FBEF215BFCD900B7AA12 /* Song1Continue2ViewController.swift */; };
 		D1F138782096AD1300A43D4B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F138772096AD1300A43D4B /* LoginViewController.swift */; };
 		D1F1387A2096AD2300A43D4B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F138792096AD2300A43D4B /* RegisterViewController.swift */; };
 		D1F1387C2096ADA600A43D4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1387B2096ADA600A43D4B /* HomeViewController.swift */; };
@@ -216,6 +217,7 @@
 		D1E5FBE8215BE16600B7AA12 /* 0007 Remando suavemente 17.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0007 Remando suavemente 17.mp3"; sourceTree = "<group>"; };
 		D1E5FBEB215BEA4400B7AA12 /* Song1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1ViewController.swift; sourceTree = "<group>"; };
 		D1E5FBED215BF54500B7AA12 /* Song1Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1Continue1ViewController.swift; sourceTree = "<group>"; };
+		D1E5FBEF215BFCD900B7AA12 /* Song1Continue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1Continue2ViewController.swift; sourceTree = "<group>"; };
 		D1F138772096AD1300A43D4B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D1F138792096AD2300A43D4B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D1F1387B2096ADA600A43D4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 			children = (
 				D1E5FBEB215BEA4400B7AA12 /* Song1ViewController.swift */,
 				D1E5FBED215BF54500B7AA12 /* Song1Continue1ViewController.swift */,
+				D1E5FBEF215BFCD900B7AA12 /* Song1Continue2ViewController.swift */,
 			);
 			path = Songs;
 			sourceTree = "<group>";
@@ -906,6 +909,7 @@
 				D15DA025215A94F000F04065 /* Lection2Continue4ViewController.swift in Sources */,
 				D1FBA8BA215AE43F00A8CC11 /* Lection4Continue1ViewController.swift in Sources */,
 				D1DA7504209CEF7F001AB742 /* MainTabBarController.swift in Sources */,
+				D1E5FBF0215BFCD900B7AA12 /* Song1Continue2ViewController.swift in Sources */,
 				D1F2F4F9213E4D1A0030E2AE /* Lection0Continue2ViewController.swift in Sources */,
 				D1FBA8C0215AF72B00A8CC11 /* Lection4Continue4ViewController.swift in Sources */,
 				D108ADB4214049A200CAA2C4 /* Lection1Continue1ViewController.swift in Sources */,

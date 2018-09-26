@@ -1,4 +1,4 @@
-//  Song1Continue1ViewController.swift
+//  Song1Continue2ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/26/18.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class Song1Continue1ViewController: UIViewController {
+class Song1Continue2ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -45,8 +45,10 @@ class Song1Continue1ViewController: UIViewController {
         btnReload.isHidden = true
         btnNext.isEnabled = false
         notesPressed.removeAll()
-        btnFa.backgroundColor = UIColor.white
+        btnDo.backgroundColor = UIColor.white
         btnRe.backgroundColor = UIColor.white
+        btnMi.backgroundColor = UIColor.white
+        btnFa.backgroundColor = UIColor.white
     }
     
     func setBorder(_ button: UIButton) {
@@ -55,7 +57,7 @@ class Song1Continue1ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0007 Remando suavemente 2", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0007 Remando suavemente 3", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -131,27 +133,17 @@ class Song1Continue1ViewController: UIViewController {
         notesPressed.append("Si")
     }
     
-    func reproduceSound(_ resource: URL) {
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: resource)
-        } catch {
-            print(error)
-        }
-        if audioPlayer.isPlaying {
-            audioPlayer.stop()
-        }
-        audioPlayer.play()
-    }
-    
     @IBAction func showResults(_ sender: Any) {
         imgResult.isHidden = false
         labelResult.isHidden = false
         labelResult2.isHidden = false
         btnReload.isHidden = false
         btnNext.isEnabled = true
-        btnFa.backgroundColor = UIColor.green
+        btnDo.backgroundColor = UIColor.green
         btnRe.backgroundColor = UIColor.green
-        let result = "FaReRe"
+        btnMi.backgroundColor = UIColor.green
+        btnFa.backgroundColor = UIColor.green
+        let result = "DoReMiFa"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -171,8 +163,22 @@ class Song1Continue1ViewController: UIViewController {
         labelResult2.isHidden = true
         btnReload.isHidden = true
         btnNext.isEnabled = true
-        btnFa.backgroundColor = UIColor.white
+        btnDo.backgroundColor = UIColor.white
         btnRe.backgroundColor = UIColor.white
+        btnMi.backgroundColor = UIColor.white
+        btnFa.backgroundColor = UIColor.white
+    }
+    
+    func reproduceSound(_ resource: URL) {
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: resource)
+        } catch {
+            print(error)
+        }
+        if audioPlayer.isPlaying {
+            audioPlayer.stop()
+        }
+        audioPlayer.play()
     }
     
     //Alert message. Receives the message as a parameter
@@ -202,9 +208,8 @@ class Song1Continue1ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song1Continue2") as! Song1Continue2ViewController
-        present(controllerTravel, animated: true, completion: nil)
+        
     }
     
-    
+
 }
