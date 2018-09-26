@@ -1,4 +1,4 @@
-//  Song1Continue3ViewController.swift
+//  Song1Continue4ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/26/18.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class Song1Continue3ViewController: UIViewController {
+class Song1Continue4ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -46,6 +46,7 @@ class Song1Continue3ViewController: UIViewController {
         btnNext.isEnabled = false
         notesPressed.removeAll()
         btnSol.backgroundColor = UIColor.white
+        btnMi.backgroundColor = UIColor.white
     }
     
     func setBorder(_ button: UIButton) {
@@ -54,7 +55,7 @@ class Song1Continue3ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0007 Remando suavemente 4", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0007 Remando suavemente 5", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -149,7 +150,8 @@ class Song1Continue3ViewController: UIViewController {
         btnReload.isHidden = false
         btnNext.isEnabled = true
         btnSol.backgroundColor = UIColor.green
-        let result = "SolSolSol"
+        btnMi.backgroundColor = UIColor.green
+        let result = "SolMiMiMi"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -170,6 +172,7 @@ class Song1Continue3ViewController: UIViewController {
         btnReload.isHidden = true
         btnNext.isEnabled = true
         btnSol.backgroundColor = UIColor.white
+        btnMi.backgroundColor = UIColor.white
     }
     
     //Alert message. Receives the message as a parameter
@@ -193,14 +196,13 @@ class Song1Continue3ViewController: UIViewController {
         
         self.present(alert, animated: true, completion: nil);
     }
-    
+
     @IBAction func goBack(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song1Continue4") as! Song1Continue4ViewController
-        present(controllerTravel, animated: true, completion: nil)
+        
     }
     
     
