@@ -1,4 +1,4 @@
-//  Song1Continue11ViewController.swift
+//  Song1Continue12ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/26/18.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class Song1Continue11ViewController: UIViewController {
+class Song1Continue12ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -46,7 +46,6 @@ class Song1Continue11ViewController: UIViewController {
         btnNext.isEnabled = false
         notesPressed.removeAll()
         btnMi.backgroundColor = UIColor.white
-        btnFa.backgroundColor = UIColor.white
         btnSol.backgroundColor = UIColor.white
     }
     
@@ -56,7 +55,7 @@ class Song1Continue11ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0007 Remando suavemente 12", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0007 Remando suavemente 13", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -151,9 +150,8 @@ class Song1Continue11ViewController: UIViewController {
         btnReload.isHidden = false
         btnNext.isEnabled = true
         btnMi.backgroundColor = UIColor.green
-        btnFa.backgroundColor = UIColor.green
         btnSol.backgroundColor = UIColor.green
-        let result = "MiFaSol"
+        let result = "SolMiMiMi"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -174,7 +172,6 @@ class Song1Continue11ViewController: UIViewController {
         btnReload.isHidden = true
         btnNext.isEnabled = true
         btnMi.backgroundColor = UIColor.white
-        btnFa.backgroundColor = UIColor.white
         btnSol.backgroundColor = UIColor.white
     }
     
@@ -205,9 +202,8 @@ class Song1Continue11ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song1Continue12") as! Song1Continue12ViewController
-        present(controllerTravel, animated: true, completion: nil)
+        
     }
     
-
+    
 }
