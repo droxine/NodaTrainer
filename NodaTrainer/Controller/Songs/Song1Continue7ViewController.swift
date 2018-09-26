@@ -149,7 +149,6 @@ class Song1Continue7ViewController: UIViewController {
         btnReload.isHidden = false
         btnNext.isEnabled = true
         btnMi.backgroundColor = UIColor.green
-        btnSol.backgroundColor = UIColor.green
         let result = "MiMiMi"
         var answer: String = ""
         for note in notesPressed {
