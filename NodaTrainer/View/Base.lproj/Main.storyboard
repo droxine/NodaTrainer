@@ -2712,6 +2712,216 @@
             </objects>
             <point key="canvasLocation" x="11914.4" y="2957.8817733990149"/>
         </scene>
+        <!--Song1 Continue5 View Controller-->
+        <scene sceneID="xa7-dy-BxV">
+            <objects>
+                <viewController storyboardIdentifier="song1Continue5" id="LHB-zU-UNk" customClass="Song1Continue5ViewController" customModule="NodaTrainer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O2e-wZ-NEV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inicio_Group" translatesAutoresizingMaskIntoConstraints="NO" id="KOw-BE-iAM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb3-RI-UcS">
+                                <rect key="frame" x="236" y="748" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SIGUIENTE"/>
+                                <connections>
+                                    <action selector="goNext:" destination="LHB-zU-UNk" eventType="touchUpInside" id="bbh-FZ-RJh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0af-3h-h2w">
+                                <rect key="frame" x="61" y="748" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="VOLVER"/>
+                                <connections>
+                                    <action selector="goBack:" destination="LHB-zU-UNk" eventType="touchUpInside" id="YD0-gv-Pds"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EI-rh-IAz">
+                                <rect key="frame" x="164" y="667" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="CHECKBOX_CHECKED"/>
+                                <connections>
+                                    <action selector="showResults:" destination="LHB-zU-UNk" eventType="touchUpInside" id="sWi-Gj-hph"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzP-FQ-Agu">
+                                <rect key="frame" x="32" y="532" width="46" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="playDo:" destination="LHB-zU-UNk" eventType="touchUpInside" id="rKc-pq-yKr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghl-gZ-H4q">
+                                <rect key="frame" x="73" y="532" width="46" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="playRe:" destination="LHB-zU-UNk" eventType="touchUpInside" id="QUo-QC-Gvi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtN-hC-DpF">
+                                <rect key="frame" x="118" y="532" width="46" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="playMi:" destination="LHB-zU-UNk" eventType="touchUpInside" id="ubO-Yt-e08"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snf-Cy-eTr">
+                                <rect key="frame" x="163" y="532" width="46" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="playFa:" destination="LHB-zU-UNk" eventType="touchUpInside" id="qed-Xj-bDH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLc-IM-gPl">
+                                <rect key="frame" x="207" y="532" width="46" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="playSol:" destination="LHB-zU-UNk" eventType="touchUpInside" id="8oM-2Z-1kG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZs-Bj-HP6">
+                                <rect key="frame" x="251" y="532" width="46" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="playLa:" destination="LHB-zU-UNk" eventType="touchUpInside" id="kHK-vT-K1A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9Z-Yq-1lX">
+                                <rect key="frame" x="296" y="532" width="46" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="playTi:" destination="LHB-zU-UNk" eventType="touchUpInside" id="lwp-yJ-mIb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arn-PZ-uKQ">
+                                <rect key="frame" x="61" y="532" width="30" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="playDoSharp:" destination="LHB-zU-UNk" eventType="touchUpInside" id="55M-6b-6BW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1f-WC-k1m">
+                                <rect key="frame" x="104" y="532" width="30" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="playReSharp:" destination="LHB-zU-UNk" eventType="touchUpInside" id="Gvy-Kb-fhW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpN-M7-rW7">
+                                <rect key="frame" x="192" y="532" width="30" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="playFaSharp:" destination="LHB-zU-UNk" eventType="touchUpInside" id="VN9-Sd-DQn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7I-dw-evm">
+                                <rect key="frame" x="236" y="532" width="30" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="playSolSharp:" destination="LHB-zU-UNk" eventType="touchUpInside" id="Fl8-Bf-Lc4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSR-sb-mY1">
+                                <rect key="frame" x="283" y="532" width="30" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="playLaSharp:" destination="LHB-zU-UNk" eventType="touchUpInside" id="KUg-kd-aq9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="F - D - D - D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D83-As-21b">
+                                <rect key="frame" x="146" y="409" width="85" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="song1_5" translatesAutoresizingMaskIntoConstraints="NO" id="xVC-dv-qai">
+                                <rect key="frame" x="23" y="292" width="336" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijA-SA-SnS">
+                                <rect key="frame" x="156" y="211" width="62" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="PLAY"/>
+                                <connections>
+                                    <action selector="playSound:" destination="LHB-zU-UNk" eventType="touchUpInside" id="CuD-sY-hOD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kI-90-IQI">
+                                <rect key="frame" x="23" y="79" width="328" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Escucha atentamente, y trata de identificar las notas, presionando las que corresponden en el pequeño teclado que se muestra. A continuación, presiona el check para mostrarte el resultado y resaltar las notas involucradas en el teclado. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remando Suavemente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpP-dc-ICs">
+                                <rect key="frame" x="80" y="44" width="215" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.4941176471" green="0.76862745099999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mu5-1T-ggJ">
+                                <rect key="frame" x="162" y="435" width="51" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="RELOAD"/>
+                                <connections>
+                                    <action selector="reloadLesson:" destination="LHB-zU-UNk" eventType="touchUpInside" id="wmE-YL-bAT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FA - RE - RE - RE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOD-kk-wtp">
+                                <rect key="frame" x="128" y="383" width="118" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yu5-2N-pLZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnDo" destination="BzP-FQ-Agu" id="Zc7-35-Oni"/>
+                        <outlet property="btnFa" destination="snf-Cy-eTr" id="eri-Up-jvO"/>
+                        <outlet property="btnLa" destination="JZs-Bj-HP6" id="SoC-1F-W33"/>
+                        <outlet property="btnMi" destination="BtN-hC-DpF" id="F5E-2i-6cD"/>
+                        <outlet property="btnNext" destination="cb3-RI-UcS" id="Bht-dG-GX9"/>
+                        <outlet property="btnRe" destination="ghl-gZ-H4q" id="hCs-5E-wMy"/>
+                        <outlet property="btnReload" destination="mu5-1T-ggJ" id="bNO-Ga-vRL"/>
+                        <outlet property="btnSol" destination="HLc-IM-gPl" id="ny4-dN-8Mg"/>
+                        <outlet property="btnTi" destination="g9Z-Yq-1lX" id="LzD-Ej-MyD"/>
+                        <outlet property="imgResult" destination="xVC-dv-qai" id="YzH-Yu-2fw"/>
+                        <outlet property="labelResult" destination="gOD-kk-wtp" id="4vz-kg-u1f"/>
+                        <outlet property="labelResult2" destination="D83-As-21b" id="DBu-De-ZZ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1lN-Ft-NKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12644" y="2957.8817733990149"/>
+        </scene>
         <!--Lection4 Continue1 View Controller-->
         <scene sceneID="ghV-Hp-5uM">
             <objects>
@@ -7102,6 +7312,7 @@
         <image name="song1_2" width="944" height="85"/>
         <image name="song1_3" width="992" height="85"/>
         <image name="song1_4" width="990" height="84"/>
+        <image name="song1_5" width="993" height="86"/>
         <image name="uploadIcon" width="720" height="720"/>
     </resources>
 </document>
