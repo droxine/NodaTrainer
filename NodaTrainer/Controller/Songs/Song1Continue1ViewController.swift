@@ -1,4 +1,4 @@
-//  Song1ViewController.swift
+//  Song1Continue1ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/26/18.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class Song1ViewController: UIViewController {
+class Song1Continue1ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -45,8 +45,8 @@ class Song1ViewController: UIViewController {
         btnReload.isHidden = true
         btnNext.isEnabled = false
         notesPressed.removeAll()
-        btnMi.backgroundColor = UIColor.white
-        btnSol.backgroundColor = UIColor.white
+        btnFa.backgroundColor = UIColor.white
+        btnRe.backgroundColor = UIColor.white
     }
     
     func setBorder(_ button: UIButton) {
@@ -55,7 +55,7 @@ class Song1ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0007 Remando suavemente 1", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0007 Remando suavemente 2", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -149,9 +149,9 @@ class Song1ViewController: UIViewController {
         labelResult2.isHidden = false
         btnReload.isHidden = false
         btnNext.isEnabled = true
-        btnMi.backgroundColor = UIColor.green
-        btnSol.backgroundColor = UIColor.green
-        let result = "SolMiMi"
+        btnFa.backgroundColor = UIColor.green
+        btnRe.backgroundColor = UIColor.green
+        let result = "FaReRe"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -171,8 +171,8 @@ class Song1ViewController: UIViewController {
         labelResult2.isHidden = true
         btnReload.isHidden = true
         btnNext.isEnabled = true
-        btnMi.backgroundColor = UIColor.white
-        btnSol.backgroundColor = UIColor.white
+        btnFa.backgroundColor = UIColor.white
+        btnRe.backgroundColor = UIColor.white
     }
     
     //Alert message. Receives the message as a parameter
@@ -202,9 +202,8 @@ class Song1ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song1Continue1") as! Song1Continue1ViewController
-        present(controllerTravel, animated: true, completion: nil)
+        
     }
     
-
+    
 }
