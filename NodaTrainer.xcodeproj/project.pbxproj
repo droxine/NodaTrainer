@@ -90,6 +90,11 @@
 		D1E5FBF4215C085200B7AA12 /* Song1Continue4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5FBF3215C085200B7AA12 /* Song1Continue4ViewController.swift */; };
 		D1ED8D72215C70190043359A /* Song1Continue15ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED8D71215C70190043359A /* Song1Continue15ViewController.swift */; };
 		D1ED8D74215C75A00043359A /* Song1CompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED8D73215C75A00043359A /* Song1CompletedViewController.swift */; };
+		D1ED8D77215C7ED60043359A /* 0008 Do, re,  mi, fa, sol, la, 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1ED8D76215C7ED60043359A /* 0008 Do, re,  mi, fa, sol, la, 1.mp3 */; };
+		D1ED8D79215C7EE40043359A /* 0008 Do, re,  mi, fa, sol, la, 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1ED8D78215C7EE40043359A /* 0008 Do, re,  mi, fa, sol, la, 2.mp3 */; };
+		D1ED8D7B215C7EEF0043359A /* 0008 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1ED8D7A215C7EEF0043359A /* 0008 Do, re,  mi, fa, sol, la, 3.mp3 */; };
+		D1ED8D7D215C7EFC0043359A /* 0008 Do, re,  mi, fa, sol, la, 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1ED8D7C215C7EFC0043359A /* 0008 Do, re,  mi, fa, sol, la, 4.mp3 */; };
+		D1ED8D7F215C805F0043359A /* Lection5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED8D7E215C805F0043359A /* Lection5ViewController.swift */; };
 		D1F138782096AD1300A43D4B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F138772096AD1300A43D4B /* LoginViewController.swift */; };
 		D1F1387A2096AD2300A43D4B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F138792096AD2300A43D4B /* RegisterViewController.swift */; };
 		D1F1387C2096ADA600A43D4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1387B2096ADA600A43D4B /* HomeViewController.swift */; };
@@ -242,6 +247,11 @@
 		D1E5FBF3215C085200B7AA12 /* Song1Continue4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1Continue4ViewController.swift; sourceTree = "<group>"; };
 		D1ED8D71215C70190043359A /* Song1Continue15ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1Continue15ViewController.swift; sourceTree = "<group>"; };
 		D1ED8D73215C75A00043359A /* Song1CompletedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1CompletedViewController.swift; sourceTree = "<group>"; };
+		D1ED8D76215C7ED60043359A /* 0008 Do, re,  mi, fa, sol, la, 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0008 Do, re,  mi, fa, sol, la, 1.mp3"; sourceTree = "<group>"; };
+		D1ED8D78215C7EE40043359A /* 0008 Do, re,  mi, fa, sol, la, 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0008 Do, re,  mi, fa, sol, la, 2.mp3"; sourceTree = "<group>"; };
+		D1ED8D7A215C7EEF0043359A /* 0008 Do, re,  mi, fa, sol, la, 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0008 Do, re,  mi, fa, sol, la, 3.mp3"; sourceTree = "<group>"; };
+		D1ED8D7C215C7EFC0043359A /* 0008 Do, re,  mi, fa, sol, la, 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0008 Do, re,  mi, fa, sol, la, 4.mp3"; sourceTree = "<group>"; };
+		D1ED8D7E215C805F0043359A /* Lection5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection5ViewController.swift; sourceTree = "<group>"; };
 		D1F138772096AD1300A43D4B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D1F138792096AD2300A43D4B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D1F1387B2096ADA600A43D4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -391,6 +401,7 @@
 				D1FBA8BB215AE9C100A8CC11 /* Lection4Continue2ViewController.swift */,
 				D1FBA8BD215AEFAD00A8CC11 /* Lection4Continue3ViewController.swift */,
 				D1FBA8BF215AF72B00A8CC11 /* Lection4Continue4ViewController.swift */,
+				D1ED8D7E215C805F0043359A /* Lection5ViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -454,9 +465,21 @@
 			path = Songs;
 			sourceTree = "<group>";
 		};
+		D1ED8D75215C7EBB0043359A /* Lection5 */ = {
+			isa = PBXGroup;
+			children = (
+				D1ED8D76215C7ED60043359A /* 0008 Do, re,  mi, fa, sol, la, 1.mp3 */,
+				D1ED8D78215C7EE40043359A /* 0008 Do, re,  mi, fa, sol, la, 2.mp3 */,
+				D1ED8D7A215C7EEF0043359A /* 0008 Do, re,  mi, fa, sol, la, 3.mp3 */,
+				D1ED8D7C215C7EFC0043359A /* 0008 Do, re,  mi, fa, sol, la, 4.mp3 */,
+			);
+			path = Lection5;
+			sourceTree = "<group>";
+		};
 		D1F2F4F5213E4CD70030E2AE /* SoundFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D1ED8D75215C7EBB0043359A /* Lection5 */,
 				D1E5FBC7215BE0BF00B7AA12 /* Song1 */,
 				D1FBA8AC215ADB6B00A8CC11 /* Lection4 */,
 				D15DA026215A9FE400F04065 /* Lection3 */,
@@ -771,10 +794,14 @@
 				D15DA02C215AA01100F04065 /* 0005 Do, re,  mi, sol, 3.mp3 in Resources */,
 				D1E5FBDD215BE13600B7AA12 /* 0007 Remando suavemente 11.mp3 in Resources */,
 				D1C946B9209E61290000757C /* ProgressHUD.bundle in Resources */,
+				D1ED8D77215C7ED60043359A /* 0008 Do, re,  mi, fa, sol, la, 1.mp3 in Resources */,
 				D1E5FBD1215BE10100B7AA12 /* 0007 Remando suavemente 5.mp3 in Resources */,
 				D1FBA8B2215ADB9500A8CC11 /* 0006 Do, re,  mi, fa,sol, 3.mp3 in Resources */,
+				D1ED8D7D215C7EFC0043359A /* 0008 Do, re,  mi, fa, sol, la, 4.mp3 in Resources */,
 				D108AD96214022BC00CAA2C4 /* 0003 Do, mi 2.mp3 in Resources */,
 				D1E5FBCB215BE0E700B7AA12 /* 0007 Remando suavemente 2.mp3 in Resources */,
+				D1ED8D79215C7EE40043359A /* 0008 Do, re,  mi, fa, sol, la, 2.mp3 in Resources */,
+				D1ED8D7B215C7EEF0043359A /* 0008 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */,
 				D1E5FBC9215BE0D900B7AA12 /* 0007 Remando suavemente 1.mp3 in Resources */,
 				D108ADA22140235000CAA2C4 /* Mi.mp3 in Resources */,
 				D1E5FBDF215BE13D00B7AA12 /* 0007 Remando suavemente 12.mp3 in Resources */,
@@ -997,6 +1024,7 @@
 				D1E5FBF2215C037F00B7AA12 /* Song1Continue3ViewController.swift in Sources */,
 				D1ED8D72215C70190043359A /* Song1Continue15ViewController.swift in Sources */,
 				D1F2F4F4213E43450030E2AE /* Lection0Continue1ViewController.swift in Sources */,
+				D1ED8D7F215C805F0043359A /* Lection5ViewController.swift in Sources */,
 				D1DA7508209CFC10001AB742 /* UserProfile.swift in Sources */,
 				D14637FF2159D72D007EF722 /* Lection2Continue2ViewController.swift in Sources */,
 			);
