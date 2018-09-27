@@ -5039,6 +5039,65 @@
             </objects>
             <point key="canvasLocation" x="19584.799999999999" y="2957.8817733990149"/>
         </scene>
+        <!--Song1 Completed View Controller-->
+        <scene sceneID="8z1-1n-6pe">
+            <objects>
+                <viewController storyboardIdentifier="song1Completed" id="InF-9w-P9H" customClass="Song1CompletedViewController" customModule="NodaTrainer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Vb-iR-daW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inicio_Group" translatesAutoresizingMaskIntoConstraints="NO" id="G91-ig-GQF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="song1" translatesAutoresizingMaskIntoConstraints="NO" id="Q4M-zJ-edG">
+                                <rect key="frame" x="23" y="235" width="336" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vq7-7A-ebr">
+                                <rect key="frame" x="156" y="154" width="62" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="PLAY"/>
+                                <connections>
+                                    <action selector="playSound:" destination="InF-9w-P9H" eventType="touchUpInside" id="0L0-Tt-min"/>
+                                    <action selector="playSound:" destination="O15-fA-OiN" eventType="touchUpInside" id="Rod-e9-gjG"/>
+                                    <action selector="playSound:" destination="dl0-tZ-cig" eventType="touchUpInside" id="ncF-06-jre"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rth-aT-dae">
+                                <rect key="frame" x="23" y="79" width="328" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">A continuación se muestra la canción entera y su audio completo. Escúchelo cuantas veces lo requiera, mientras sigue la partitura.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remando Suavemente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gx1-Lq-z0T">
+                                <rect key="frame" x="80" y="44" width="215" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.4941176471" green="0.76862745099999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyl-zh-ehQ">
+                                <rect key="frame" x="109" y="748" width="157" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="COMPLETAR LECCIÓN"/>
+                                <connections>
+                                    <action selector="completeLesson:" destination="InF-9w-P9H" eventType="touchUpInside" id="3gO-Mz-pDN"/>
+                                    <action selector="completeLesson:" destination="y72-dM-iyp" eventType="touchUpInside" id="jeP-8B-19H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CnI-4t-TQU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnA-5K-qfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20266.400000000001" y="2957.8817733990149"/>
+        </scene>
         <!--Lection4 Continue1 View Controller-->
         <scene sceneID="ghV-Hp-5uM">
             <objects>
@@ -9424,6 +9483,7 @@
         <image name="notas" width="846" height="77"/>
         <image name="sesion_background" width="640" height="1136"/>
         <image name="sesion_background2" width="828" height="1472"/>
+        <image name="song1" width="1026" height="640"/>
         <image name="song1_0" width="960" height="80"/>
         <image name="song1_1" width="984" height="89"/>
         <image name="song1_10" width="990" height="83"/>

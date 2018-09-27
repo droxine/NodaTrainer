@@ -199,7 +199,8 @@ class Song1Continue15ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song1Completed") as! Song1CompletedViewController
+        present(controllerTravel, animated: true, completion: nil)
     }
     
 
