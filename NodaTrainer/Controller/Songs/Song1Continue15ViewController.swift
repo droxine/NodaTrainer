@@ -1,4 +1,4 @@
-//  Song1Continue14ViewController.swift
+//  Song1Continue15ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/26/18.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class Song1Continue14ViewController: UIViewController {
+class Song1Continue15ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -45,9 +45,7 @@ class Song1Continue14ViewController: UIViewController {
         btnReload.isHidden = true
         btnNext.isEnabled = false
         notesPressed.removeAll()
-        btnDo.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
-        btnSol.backgroundColor = UIColor.white
     }
     
     func setBorder(_ button: UIButton) {
@@ -56,7 +54,7 @@ class Song1Continue14ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0007 Remando suavemente 15", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0007 Remando suavemente 16", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -150,10 +148,8 @@ class Song1Continue14ViewController: UIViewController {
         labelResult2.isHidden = false
         btnReload.isHidden = false
         btnNext.isEnabled = true
-        btnDo.backgroundColor = UIColor.green
         btnMi.backgroundColor = UIColor.green
-        btnSol.backgroundColor = UIColor.green
-        let result = "DoMiSolSol"
+        let result = "MiMiMi"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -173,9 +169,7 @@ class Song1Continue14ViewController: UIViewController {
         labelResult2.isHidden = true
         btnReload.isHidden = true
         btnNext.isEnabled = true
-        btnDo.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
-        btnSol.backgroundColor = UIColor.white
     }
     
     //Alert message. Receives the message as a parameter
@@ -205,8 +199,7 @@ class Song1Continue14ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song1Continue15") as! Song1Continue15ViewController
-        present(controllerTravel, animated: true, completion: nil)
+        
     }
     
 
