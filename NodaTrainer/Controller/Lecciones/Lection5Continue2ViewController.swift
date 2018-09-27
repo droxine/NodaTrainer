@@ -1,4 +1,4 @@
-//  Lection5Continue1ViewController.swift
+//  Lection5Continue2ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/26/18.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class Lection5Continue1ViewController: UIViewController {
+class Lection5Continue2ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -46,7 +46,7 @@ class Lection5Continue1ViewController: UIViewController {
         btnNext.isEnabled = false
         notesPressed.removeAll()
         btnFa.backgroundColor = UIColor.white
-        btnMi.backgroundColor = UIColor.white
+        btnLa.backgroundColor = UIColor.white
         btnRe.backgroundColor = UIColor.white
         btnSol.backgroundColor = UIColor.white
     }
@@ -57,7 +57,7 @@ class Lection5Continue1ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0008 Do, re,  mi, fa, sol, la, 2", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0008 Do, re,  mi, fa, sol, la, 3", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -140,10 +140,10 @@ class Lection5Continue1ViewController: UIViewController {
         btnReload.isHidden = false
         btnNext.isEnabled = true
         btnSol.backgroundColor = UIColor.green
-        btnMi.backgroundColor = UIColor.green
+        btnLa.backgroundColor = UIColor.green
         btnRe.backgroundColor = UIColor.green
         btnFa.backgroundColor = UIColor.green
-        let result = "ReMiSolFa"
+        let result = "SolLaFaRe"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -164,7 +164,7 @@ class Lection5Continue1ViewController: UIViewController {
         btnReload.isHidden = true
         btnNext.isEnabled = true
         btnSol.backgroundColor = UIColor.white
-        btnMi.backgroundColor = UIColor.white
+        btnLa.backgroundColor = UIColor.white
         btnRe.backgroundColor = UIColor.white
         btnFa.backgroundColor = UIColor.white
     }
@@ -208,8 +208,7 @@ class Lection5Continue1ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection5Continue2") as! Lection5Continue2ViewController
-        present(controllerTravel, animated: true, completion: nil)
+        
     }
     
 
