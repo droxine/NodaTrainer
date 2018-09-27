@@ -1,4 +1,4 @@
-//  Lection7Continue1ViewController.swift
+//  Lection7Continue2ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/27/18.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class Lection7Continue1ViewController: UIViewController {
+class Lection7Continue2ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -61,7 +61,7 @@ class Lection7Continue1ViewController: UIViewController {
         btnReload.isHidden = true
         btnNext.isEnabled = false
         notesPressed.removeAll()
-        btnDo.backgroundColor = UIColor.white
+        btnTi.backgroundColor = UIColor.white
         btnDo2.backgroundColor = UIColor.white
         btnSol.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
@@ -73,7 +73,7 @@ class Lection7Continue1ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0010 Do, re,  mi, fa, sol, la, 2", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0010 Do, re,  mi, fa, sol, la, 3", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -233,11 +233,11 @@ class Lection7Continue1ViewController: UIViewController {
         labelResult2.isHidden = false
         btnReload.isHidden = false
         btnNext.isEnabled = true
-        btnDo.backgroundColor = UIColor.green
+        btnTi.backgroundColor = UIColor.green
         btnDo2.backgroundColor = UIColor.green
         btnSol.backgroundColor = UIColor.green
         btnMi.backgroundColor = UIColor.green
-        let result = "DoMiSolDo2"
+        let result = "SiDo2SolMi"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -257,7 +257,7 @@ class Lection7Continue1ViewController: UIViewController {
         labelResult2.isHidden = true
         btnReload.isHidden = true
         btnNext.isEnabled = true
-        btnDo.backgroundColor = UIColor.white
+        btnTi.backgroundColor = UIColor.white
         btnDo2.backgroundColor = UIColor.white
         btnSol.backgroundColor = UIColor.white
         btnMi.backgroundColor = UIColor.white
@@ -302,8 +302,7 @@ class Lection7Continue1ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection7Continue2") as! Lection7Continue2ViewController
-        present(controllerTravel, animated: true, completion: nil)
+        
     }
     
 
