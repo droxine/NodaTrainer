@@ -55,6 +55,7 @@
 		D1A2E862215C403F0052C5BD /* Song1Continue10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2E861215C403F0052C5BD /* Song1Continue10ViewController.swift */; };
 		D1A2E864215C45A10052C5BD /* Song1Continue11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2E863215C45A10052C5BD /* Song1Continue11ViewController.swift */; };
 		D1A2E866215C4B630052C5BD /* Song1Continue12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2E865215C4B630052C5BD /* Song1Continue12ViewController.swift */; };
+		D1A2E868215C52740052C5BD /* Song1Continue13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2E867215C52740052C5BD /* Song1Continue13ViewController.swift */; };
 		D1C946B9209E61290000757C /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D1C946B6209E61280000757C /* ProgressHUD.bundle */; };
 		D1C946BA209E61290000757C /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C946B8209E61290000757C /* ProgressHUD.m */; };
 		D1DA7504209CEF7F001AB742 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DA7503209CEF7F001AB742 /* MainTabBarController.swift */; };
@@ -201,6 +202,7 @@
 		D1A2E861215C403F0052C5BD /* Song1Continue10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1Continue10ViewController.swift; sourceTree = "<group>"; };
 		D1A2E863215C45A10052C5BD /* Song1Continue11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1Continue11ViewController.swift; sourceTree = "<group>"; };
 		D1A2E865215C4B630052C5BD /* Song1Continue12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1Continue12ViewController.swift; sourceTree = "<group>"; };
+		D1A2E867215C52740052C5BD /* Song1Continue13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1Continue13ViewController.swift; sourceTree = "<group>"; };
 		D1C946B5209E61270000757C /* NodaTrainer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NodaTrainer-Bridging-Header.h"; sourceTree = "<group>"; };
 		D1C946B6209E61280000757C /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		D1C946B7209E61280000757C /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
@@ -438,6 +440,7 @@
 				D1A2E861215C403F0052C5BD /* Song1Continue10ViewController.swift */,
 				D1A2E863215C45A10052C5BD /* Song1Continue11ViewController.swift */,
 				D1A2E865215C4B630052C5BD /* Song1Continue12ViewController.swift */,
+				D1A2E867215C52740052C5BD /* Song1Continue13ViewController.swift */,
 			);
 			path = Songs;
 			sourceTree = "<group>";
@@ -956,6 +959,7 @@
 				D1574C62213CED2700078616 /* Lection0ViewController.swift in Sources */,
 				D108ADB62140595B00CAA2C4 /* Lection1Continue2ViewController.swift in Sources */,
 				D1F1387E20992DBC00A43D4B /* LectionsViewController.swift in Sources */,
+				D1A2E868215C52740052C5BD /* Song1Continue13ViewController.swift in Sources */,
 				D1FBE539215C1FE300F58B92 /* Song1Continue5ViewController.swift in Sources */,
 				D1A2E862215C403F0052C5BD /* Song1Continue10ViewController.swift in Sources */,
 				D108ADB8214074C000CAA2C4 /* Lection1Continue3ViewController.swift in Sources */,
