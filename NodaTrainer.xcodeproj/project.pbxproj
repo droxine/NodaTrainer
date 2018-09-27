@@ -148,6 +148,11 @@
 		D1F5F7482083DEFE0045614E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F5F7462083DEFE0045614E /* GoogleService-Info.plist */; };
 		D1F5F7492083DEFE0045614E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F5F7462083DEFE0045614E /* GoogleService-Info.plist */; };
 		D1FBA4B8215D92CC002FC2E8 /* Lection7Continue5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FBA4B7215D92CC002FC2E8 /* Lection7Continue5ViewController.swift */; };
+		D1FBA4BB215D98F0002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FBA4BA215D98F0002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 1.mp3 */; };
+		D1FBA4BD215D98F9002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FBA4BC215D98F9002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 2.mp3 */; };
+		D1FBA4BF215D9901002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FBA4BE215D9901002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 3.mp3 */; };
+		D1FBA4C1215D9909002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FBA4C0215D9909002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 4.mp3 */; };
+		D1FBA4C3215D9A4B002FC2E8 /* Lection8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FBA4C2215D9A4B002FC2E8 /* Lection8ViewController.swift */; };
 		D1FBA8AB215AD22D00A8CC11 /* Lection3Continue3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FBA8AA215AD22D00A8CC11 /* Lection3Continue3ViewController.swift */; };
 		D1FBA8AE215ADB7E00A8CC11 /* 0006 Do, re,  mi, fa,sol, 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FBA8AD215ADB7E00A8CC11 /* 0006 Do, re,  mi, fa,sol, 1.mp3 */; };
 		D1FBA8B0215ADB8900A8CC11 /* 0006 Do, re,  mi, fa,sol, 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FBA8AF215ADB8900A8CC11 /* 0006 Do, re,  mi, fa,sol, 2.mp3 */; };
@@ -347,6 +352,11 @@
 		D1F5F74D20841E680045614E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D1F5F74E20841E950045614E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D1FBA4B7215D92CC002FC2E8 /* Lection7Continue5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection7Continue5ViewController.swift; sourceTree = "<group>"; };
+		D1FBA4BA215D98F0002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0011 Do, re,  mi, fa, sol, la, 1.mp3"; sourceTree = "<group>"; };
+		D1FBA4BC215D98F9002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0011 Do, re,  mi, fa, sol, la, 2.mp3"; sourceTree = "<group>"; };
+		D1FBA4BE215D9901002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0011 Do, re,  mi, fa, sol, la, 3.mp3"; sourceTree = "<group>"; };
+		D1FBA4C0215D9909002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0011 Do, re,  mi, fa, sol, la, 4.mp3"; sourceTree = "<group>"; };
+		D1FBA4C2215D9A4B002FC2E8 /* Lection8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection8ViewController.swift; sourceTree = "<group>"; };
 		D1FBA8AA215AD22D00A8CC11 /* Lection3Continue3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection3Continue3ViewController.swift; sourceTree = "<group>"; };
 		D1FBA8AD215ADB7E00A8CC11 /* 0006 Do, re,  mi, fa,sol, 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0006 Do, re,  mi, fa,sol, 1.mp3"; sourceTree = "<group>"; };
 		D1FBA8AF215ADB8900A8CC11 /* 0006 Do, re,  mi, fa,sol, 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0006 Do, re,  mi, fa,sol, 2.mp3"; sourceTree = "<group>"; };
@@ -532,6 +542,7 @@
 				D1F151A7215D6AFF006D9220 /* Lection7Continue3ViewController.swift */,
 				D1F151A9215D7123006D9220 /* Lection7Continue4ViewController.swift */,
 				D1FBA4B7215D92CC002FC2E8 /* Lection7Continue5ViewController.swift */,
+				D1FBA4C2215D9A4B002FC2E8 /* Lection8ViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -609,6 +620,7 @@
 		D1F2F4F5213E4CD70030E2AE /* SoundFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D1FBA4B9215D98DD002FC2E8 /* Lection8 */,
 				D10BECA1215D3AAF0098FD86 /* Lection7 */,
 				D10BEC8E215D1BCA0098FD86 /* Lection6 */,
 				D1ED8D75215C7EBB0043359A /* Lection5 */,
@@ -737,6 +749,17 @@
 				D1574C5E213C5B9500078616 /* Instrument.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D1FBA4B9215D98DD002FC2E8 /* Lection8 */ = {
+			isa = PBXGroup;
+			children = (
+				D1FBA4BA215D98F0002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 1.mp3 */,
+				D1FBA4BC215D98F9002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 2.mp3 */,
+				D1FBA4BE215D9901002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 3.mp3 */,
+				D1FBA4C0215D9909002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 4.mp3 */,
+			);
+			path = Lection8;
 			sourceTree = "<group>";
 		};
 		D1FBA8AC215ADB6B00A8CC11 /* Lection4 */ = {
@@ -902,6 +925,7 @@
 				D1E5FBD9215BE12400B7AA12 /* 0007 Remando suavemente 9.mp3 in Resources */,
 				D1F5F7212083D9DA0045614E /* LaunchScreen.storyboard in Resources */,
 				D1FD48DA214ED93D00A1B204 /* 0004 Do, mi, sol, 5.mp3 in Resources */,
+				D1FBA4BB215D98F0002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 1.mp3 in Resources */,
 				D1F5F7472083DEFE0045614E /* GoogleService-Info.plist in Resources */,
 				D1FBA8B4215ADB9D00A8CC11 /* 0006 Do, re,  mi, fa,sol, 4.mp3 in Resources */,
 				D1F2F4F7213E4CEE0030E2AE /* 0001notas.mp3 in Resources */,
@@ -929,6 +953,7 @@
 				D10BECBA215D4A470098FD86 /* Mi2.mp3 in Resources */,
 				D15DA02E215AA01A00F04065 /* 0005 Do, re,  mi, sol, 4.mp3 in Resources */,
 				D10BECC4215D4A950098FD86 /* La2.mp3 in Resources */,
+				D1FBA4BF215D9901002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */,
 				D1E5FBDB215BE12D00B7AA12 /* 0007 Remando suavemente 10.mp3 in Resources */,
 				D1E5FBE7215BE15E00B7AA12 /* 0007 Remando suavemente 16.mp3 in Resources */,
 				D15DA02C215AA01100F04065 /* 0005 Do, re,  mi, sol, 3.mp3 in Resources */,
@@ -961,6 +986,7 @@
 				D10BECB6215D4A340098FD86 /* Re2.mp3 in Resources */,
 				D15DA028215A9FFD00F04065 /* 0005 Do, re,  mi, sol, 1.mp3 in Resources */,
 				D10BEC94215D1C000098FD86 /* 0009 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */,
+				D1FBA4C1215D9909002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 4.mp3 in Resources */,
 				D10BECC8215D4AA60098FD86 /* Si2.mp3 in Resources */,
 				D1533F812131E91400B2C785 /* MusicClassCell.xib in Resources */,
 				D108ADB02140240F00CAA2C4 /* La#.mp3 in Resources */,
@@ -972,6 +998,7 @@
 				D1E5FBCD215BE0EF00B7AA12 /* 0007 Remando suavemente 3.mp3 in Resources */,
 				D108ADA6214023B400CAA2C4 /* Fa.mp3 in Resources */,
 				D10BECC6215D4A9D0098FD86 /* La#2.mp3 in Resources */,
+				D1FBA4BD215D98F9002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 2.mp3 in Resources */,
 				D108AD94214022A900CAA2C4 /* 0003 Do, mi 1.mp3 in Resources */,
 				D1FBA8B0215ADB8900A8CC11 /* 0006 Do, re,  mi, fa,sol, 2.mp3 in Resources */,
 				D1FBA8AE215ADB7E00A8CC11 /* 0006 Do, re,  mi, fa,sol, 1.mp3 in Resources */,
@@ -1140,6 +1167,7 @@
 				D10BEC9C215D2B6A0098FD86 /* Lection6Continue2ViewController.swift in Sources */,
 				D166D76220A2949F00C29E24 /* TestResultsViewController.swift in Sources */,
 				D15DA025215A94F000F04065 /* Lection2Continue4ViewController.swift in Sources */,
+				D1FBA4C3215D9A4B002FC2E8 /* Lection8ViewController.swift in Sources */,
 				D10BEC9E215D33430098FD86 /* Lection6Continue3ViewController.swift in Sources */,
 				D10BECCE215D56680098FD86 /* Lection7Continue2ViewController.swift in Sources */,
 				D1FBA8BA215AE43F00A8CC11 /* Lection4Continue1ViewController.swift in Sources */,
