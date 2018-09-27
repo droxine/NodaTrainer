@@ -35,6 +35,7 @@
 		D10BEC96215D1C0C0098FD86 /* 0009 Do, re,  mi, fa, sol, la, 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D10BEC95215D1C0C0098FD86 /* 0009 Do, re,  mi, fa, sol, la, 4.mp3 */; };
 		D10BEC98215D1E2B0098FD86 /* Lection6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BEC97215D1E2B0098FD86 /* Lection6ViewController.swift */; };
 		D10BEC9A215D265E0098FD86 /* Lection6Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BEC99215D265E0098FD86 /* Lection6Continue1ViewController.swift */; };
+		D10BEC9C215D2B6A0098FD86 /* Lection6Continue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BEC9B215D2B6A0098FD86 /* Lection6Continue2ViewController.swift */; };
 		D111E2C2215980A100E4405C /* Lection2Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111E2C1215980A100E4405C /* Lection2Continue1ViewController.swift */; };
 		D141F1542137A1140053F661 /* MusicClassFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141F1532137A1140053F661 /* MusicClassFormViewController.swift */; };
 		D141F1562137A13F0053F661 /* InstrumentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141F1552137A13F0053F661 /* InstrumentFormViewController.swift */; };
@@ -198,6 +199,7 @@
 		D10BEC95215D1C0C0098FD86 /* 0009 Do, re,  mi, fa, sol, la, 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0009 Do, re,  mi, fa, sol, la, 4.mp3"; sourceTree = "<group>"; };
 		D10BEC97215D1E2B0098FD86 /* Lection6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection6ViewController.swift; sourceTree = "<group>"; };
 		D10BEC99215D265E0098FD86 /* Lection6Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection6Continue1ViewController.swift; sourceTree = "<group>"; };
+		D10BEC9B215D2B6A0098FD86 /* Lection6Continue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection6Continue2ViewController.swift; sourceTree = "<group>"; };
 		D111E2C1215980A100E4405C /* Lection2Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection2Continue1ViewController.swift; sourceTree = "<group>"; };
 		D141F1532137A1140053F661 /* MusicClassFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClassFormViewController.swift; sourceTree = "<group>"; };
 		D141F1552137A13F0053F661 /* InstrumentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentFormViewController.swift; sourceTree = "<group>"; };
@@ -436,6 +438,7 @@
 				D1ED8D84215C945C0043359A /* Lection5Continue3ViewController.swift */,
 				D10BEC97215D1E2B0098FD86 /* Lection6ViewController.swift */,
 				D10BEC99215D265E0098FD86 /* Lection6Continue1ViewController.swift */,
+				D10BEC9B215D2B6A0098FD86 /* Lection6Continue2ViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -1018,6 +1021,7 @@
 				D1DA7506209CF7E4001AB742 /* LectionsNavigationController.swift in Sources */,
 				D1F5F7192083D9DA0045614E /* ViewController.swift in Sources */,
 				D1A2E864215C45A10052C5BD /* Song1Continue11ViewController.swift in Sources */,
+				D10BEC9C215D2B6A0098FD86 /* Lection6Continue2ViewController.swift in Sources */,
 				D166D76220A2949F00C29E24 /* TestResultsViewController.swift in Sources */,
 				D15DA025215A94F000F04065 /* Lection2Continue4ViewController.swift in Sources */,
 				D1FBA8BA215AE43F00A8CC11 /* Lection4Continue1ViewController.swift in Sources */,
