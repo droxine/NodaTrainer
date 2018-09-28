@@ -1,4 +1,4 @@
-//  Lection9ViewController.swift
+//  Lection9Continue1ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/27/18.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class Lection9ViewController: UIViewController {
+class Lection9Continue1ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -64,7 +64,6 @@ class Lection9ViewController: UIViewController {
         btnDo2.backgroundColor = UIColor.white
         btnRe2.backgroundColor = UIColor.white
         btnMi2.backgroundColor = UIColor.white
-        btnTi.backgroundColor = UIColor.white
     }
     
     func setBorder(_ button: UIButton) {
@@ -73,7 +72,7 @@ class Lection9ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0012 Do, re,  mi, fa, sol, la, 1", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0012 Do, re,  mi, fa, sol, la, 2", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -236,8 +235,7 @@ class Lection9ViewController: UIViewController {
         btnDo2.backgroundColor = UIColor.green
         btnRe2.backgroundColor = UIColor.green
         btnMi2.backgroundColor = UIColor.green
-        btnTi.backgroundColor = UIColor.green
-        let result = "SiDo2Re2Mi2"
+        let result = "Do2Re2Mi2Re2"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -260,7 +258,6 @@ class Lection9ViewController: UIViewController {
         btnDo2.backgroundColor = UIColor.white
         btnRe2.backgroundColor = UIColor.white
         btnMi2.backgroundColor = UIColor.white
-        btnTi.backgroundColor = UIColor.white
     }
     
     func reproduceSound(_ resource: URL) {
@@ -302,9 +299,8 @@ class Lection9ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection9Continue1") as! Lection9Continue1ViewController
-        present(controllerTravel, animated: true, completion: nil)
+        
     }
     
-    
+
 }
