@@ -215,6 +215,7 @@
 		D1FD941A215ED55F007EDF28 /* 0016 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FD9419215ED55F007EDF28 /* 0016 3.mp3 */; };
 		D1FD941C215ED566007EDF28 /* 0016 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FD941B215ED566007EDF28 /* 0016 4.mp3 */; };
 		D1FD941E215ED677007EDF28 /* Lection13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD941D215ED677007EDF28 /* Lection13ViewController.swift */; };
+		D1FD9420215EDBA2007EDF28 /* Lection13Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD941F215EDBA2007EDF28 /* Lection13Continue1ViewController.swift */; };
 		F4DB95A53285AF078CF731F4 /* Pods_NodaTrainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F550206C1358D2FEDCA9C29A /* Pods_NodaTrainer.framework */; };
 /* End PBXBuildFile section */
 
@@ -459,6 +460,7 @@
 		D1FD9419215ED55F007EDF28 /* 0016 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0016 3.mp3"; sourceTree = "<group>"; };
 		D1FD941B215ED566007EDF28 /* 0016 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0016 4.mp3"; sourceTree = "<group>"; };
 		D1FD941D215ED677007EDF28 /* Lection13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection13ViewController.swift; sourceTree = "<group>"; };
+		D1FD941F215EDBA2007EDF28 /* Lection13Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection13Continue1ViewController.swift; sourceTree = "<group>"; };
 		F550206C1358D2FEDCA9C29A /* Pods_NodaTrainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NodaTrainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -676,6 +678,7 @@
 				D1FD9410215EC812007EDF28 /* Lection12Continue2ViewController.swift */,
 				D1FD9412215ECE9C007EDF28 /* Lection12Continue3ViewController.swift */,
 				D1FD941D215ED677007EDF28 /* Lection13ViewController.swift */,
+				D1FD941F215EDBA2007EDF28 /* Lection13Continue1ViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -1398,6 +1401,7 @@
 				D1A2E86A215C57DF0052C5BD /* Song1Continue14ViewController.swift in Sources */,
 				D1E5FBEC215BEA4400B7AA12 /* Song1ViewController.swift in Sources */,
 				D1574C5F213C5B9500078616 /* Instrument.swift in Sources */,
+				D1FD9420215EDBA2007EDF28 /* Lection13Continue1ViewController.swift in Sources */,
 				D10CE342215E783900E6726E /* Lection10ViewController.swift in Sources */,
 				D1FBA4C7215DA5E5002FC2E8 /* Lection8Continue2ViewController.swift in Sources */,
 				D1FD941E215ED677007EDF28 /* Lection13ViewController.swift in Sources */,

@@ -1,4 +1,4 @@
-//  Lection13ViewController.swift
+//  Lection13Continue1ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/28/18.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class Lection13ViewController: UIViewController {
+class Lection13Continue1ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -62,17 +62,17 @@ class Lection13ViewController: UIViewController {
         btnNext.isEnabled = false
         notesPressed.removeAll()
         btnTi2.backgroundColor = UIColor.white
-        btnLa2.backgroundColor = UIColor.white
+        btnSol2.backgroundColor = UIColor.white
         btnMi2.backgroundColor = UIColor.white
     }
-
+    
     func setBorder(_ button: UIButton) {
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.black.cgColor
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0016 1", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0016 2", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -233,9 +233,9 @@ class Lection13ViewController: UIViewController {
         btnReload.isHidden = false
         btnNext.isEnabled = true
         btnTi2.backgroundColor = UIColor.green
-        btnLa2.backgroundColor = UIColor.green
+        btnSol2.backgroundColor = UIColor.green
         btnMi2.backgroundColor = UIColor.green
-        let result = "Si2La2Mi2La2"
+        let result = "Si2Sol2Mi2Sol2"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -256,7 +256,7 @@ class Lection13ViewController: UIViewController {
         btnReload.isHidden = true
         btnNext.isEnabled = true
         btnTi2.backgroundColor = UIColor.white
-        btnLa2.backgroundColor = UIColor.white
+        btnSol2.backgroundColor = UIColor.white
         btnMi2.backgroundColor = UIColor.white
     }
     
@@ -299,8 +299,8 @@ class Lection13ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection13Continue1") as! Lection13Continue1ViewController
-        present(controllerTravel, animated: true, completion: nil)
+        
     }
     
+
 }
