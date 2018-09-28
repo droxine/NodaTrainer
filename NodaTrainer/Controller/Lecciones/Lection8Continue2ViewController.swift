@@ -1,4 +1,4 @@
-//  Lection8Continue1ViewController.swift
+//  Lection8Continue2ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/27/18.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class Lection8Continue1ViewController: UIViewController {
+class Lection8Continue2ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -64,6 +64,7 @@ class Lection8Continue1ViewController: UIViewController {
         btnDo2.backgroundColor = UIColor.white
         btnRe2.backgroundColor = UIColor.white
         btnTi.backgroundColor = UIColor.white
+        btnLa.backgroundColor = UIColor.white
     }
     
     func setBorder(_ button: UIButton) {
@@ -72,7 +73,7 @@ class Lection8Continue1ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0011 Do, re,  mi, fa, sol, la, 2", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0011 Do, re,  mi, fa, sol, la, 3", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -235,7 +236,8 @@ class Lection8Continue1ViewController: UIViewController {
         btnDo2.backgroundColor = UIColor.green
         btnRe2.backgroundColor = UIColor.green
         btnTi.backgroundColor = UIColor.green
-        let result = "Re2Do2Re2Si"
+        btnLa.backgroundColor = UIColor.green
+        let result = "LaDo2Re2Si"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -258,6 +260,7 @@ class Lection8Continue1ViewController: UIViewController {
         btnDo2.backgroundColor = UIColor.white
         btnRe2.backgroundColor = UIColor.white
         btnTi.backgroundColor = UIColor.white
+        btnLa.backgroundColor = UIColor.white
     }
     
     func reproduceSound(_ resource: URL) {
@@ -299,8 +302,7 @@ class Lection8Continue1ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection8Continue2") as! Lection8Continue2ViewController
-        present(controllerTravel, animated: true, completion: nil)
+        
     }
     
 
