@@ -216,6 +216,7 @@
 		D1FD941C215ED566007EDF28 /* 0016 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1FD941B215ED566007EDF28 /* 0016 4.mp3 */; };
 		D1FD941E215ED677007EDF28 /* Lection13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD941D215ED677007EDF28 /* Lection13ViewController.swift */; };
 		D1FD9420215EDBA2007EDF28 /* Lection13Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD941F215EDBA2007EDF28 /* Lection13Continue1ViewController.swift */; };
+		D1FD9422215EE076007EDF28 /* Lection13Continue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD9421215EE076007EDF28 /* Lection13Continue2ViewController.swift */; };
 		F4DB95A53285AF078CF731F4 /* Pods_NodaTrainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F550206C1358D2FEDCA9C29A /* Pods_NodaTrainer.framework */; };
 /* End PBXBuildFile section */
 
@@ -461,6 +462,7 @@
 		D1FD941B215ED566007EDF28 /* 0016 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0016 4.mp3"; sourceTree = "<group>"; };
 		D1FD941D215ED677007EDF28 /* Lection13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection13ViewController.swift; sourceTree = "<group>"; };
 		D1FD941F215EDBA2007EDF28 /* Lection13Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection13Continue1ViewController.swift; sourceTree = "<group>"; };
+		D1FD9421215EE076007EDF28 /* Lection13Continue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection13Continue2ViewController.swift; sourceTree = "<group>"; };
 		F550206C1358D2FEDCA9C29A /* Pods_NodaTrainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NodaTrainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -679,6 +681,7 @@
 				D1FD9412215ECE9C007EDF28 /* Lection12Continue3ViewController.swift */,
 				D1FD941D215ED677007EDF28 /* Lection13ViewController.swift */,
 				D1FD941F215EDBA2007EDF28 /* Lection13Continue1ViewController.swift */,
+				D1FD9421215EE076007EDF28 /* Lection13Continue2ViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -1369,6 +1372,7 @@
 				D1533F7A2131D4CD00B2C785 /* EventsViewController.swift in Sources */,
 				D1F85410215DC47900C4E7F6 /* Lection9Continue1ViewController.swift in Sources */,
 				D1FBA8BE215AEFAD00A8CC11 /* Lection4Continue3ViewController.swift in Sources */,
+				D1FD9422215EE076007EDF28 /* Lection13Continue2ViewController.swift in Sources */,
 				D1FBA8AB215AD22D00A8CC11 /* Lection3Continue3ViewController.swift in Sources */,
 				D15DA032215AAF8B00F04065 /* Lection3Continue1ViewController.swift in Sources */,
 				D1ED8D83215C8E370043359A /* Lection5Continue2ViewController.swift in Sources */,
