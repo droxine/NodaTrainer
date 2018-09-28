@@ -1,4 +1,4 @@
-//  Lection12ViewController.swift
+//  Lection12Continue1ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/28/18.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class Lection12ViewController: UIViewController {
+class Lection12Continue1ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -72,7 +72,7 @@ class Lection12ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0015 1", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0015 2", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -235,7 +235,7 @@ class Lection12ViewController: UIViewController {
         btnSol2.backgroundColor = UIColor.green
         btnLa2.backgroundColor = UIColor.green
         btnMi2.backgroundColor = UIColor.green
-        let result = "Sol2Mi2Sol2La2"
+        let result = "Mi2Sol2La2Sol2"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -299,8 +299,7 @@ class Lection12ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection12Continue1") as! Lection12Continue1ViewController
-        present(controllerTravel, animated: true, completion: nil)
+        
     }
     
 
