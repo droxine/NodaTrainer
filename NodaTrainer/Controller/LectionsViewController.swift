@@ -25,6 +25,7 @@ class LectionsViewController: UIViewController {
     @IBOutlet weak var imgLection10: UIImageView!
     @IBOutlet weak var imgLection11: UIImageView!
     @IBOutlet weak var imgLection12: UIImageView!
+    @IBOutlet weak var imgLection13: UIImageView!
     
     var withoutLessons: Bool = true
 
@@ -105,6 +106,11 @@ class LectionsViewController: UIViewController {
         imgLection12.isUserInteractionEnabled = true
         imgLection12.addGestureRecognizer(imageTap13)
         imgLection12.clipsToBounds = true
+        
+        let imageTap14 = UITapGestureRecognizer(target: self, action: #selector(goLection13))
+        imgLection13.isUserInteractionEnabled = true
+        imgLection13.addGestureRecognizer(imageTap14)
+        imgLection13.clipsToBounds = true
     }
     
     func loadLessonsDone() {
@@ -196,6 +202,11 @@ class LectionsViewController: UIViewController {
     
     @objc func goLection12(_ sender: Any) {
         let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection12") as! Lection12ViewController
+        present(controllerTravel, animated: true, completion: nil)
+    }
+    
+    @objc func goLection13(_ sender: Any) {
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection13") as! Lection13ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
 
