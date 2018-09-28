@@ -1,4 +1,4 @@
-//  Lection12Continue1ViewController.swift
+//  Lection12Continue2ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 9/28/18.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class Lection12Continue1ViewController: UIViewController {
+class Lection12Continue2ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -63,7 +63,6 @@ class Lection12Continue1ViewController: UIViewController {
         notesPressed.removeAll()
         btnSol2.backgroundColor = UIColor.white
         btnLa2.backgroundColor = UIColor.white
-        btnMi2.backgroundColor = UIColor.white
     }
     
     func setBorder(_ button: UIButton) {
@@ -72,7 +71,7 @@ class Lection12Continue1ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"0015 2", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"0015 3", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -234,8 +233,7 @@ class Lection12Continue1ViewController: UIViewController {
         btnNext.isEnabled = true
         btnSol2.backgroundColor = UIColor.green
         btnLa2.backgroundColor = UIColor.green
-        btnMi2.backgroundColor = UIColor.green
-        let result = "Mi2Sol2La2Sol2"
+        let result = "La2La2Sol2La2"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -257,7 +255,6 @@ class Lection12Continue1ViewController: UIViewController {
         btnNext.isEnabled = true
         btnSol2.backgroundColor = UIColor.white
         btnLa2.backgroundColor = UIColor.white
-        btnMi2.backgroundColor = UIColor.white
     }
     
     func reproduceSound(_ resource: URL) {
@@ -299,9 +296,7 @@ class Lection12Continue1ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection12Continue2") as! Lection12Continue2ViewController
-        present(controllerTravel, animated: true, completion: nil)
+        
     }
     
-
 }
