@@ -35,6 +35,10 @@ class Lection0Continue2ViewController: UIViewController {
     
     
     @IBAction func goLessons(_ sender: Any) {
+        if audioPlayer != nil && audioPlayer.isPlaying {
+            audioPlayer.stop()
+        }
+        
         saveLessonsDone() { success in
             if !success {
                 print("Error: No se pudo actualizar el fin de la leccion")
