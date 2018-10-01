@@ -33,33 +33,20 @@ class Lection0Continue2ViewController: UIViewController {
         audioPlayer.play()
     }
     
-    
-    @IBAction func goLessons(_ sender: Any) {
+    @IBAction func goBack(_ sender: Any) {
         if audioPlayer != nil && audioPlayer.isPlaying {
             audioPlayer.stop()
         }
-        
-        saveLessonsDone() { success in
-            if !success {
-                print("Error: No se pudo actualizar el fin de la leccion")
-            }
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func goNext(_ sender: Any) {
+        if audioPlayer != nil && audioPlayer.isPlaying {
+            audioPlayer.stop()
         }
-        
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
-        controllerTravel.selectedIndex = 1
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection0Continue3") as! Lection0Continue3ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
     
-    func saveLessonsDone(completion: @escaping ((_ success: Bool) -> ()) ) -> Void{
-        guard let uid = Auth.auth().currentUser?.uid else { return}
-        print(uid)
-        let lessonsObject = [
-            "done": true
-            ] as [String:Any]
-        let childUpdates = ["/lessons/\(uid)/": lessonsObject]
-        Database.database().reference().updateChildValues(childUpdates, withCompletionBlock: { (error, ref) in
-            completion(error == nil)
-        })
-    }
 
 }
