@@ -234,7 +234,7 @@ class Song2Continue4ViewController: UIViewController {
         btnNext.isEnabled = true
         btnSol.backgroundColor = UIColor.green
         btnLa.backgroundColor = UIColor.green
-        let result = "SolLa"
+        let result = "SolSolLa"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)

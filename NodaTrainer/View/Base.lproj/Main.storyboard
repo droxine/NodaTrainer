@@ -5258,7 +5258,7 @@
         <!--Song2 Continue1 View Controller-->
         <scene sceneID="KaM-9g-Ubq">
             <objects>
-                <viewController storyboardIdentifier="song2continue1" id="Gye-nd-Umi" customClass="Song2Continue1ViewController" customModule="NodaTrainer" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="song2Continue1" id="Gye-nd-Umi" customClass="Song2Continue1ViewController" customModule="NodaTrainer" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iov-N2-y8Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

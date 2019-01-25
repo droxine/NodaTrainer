@@ -295,7 +295,7 @@ class Song2Continue1ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "Song2Continue2") as! Song2Continue2ViewController
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song2Continue2") as! Song2Continue2ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
 
