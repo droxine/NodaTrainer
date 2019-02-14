@@ -1,15 +1,15 @@
 //
-//  Song2Continue9ViewController.swift
+//  Song2Continue11ViewController.swift
 //  NodaTrainer
 //
-//  Created by sangeles on 1/17/19.
+//  Created by sangeles on 2/14/19.
 //  Copyright © 2019 SAM Creators. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class Song2Continue9ViewController: UIViewController {
+class Song2Continue11ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -61,7 +61,7 @@ class Song2Continue9ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"10", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"12", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -221,9 +221,8 @@ class Song2Continue9ViewController: UIViewController {
         labelResult2.isHidden = false
         btnReload.isHidden = false
         btnNext.isEnabled = true
-        btnRe2.backgroundColor = UIColor.green
-        btnMi2.backgroundColor = UIColor.green
-        let result = "Re2Re2Re2Mi2"
+        btnLa.backgroundColor = UIColor.green
+        let result = "La"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -243,8 +242,7 @@ class Song2Continue9ViewController: UIViewController {
         labelResult2.isHidden = true
         btnReload.isHidden = true
         btnNext.isEnabled = true
-        btnRe2.backgroundColor = UIColor.white
-        btnMi2.backgroundColor = UIColor.white
+        btnLa.backgroundColor = UIColor.white
     }
     
     func reproduceSound(_ resource: URL) {
@@ -286,7 +284,7 @@ class Song2Continue9ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song2Continue10") as! Song2Continue10ViewController
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song2Continue12") as! Song2Continue12ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
     
@@ -297,9 +295,7 @@ class Song2Continue9ViewController: UIViewController {
         btnReload.isHidden = true
         btnNext.isEnabled = false
         notesPressed.removeAll()
-        btnRe2.backgroundColor = UIColor.white
-        btnMi2.backgroundColor = UIColor.white
+        btnLa.backgroundColor = UIColor.white
     }
-    
 
 }

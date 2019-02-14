@@ -1,16 +1,16 @@
 //
-//  Song2Continue9ViewController.swift
+//  Song2Continue13ViewController.swift
 //  NodaTrainer
 //
-//  Created by sangeles on 1/17/19.
+//  Created by sangeles on 2/14/19.
 //  Copyright © 2019 SAM Creators. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class Song2Continue9ViewController: UIViewController {
-    
+class Song2Continue13ViewController: UIViewController {
+
     var audioPlayer: AVAudioPlayer!
     
     @IBOutlet weak var btnDo: UIButton!
@@ -35,7 +35,7 @@ class Song2Continue9ViewController: UIViewController {
     @IBOutlet weak var btnReload: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     var notesPressed: Array<String> = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setBorder(btnDo)
@@ -61,7 +61,7 @@ class Song2Continue9ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"10", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"14", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -223,7 +223,7 @@ class Song2Continue9ViewController: UIViewController {
         btnNext.isEnabled = true
         btnRe2.backgroundColor = UIColor.green
         btnMi2.backgroundColor = UIColor.green
-        let result = "Re2Re2Re2Mi2"
+        let result = "Re2Mi2"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -286,7 +286,7 @@ class Song2Continue9ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song2Continue10") as! Song2Continue10ViewController
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song2Continue14") as! Song2Continue13ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
     
