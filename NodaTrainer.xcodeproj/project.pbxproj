@@ -133,6 +133,8 @@
 		D1602FF32216066F0062EC53 /* Song2Continue11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1602FF22216066F0062EC53 /* Song2Continue11ViewController.swift */; };
 		D1602FF522160D9B0062EC53 /* Song2Continue12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1602FF422160D9B0062EC53 /* Song2Continue12ViewController.swift */; };
 		D1602FF7221611210062EC53 /* Song2Continue13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1602FF6221611210062EC53 /* Song2Continue13ViewController.swift */; };
+		D1602FF9221780810062EC53 /* Song2Continue14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1602FF8221780810062EC53 /* Song2Continue14ViewController.swift */; };
+		D1602FFB2217852C0062EC53 /* Song2Continue15ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1602FFA2217852C0062EC53 /* Song2Continue15ViewController.swift */; };
 		D166D76220A2949F00C29E24 /* TestResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D166D76120A2949F00C29E24 /* TestResultsViewController.swift */; };
 		D1A2E860215C39C60052C5BD /* Song1Continue9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2E85F215C39C60052C5BD /* Song1Continue9ViewController.swift */; };
 		D1A2E862215C403F0052C5BD /* Song1Continue10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2E861215C403F0052C5BD /* Song1Continue10ViewController.swift */; };
@@ -412,6 +414,8 @@
 		D1602FF22216066F0062EC53 /* Song2Continue11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2Continue11ViewController.swift; sourceTree = "<group>"; };
 		D1602FF422160D9B0062EC53 /* Song2Continue12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2Continue12ViewController.swift; sourceTree = "<group>"; };
 		D1602FF6221611210062EC53 /* Song2Continue13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2Continue13ViewController.swift; sourceTree = "<group>"; };
+		D1602FF8221780810062EC53 /* Song2Continue14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2Continue14ViewController.swift; sourceTree = "<group>"; };
+		D1602FFA2217852C0062EC53 /* Song2Continue15ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2Continue15ViewController.swift; sourceTree = "<group>"; };
 		D166D760209FE3FC00C29E24 /* NodaTrainer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NodaTrainer.entitlements; sourceTree = "<group>"; };
 		D166D76120A2949F00C29E24 /* TestResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultsViewController.swift; sourceTree = "<group>"; };
 		D1A2E85F215C39C60052C5BD /* Song1Continue9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1Continue9ViewController.swift; sourceTree = "<group>"; };
@@ -870,6 +874,8 @@
 				D1602FF22216066F0062EC53 /* Song2Continue11ViewController.swift */,
 				D1602FF422160D9B0062EC53 /* Song2Continue12ViewController.swift */,
 				D1602FF6221611210062EC53 /* Song2Continue13ViewController.swift */,
+				D1602FF8221780810062EC53 /* Song2Continue14ViewController.swift */,
+				D1602FFA2217852C0062EC53 /* Song2Continue15ViewController.swift */,
 			);
 			path = Songs;
 			sourceTree = "<group>";
@@ -1497,6 +1503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1602FF9221780810062EC53 /* Song2Continue14ViewController.swift in Sources */,
 				D10CE355215E98E700E6726E /* Lection11Continue1ViewController.swift in Sources */,
 				D1533F8321338C7700B2C785 /* UpdateProfileViewController.swift in Sources */,
 				D10CE359215EA6FA00E6726E /* Lection11Continue3ViewController.swift in Sources */,
@@ -1593,6 +1600,7 @@
 				D1533F802131E91400B2C785 /* MusicClassCell.swift in Sources */,
 				D1C946BA209E61290000757C /* ProgressHUD.m in Sources */,
 				D1DA7510209D330E001AB742 /* Question.swift in Sources */,
+				D1602FFB2217852C0062EC53 /* Song2Continue15ViewController.swift in Sources */,
 				D1FD48DE214EDDC200A1B204 /* Lection2ViewController.swift in Sources */,
 				D1FBA8B8215ADD4000A8CC11 /* Lection4ViewController.swift in Sources */,
 				D1574C5D213C442D00078616 /* MusicClass.swift in Sources */,

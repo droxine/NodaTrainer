@@ -1,16 +1,16 @@
 //
-//  Song2Continue13ViewController.swift
+//  Song2Continue14ViewController.swift
 //  NodaTrainer
 //
-//  Created by sangeles on 2/14/19.
+//  Created by sangeles on 2/15/19.
 //  Copyright © 2019 SAM Creators. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class Song2Continue13ViewController: UIViewController {
-
+class Song2Continue14ViewController: UIViewController {
+    
     var audioPlayer: AVAudioPlayer!
     
     @IBOutlet weak var btnDo: UIButton!
@@ -35,7 +35,7 @@ class Song2Continue13ViewController: UIViewController {
     @IBOutlet weak var btnReload: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     var notesPressed: Array<String> = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setBorder(btnDo)
@@ -61,7 +61,7 @@ class Song2Continue13ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"14", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"15", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -221,9 +221,11 @@ class Song2Continue13ViewController: UIViewController {
         labelResult2.isHidden = false
         btnReload.isHidden = false
         btnNext.isEnabled = true
+        btnFa2.backgroundColor = UIColor.green
         btnRe2.backgroundColor = UIColor.green
         btnMi2.backgroundColor = UIColor.green
-        let result = "Re2Mi2"
+        btnDo2.backgroundColor = UIColor.green
+        let result = "Fa2Mi2Re2Do2"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -243,6 +245,8 @@ class Song2Continue13ViewController: UIViewController {
         labelResult2.isHidden = true
         btnReload.isHidden = true
         btnNext.isEnabled = true
+        btnFa2.backgroundColor = UIColor.white
+        btnDo2.backgroundColor = UIColor.white
         btnRe2.backgroundColor = UIColor.white
         btnMi2.backgroundColor = UIColor.white
     }
@@ -286,7 +290,7 @@ class Song2Continue13ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song2Continue14") as! Song2Continue14ViewController
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song2Continue15") as! Song2Continue15ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
     
@@ -297,9 +301,10 @@ class Song2Continue13ViewController: UIViewController {
         btnReload.isHidden = true
         btnNext.isEnabled = false
         notesPressed.removeAll()
+        btnFa2.backgroundColor = UIColor.white
         btnRe2.backgroundColor = UIColor.white
+        btnDo2.backgroundColor = UIColor.white
         btnMi2.backgroundColor = UIColor.white
     }
-    
 
 }
