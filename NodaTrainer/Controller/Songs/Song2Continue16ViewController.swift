@@ -1,5 +1,5 @@
 //
-//  Song2Continue15ViewController.swift
+//  Song2Continue16ViewController.swift
 //  NodaTrainer
 //
 //  Created by sangeles on 2/15/19.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class Song2Continue15ViewController: UIViewController {
+class Song2Continue16ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
     
@@ -61,7 +61,7 @@ class Song2Continue15ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"16", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"17", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -223,9 +223,9 @@ class Song2Continue15ViewController: UIViewController {
         btnNext.isEnabled = true
         btnTi.backgroundColor = UIColor.green
         btnRe2.backgroundColor = UIColor.green
-        btnMi2.backgroundColor = UIColor.green
+        btnLa.backgroundColor = UIColor.green
         btnDo2.backgroundColor = UIColor.green
-        let result = "Mi2Re2Do2Si"
+        let result = "Re2Do2SiLa"
         var answer: String = ""
         for note in notesPressed {
             answer.append(note)
@@ -248,7 +248,7 @@ class Song2Continue15ViewController: UIViewController {
         btnTi.backgroundColor = UIColor.white
         btnDo2.backgroundColor = UIColor.white
         btnRe2.backgroundColor = UIColor.white
-        btnMi2.backgroundColor = UIColor.white
+        btnLa.backgroundColor = UIColor.white
     }
     
     func reproduceSound(_ resource: URL) {
@@ -290,7 +290,7 @@ class Song2Continue15ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song2Continue16") as! Song2Continue16ViewController
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song2Continue17") as! Song2Continue17ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
     
@@ -304,6 +304,7 @@ class Song2Continue15ViewController: UIViewController {
         btnTi.backgroundColor = UIColor.white
         btnRe2.backgroundColor = UIColor.white
         btnDo2.backgroundColor = UIColor.white
-        btnMi2.backgroundColor = UIColor.white
+        btnLa.backgroundColor = UIColor.white
     }
+
 }

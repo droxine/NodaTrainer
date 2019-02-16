@@ -135,6 +135,10 @@
 		D1602FF7221611210062EC53 /* Song2Continue13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1602FF6221611210062EC53 /* Song2Continue13ViewController.swift */; };
 		D1602FF9221780810062EC53 /* Song2Continue14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1602FF8221780810062EC53 /* Song2Continue14ViewController.swift */; };
 		D1602FFB2217852C0062EC53 /* Song2Continue15ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1602FFA2217852C0062EC53 /* Song2Continue15ViewController.swift */; };
+		D1602FFD221788F90062EC53 /* Song2Continue16ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1602FFC221788F90062EC53 /* Song2Continue16ViewController.swift */; };
+		D1602FFF22178CD70062EC53 /* Song2Continue17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1602FFE22178CD70062EC53 /* Song2Continue17ViewController.swift */; };
+		D16030012217912D0062EC53 /* Song2CompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16030002217912D0062EC53 /* Song2CompletedViewController.swift */; };
+		D16030032217923A0062EC53 /* El tamborilero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D16030022217923A0062EC53 /* El tamborilero.mp3 */; };
 		D166D76220A2949F00C29E24 /* TestResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D166D76120A2949F00C29E24 /* TestResultsViewController.swift */; };
 		D1A2E860215C39C60052C5BD /* Song1Continue9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2E85F215C39C60052C5BD /* Song1Continue9ViewController.swift */; };
 		D1A2E862215C403F0052C5BD /* Song1Continue10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2E861215C403F0052C5BD /* Song1Continue10ViewController.swift */; };
@@ -416,6 +420,10 @@
 		D1602FF6221611210062EC53 /* Song2Continue13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2Continue13ViewController.swift; sourceTree = "<group>"; };
 		D1602FF8221780810062EC53 /* Song2Continue14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2Continue14ViewController.swift; sourceTree = "<group>"; };
 		D1602FFA2217852C0062EC53 /* Song2Continue15ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2Continue15ViewController.swift; sourceTree = "<group>"; };
+		D1602FFC221788F90062EC53 /* Song2Continue16ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2Continue16ViewController.swift; sourceTree = "<group>"; };
+		D1602FFE22178CD70062EC53 /* Song2Continue17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2Continue17ViewController.swift; sourceTree = "<group>"; };
+		D16030002217912D0062EC53 /* Song2CompletedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2CompletedViewController.swift; sourceTree = "<group>"; };
+		D16030022217923A0062EC53 /* El tamborilero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "El tamborilero.mp3"; sourceTree = "<group>"; };
 		D166D760209FE3FC00C29E24 /* NodaTrainer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NodaTrainer.entitlements; sourceTree = "<group>"; };
 		D166D76120A2949F00C29E24 /* TestResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultsViewController.swift; sourceTree = "<group>"; };
 		D1A2E85F215C39C60052C5BD /* Song1Continue9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1Continue9ViewController.swift; sourceTree = "<group>"; };
@@ -703,6 +711,7 @@
 		D13249B221EA145F000D2B66 /* Song2 */ = {
 			isa = PBXGroup;
 			children = (
+				D16030022217923A0062EC53 /* El tamborilero.mp3 */,
 				D13249BB21EA15FB000D2B66 /* 1.mp3 */,
 				D13249C021EA15FC000D2B66 /* 2.mp3 */,
 				D13249BD21EA15FB000D2B66 /* 3.mp3 */,
@@ -876,6 +885,9 @@
 				D1602FF6221611210062EC53 /* Song2Continue13ViewController.swift */,
 				D1602FF8221780810062EC53 /* Song2Continue14ViewController.swift */,
 				D1602FFA2217852C0062EC53 /* Song2Continue15ViewController.swift */,
+				D1602FFC221788F90062EC53 /* Song2Continue16ViewController.swift */,
+				D1602FFE22178CD70062EC53 /* Song2Continue17ViewController.swift */,
+				D16030002217912D0062EC53 /* Song2CompletedViewController.swift */,
 			);
 			path = Songs;
 			sourceTree = "<group>";
@@ -1309,6 +1321,7 @@
 				D13249C921EA15FE000D2B66 /* 12.mp3 in Resources */,
 				D1ED8D79215C7EE40043359A /* 0008 Do, re,  mi, fa, sol, la, 2.mp3 in Resources */,
 				D10BECAB215D3ADC0098FD86 /* 0010 Do, re,  mi, fa, sol, la, 5.mp3 in Resources */,
+				D16030032217923A0062EC53 /* El tamborilero.mp3 in Resources */,
 				D1ED8D7B215C7EEF0043359A /* 0008 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */,
 				D1E5FBC9215BE0D900B7AA12 /* 0007 Remando suavemente 1.mp3 in Resources */,
 				D10CE362215EAE0000E6726E /* 0015 4.mp3 in Resources */,
@@ -1596,10 +1609,12 @@
 				D1602FF12215975F0062EC53 /* Song2Continue10ViewController.swift in Sources */,
 				D1FBA4C7215DA5E5002FC2E8 /* Lection8Continue2ViewController.swift in Sources */,
 				D1FD941E215ED677007EDF28 /* Lection13ViewController.swift in Sources */,
+				D1602FFD221788F90062EC53 /* Song2Continue16ViewController.swift in Sources */,
 				D1F8540E215DBF0800C4E7F6 /* Lection9ViewController.swift in Sources */,
 				D1533F802131E91400B2C785 /* MusicClassCell.swift in Sources */,
 				D1C946BA209E61290000757C /* ProgressHUD.m in Sources */,
 				D1DA7510209D330E001AB742 /* Question.swift in Sources */,
+				D16030012217912D0062EC53 /* Song2CompletedViewController.swift in Sources */,
 				D1602FFB2217852C0062EC53 /* Song2Continue15ViewController.swift in Sources */,
 				D1FD48DE214EDDC200A1B204 /* Lection2ViewController.swift in Sources */,
 				D1FBA8B8215ADD4000A8CC11 /* Lection4ViewController.swift in Sources */,
@@ -1615,6 +1630,7 @@
 				D13249D821EA1F74000D2B66 /* Song2ViewController.swift in Sources */,
 				D1533F7C2131D60900B2C785 /* InitViewController.swift in Sources */,
 				D1FD940D215EBD82007EDF28 /* Lection12ViewController.swift in Sources */,
+				D1602FFF22178CD70062EC53 /* Song2Continue17ViewController.swift in Sources */,
 				D1E5FBF2215C037F00B7AA12 /* Song1Continue3ViewController.swift in Sources */,
 				D1ED8D72215C70190043359A /* Song1Continue15ViewController.swift in Sources */,
 				D1FBA4C9215DAC59002FC2E8 /* Lection8Continue3ViewController.swift in Sources */,
