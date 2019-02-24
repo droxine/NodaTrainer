@@ -80,6 +80,8 @@
 		D10CE360215EADF900E6726E /* 0015 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D10CE35F215EADF900E6726E /* 0015 3.mp3 */; };
 		D10CE362215EAE0000E6726E /* 0015 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D10CE361215EAE0000E6726E /* 0015 4.mp3 */; };
 		D111E2C2215980A100E4405C /* Lection2Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111E2C1215980A100E4405C /* Lection2Continue1ViewController.swift */; };
+		D12198FE2222DB5000180956 /* SceneKit Piano.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D12198FD2222DB5000180956 /* SceneKit Piano.scnassets */; };
+		D12199002222DB8C00180956 /* PianoARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12198FF2222DB8C00180956 /* PianoARViewController.swift */; };
 		D13249C521EA15FE000D2B66 /* 14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D13249B321EA15F7000D2B66 /* 14.mp3 */; };
 		D13249C621EA15FE000D2B66 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D13249B421EA15F8000D2B66 /* 4.mp3 */; };
 		D13249C721EA15FE000D2B66 /* 10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D13249B521EA15F8000D2B66 /* 10.mp3 */; };
@@ -365,6 +367,8 @@
 		D10CE35F215EADF900E6726E /* 0015 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0015 3.mp3"; sourceTree = "<group>"; };
 		D10CE361215EAE0000E6726E /* 0015 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0015 4.mp3"; sourceTree = "<group>"; };
 		D111E2C1215980A100E4405C /* Lection2Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection2Continue1ViewController.swift; sourceTree = "<group>"; };
+		D12198FD2222DB5000180956 /* SceneKit Piano.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = "SceneKit Piano.scnassets"; sourceTree = "<group>"; };
+		D12198FF2222DB8C00180956 /* PianoARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoARViewController.swift; sourceTree = "<group>"; };
 		D13249B321EA15F7000D2B66 /* 14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14.mp3; sourceTree = "<group>"; };
 		D13249B421EA15F8000D2B66 /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
 		D13249B521EA15F8000D2B66 /* 10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10.mp3; sourceTree = "<group>"; };
@@ -810,6 +814,7 @@
 				D1FD9432215EF775007EDF28 /* Lection14Continue2ViewController.swift */,
 				D1FD9434215EFC2D007EDF28 /* Lection14Continue3ViewController.swift */,
 				D15687F0216260C80034469C /* Lection0Continue3ViewController.swift */,
+				D12198FF2222DB8C00180956 /* PianoARViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -1013,6 +1018,7 @@
 				D1F5F71D2083D9DA0045614E /* Assets.xcassets */,
 				D1F5F71F2083D9DA0045614E /* LaunchScreen.storyboard */,
 				D1F5F71A2083D9DA0045614E /* Main.storyboard */,
+				D12198FD2222DB5000180956 /* SceneKit Piano.scnassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1374,6 +1380,7 @@
 				D10BECA9215D3AD50098FD86 /* 0010 Do, re,  mi, fa, sol, la, 4.mp3 in Resources */,
 				D1E5FBE1215BE14600B7AA12 /* 0007 Remando suavemente 13.mp3 in Resources */,
 				D10CE34D215E8EB100E6726E /* 0014 2.mp3 in Resources */,
+				D12198FE2222DB5000180956 /* SceneKit Piano.scnassets in Resources */,
 				D1FD941C215ED566007EDF28 /* 0016 4.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1563,6 +1570,7 @@
 				D1533F7A2131D4CD00B2C785 /* EventsViewController.swift in Sources */,
 				D1602FF522160D9B0062EC53 /* Song2Continue12ViewController.swift in Sources */,
 				D1F85410215DC47900C4E7F6 /* Lection9Continue1ViewController.swift in Sources */,
+				D12199002222DB8C00180956 /* PianoARViewController.swift in Sources */,
 				D1FD9424215EE554007EDF28 /* Lection13Continue3ViewController.swift in Sources */,
 				D1FBA8BE215AEFAD00A8CC11 /* Lection4Continue3ViewController.swift in Sources */,
 				D1FD9422215EE076007EDF28 /* Lection13Continue2ViewController.swift in Sources */,

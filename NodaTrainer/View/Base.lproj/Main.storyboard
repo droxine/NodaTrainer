@@ -252,6 +252,22 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l49-Vs-XgR">
+                                                <rect key="frame" x="340" y="8" width="28" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="MENUIMG_HOMECLICKED"/>
+                                                <connections>
+                                                    <action selector="startAugmentedReality:" destination="btJ-wx-NMY" eventType="touchUpInside" id="jhI-i3-kl5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-mE-ZKv">
+                                                <rect key="frame" x="342" y="46" width="24" height="23"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="MENUIMG_CLASSESCLICKED"/>
+                                                <connections>
+                                                    <action selector="showTip:" destination="btJ-wx-NMY" eventType="touchUpInside" id="HZJ-bR-Akk"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="sCT-93-uY4" firstAttribute="top" secondItem="MD3-QT-1nq" secondAttribute="top" constant="97" id="4Gf-W3-bRR"/>
@@ -734,6 +750,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JV4-RJ-4Ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7280.8000000000002" y="-389.40886699507394"/>
+        </scene>
+        <!--PianoAR View Controller-->
+        <scene sceneID="0eA-rX-mfx">
+            <objects>
+                <viewController storyboardIdentifier="pianoAR" id="Khf-qq-g9m" customClass="PianoARViewController" customModule="NodaTrainer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ctX-eB-q5l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-x0-5h9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="khS-7n-VC0"/>
+                    </view>
+                    <connections>
+                        <outlet property="pianoView" destination="PAY-x0-5h9" id="Efs-vP-wYT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vP3-fe-ikG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8916" y="-1053.6945812807883"/>
         </scene>
         <!--Lection0 View Controller-->
         <scene sceneID="KdE-3G-Qrs">
@@ -28370,6 +28410,8 @@
         <image name="Inicio-1" width="24" height="40"/>
         <image name="InicioSelected" width="24" height="38"/>
         <image name="MAGICIAN" width="59" height="101"/>
+        <image name="MENUIMG_CLASSESCLICKED" width="24" height="23"/>
+        <image name="MENUIMG_HOMECLICKED" width="46" height="50"/>
         <image name="MENUIMG_USERCLICKED" width="50" height="50"/>
         <image name="My Music" width="45" height="41"/>
         <image name="My MusicSelected" width="45" height="40"/>

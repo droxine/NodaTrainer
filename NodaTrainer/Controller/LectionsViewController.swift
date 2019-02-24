@@ -240,6 +240,19 @@ class LectionsViewController: UIViewController {
         return .lightContent
     }
     
+    @IBAction func showTip(_ sender: Any) {
+        let alert = UIAlertController(title: "Tip", message: "A partir de las lecciones con manejo de la segunda escala, se recomienda el uso de un Stylus.", preferredStyle: UIAlertController.Style.alert);
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil);
+        
+        alert.addAction(okAction);
+        self.present(alert, animated: true, completion: nil);
+    }
+    
+    @IBAction func startAugmentedReality(_ sender: UIButton) {
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "pianoAR") as! PianoARViewController
+        present(controllerTravel, animated: true, completion: nil)
+    }
+    
     @IBAction func logOutUser(_ sender: Any) {
         print("button logOut pressed")
         try! Auth.auth().signOut()
