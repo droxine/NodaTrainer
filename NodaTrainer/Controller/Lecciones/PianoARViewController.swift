@@ -13,9 +13,13 @@ import ARKit
 class PianoARViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet weak var pianoView: ARSCNView!
+    lazy var doneButton: UIBarButtonItem = {
+        UIBarButtonItem.init(title: "Volver a Lecciones", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.goLessons(_:)))
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden=false
         pianoView.delegate = self
         let scene = SCNScene(named: "SceneKit Piano.scnassets/Piano.scn")
         /*let cube = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.01)
@@ -33,6 +37,17 @@ class PianoARViewController: UIViewController, ARSCNViewDelegate {
         
         //pianoView.scene.rootNode.addChildNode(node)
         pianoView.autoenablesDefaultLighting = true
+        
+        let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: 375, height: 80))
+        navigationBar.barTintColor = UIColor.lightGray
+        let navigationItem = UINavigationItem()
+        //let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(goLessons))
+        //doneButton = UIBarButtonItem.init(title: "Volver a Lecciones",  style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.goLessons))
+        UIBarButtonItem.appearance().setTitlePositionAdjustment(UIOffset.init(horizontal: 6, vertical: 33), for: UIBarMetrics.default)
+        navigationItem.rightBarButtonItem = doneButton
+        navigationBar.items = [navigationItem]
+        navigationBar.prefersLargeTitles = true
+        view.addSubview(navigationBar)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,5 +71,11 @@ class PianoARViewController: UIViewController, ARSCNViewDelegate {
         super.viewWillDisappear(animated)
         pianoView.session.pause()
     }
+    
+    @objc func goLessons(_ sender:UIBarButtonItem!) {
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "LectionsViewController") as! LectionsViewController
+        present(controllerTravel, animated: true, completion: nil)
+    }
+    
 
 }
