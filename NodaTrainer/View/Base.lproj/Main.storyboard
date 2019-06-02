@@ -5390,10 +5390,10 @@
             </objects>
             <point key="canvasLocation" x="8920.7999999999993" y="11366.748768472908"/>
         </scene>
-        <!--View Controller-->
+        <!--Lection15 Continue1 View Controller-->
         <scene sceneID="ZgI-zX-IYm">
             <objects>
-                <viewController id="uWi-Gg-tKs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="lection15Continue1" id="uWi-Gg-tKs" customClass="Lection15Continue1ViewController" customModule="NodaTrainer" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bBC-E0-JUi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5407,6 +5407,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="VOLVER"/>
                                 <connections>
+                                    <action selector="goBack:" destination="uWi-Gg-tKs" eventType="touchUpInside" id="F5U-Qe-hJp"/>
                                     <action selector="goBack:" destination="SKF-Mm-OCO" eventType="touchUpInside" id="HTu-iY-oTH"/>
                                     <action selector="goBack:" destination="Tlb-fE-3rD" eventType="touchUpInside" id="JEy-j1-h9z"/>
                                 </connections>
@@ -5472,6 +5473,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                 <connections>
                                     <action selector="goNext:" destination="SKF-Mm-OCO" eventType="touchUpInside" id="EsY-tI-rki"/>
                                     <action selector="goNext:" destination="Tlb-fE-3rD" eventType="touchUpInside" id="eoI-Ef-ewv"/>
+                                    <action selector="goNext:" destination="uWi-Gg-tKs" eventType="touchUpInside" id="gLV-m5-uim"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -5482,6 +5484,79 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rDw-d7-eCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9613.6000000000004" y="11366.748768472908"/>
+        </scene>
+        <!--Lection15 Continue2 View Controller-->
+        <scene sceneID="IFc-oS-bXe">
+            <objects>
+                <viewController storyboardIdentifier="lection15Continue2" id="iwQ-BX-7Tk" customClass="Lection15Continue2ViewController" customModule="NodaTrainer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CWy-Q2-HC3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sesion_background2" translatesAutoresizingMaskIntoConstraints="NO" id="1Ch-MJ-tuF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdX-a1-mhI">
+                                <rect key="frame" x="102" y="731" width="157" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="COMPLETAR LECCIÓN"/>
+                                <connections>
+                                    <action selector="completeLesson:" destination="iwQ-BX-7Tk" eventType="touchUpInside" id="EdI-ts-gWM"/>
+                                    <action selector="completeLesson:" destination="QRc-XT-hjC" eventType="touchUpInside" id="ck8-ao-lqU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mw-K0-Ugo">
+                                <rect key="frame" x="16" y="279" width="328" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">En resumen: - Si al identificar el intervalo, cuentas 8 notas naturales, es una octava. Como te habrás dado cuenta, solo queda que sea justa, no hay otra variación.
+- A la 4ta aumentada y la 5ta disminuida también se les conoce como "tritonos"
+- En un teclado o piano, los sostenidos y bemoles se encuentran en las notas negras. Considera que de nota blanca a blanca hay un tono, y de blanca a negra, o negra a blanca hay un semitono. La excepción a esto se da cuando no hay negras entre blancas. Ejemplo: Mi-Fa. En ese caso, la distancia es de un semitono, y no tono.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxB-0u-Kc4">
+                                <rect key="frame" x="16" y="121" width="328" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">- 7ma menor (5 tonos) - 7ma mayor (5 tonos + 1 semitono) - 4ta justa (2 tonos + 1 semitono) - 5ta justa (3 tonos + 1 semitono)
+- 8va justa (6 tonos)
+- 4ta aumentada (3 tonos)
+- 5ta disminuida (3 tonos)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TONOS EN INTERVALOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pu-0Z-hKI">
+                                <rect key="frame" x="16" y="92" width="198" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lección 15: Intervalos - Teoría" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKe-M7-O7Q">
+                                <rect key="frame" x="58" y="44" width="259" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.4941176471" green="0.76862745099999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtP-v5-I9n">
+                                <rect key="frame" x="16" y="614" width="328" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">A partir de la siguiente lección, se practicará exclusivamente la identificación de los intervalos, con una canción final como refuerzo.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LqW-7C-WPd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFf-T4-ARL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10311.200000000001" y="11366.748768472908"/>
         </scene>
         <!--Song2 Continue1 View Controller-->
         <scene sceneID="KaM-9g-Ubq">
