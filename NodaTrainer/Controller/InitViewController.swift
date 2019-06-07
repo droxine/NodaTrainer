@@ -89,7 +89,7 @@ class InitViewController: UIViewController {
     @IBAction func logOutUser(_ sender: Any) {
         print("button logOut pressed")
         try! Auth.auth().signOut()
-        FBSDKLoginManager().logOut()
+        LoginManager().logOut()
     }
     
     func loadUser() {

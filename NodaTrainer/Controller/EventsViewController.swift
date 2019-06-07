@@ -119,7 +119,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func logOutUser(_ sender: Any) {
         print("button logOut pressed")
         try! Auth.auth().signOut()
-        FBSDKLoginManager().logOut()
+        LoginManager().logOut()
     }
     
     func loadData() {

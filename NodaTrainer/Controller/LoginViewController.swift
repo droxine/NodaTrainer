@@ -11,7 +11,7 @@ import Firebase
 import GoogleSignIn
 import FBSDKLoginKit
 
-class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButtonDelegate {
+class LoginViewController: UIViewController, GIDSignInUIDelegate, LoginButtonDelegate {
     
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
@@ -36,49 +36,50 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
     }
     
     fileprivate func setupFacebookButton() {
-        let facebookButton = FBSDKLoginButton()
-        facebookButton.readPermissions = ["public_profile", "email", "user_friends"]
+        let facebookButton = FBLoginButton()
+        //facebookButton.readPermissions = ["public_profile", "email", "user_friends"]
         facebookButton.frame = CGRect(x: 67, y: 580, width: view.frame.width - 132, height: 45)
         facebookButton.delegate = self
         view.addSubview(facebookButton)
     }
     
-    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
-        if error != nil {
-            print(error)
-            ProgressHUD.showError(error.localizedDescription)
-            FBSDKAccessToken.setCurrent(nil)
-            FBSDKLoginManager().logOut()
+    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        
+        if error != nil || !(result?.grantedPermissions.contains("public_profile"))!{
+            print(error!)
+            ProgressHUD.showError(error?.localizedDescription)
+            AccessToken.current = nil
+            LoginManager().logOut()
             return
         }
         
         print("Login with Facebook successfully, proceding with the credentials")
         
-        let token = FBSDKAccessToken.current()
+        let token = AccessToken.current
         if token != nil {
             let credential = FacebookAuthProvider.credential(withAccessToken: (token?.tokenString)!)
             Auth.auth().signIn(with: credential) { (user, error) in
                 if error != nil {
                     print("No se asoció el usuario de Google con Firebase", error!)
                     ProgressHUD.showError(error?.localizedDescription)
-                    FBSDKAccessToken.setCurrent(nil)
-                    FBSDKLoginManager().logOut()
+                    AccessToken.current = nil
+                    LoginManager().logOut()
                     return
                 }
                 
-                guard let uid = user?.uid else {return}
+                guard let uid = user?.user.uid else {return}
                 print("Facebook asociado con Firebase, para el usuario", uid)
                 ProgressHUD.showSuccess("Conectado con Facebook")
             }
         }
     }
     
-    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
         print("Facebook, log out")
-        FBSDKAccessToken.setCurrent(nil)
-        FBSDKLoginManager().logOut()
-        let deletepermission = FBSDKGraphRequest(graphPath: "me/permissions/", parameters: nil, httpMethod: "DELETE")
-        deletepermission?.start(completionHandler: {(connection,result,error)-> Void in
+        AccessToken.current = nil
+        LoginManager().logOut()
+        let deletepermission = GraphRequest(graphPath: "me/permissions/", parameters: [:], httpMethod: HTTPMethod(rawValue: "DELETE"))
+        deletepermission.start(completionHandler: {(connection,result,error)-> Void in
             print("the delete permission is (result)")
         })
     }

@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().delegate = self
         
         //Initializing Facebook
-        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
         //Handling Auth State: For Later
         _ = Auth.auth().addStateDidChangeListener { auth, user in
@@ -65,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 print("No se asoció el usuario de Google con Firebase")
             }
             
-            guard let uid = user?.uid else {return}
+            guard let uid = user?.user.uid else {return}
             print("Google asociado con Firebase, para el usuario", uid)
             ProgressHUD.showSuccess("Conectado con Google")
             self.userFlow(signedIn: error == nil)
@@ -87,7 +87,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        let signInMethod = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String?, annotation: options[UIApplication.OpenURLOptionsKey.annotation])
+        let signInMethod = ApplicationDelegate.shared.application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String?, annotation: options[UIApplication.OpenURLOptionsKey.annotation])
         
         GIDSignIn.sharedInstance().handle(url,
                                           sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,

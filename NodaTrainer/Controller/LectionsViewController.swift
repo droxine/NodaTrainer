@@ -29,6 +29,7 @@ class LectionsViewController: UIViewController {
     @IBOutlet weak var imgLection14: UIImageView!
     @IBOutlet weak var imgSong2: UIImageView!
     @IBOutlet weak var imgLection15: UIImageView!
+    @IBOutlet weak var imgLection16: UIImageView!
     
     var withoutLessons: Bool = true
 
@@ -129,6 +130,11 @@ class LectionsViewController: UIViewController {
         imgLection15.isUserInteractionEnabled = true
         imgLection15.addGestureRecognizer(imageTap17)
         imgLection15.clipsToBounds = true
+        
+        let imageTap18 = UITapGestureRecognizer(target: self, action: #selector(goLection16))
+        imgLection16.isUserInteractionEnabled = true
+        imgLection16.addGestureRecognizer(imageTap18)
+        imgLection16.clipsToBounds = true
     }
     
     func loadLessonsDone() {
@@ -242,6 +248,11 @@ class LectionsViewController: UIViewController {
         let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "song2") as! Song2ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
+    
+    @objc func goLection16(_ sender: Any) {
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection16") as! Lection16ViewController
+        present(controllerTravel, animated: true, completion: nil)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -267,7 +278,7 @@ class LectionsViewController: UIViewController {
     @IBAction func logOutUser(_ sender: Any) {
         print("button logOut pressed")
         try! Auth.auth().signOut()
-        FBSDKLoginManager().logOut()
+        LoginManager().logOut()
     }
     
     

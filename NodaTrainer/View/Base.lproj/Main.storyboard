@@ -298,7 +298,7 @@
                                         <rect key="frame" x="43" y="866" width="71" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="wLz-sa-kwm">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="wLz-sa-kwm">
                                         <rect key="frame" x="150" y="866" width="71" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -455,6 +455,7 @@
                         <outlet property="imgLection13" destination="Xx7-F7-JQR" id="wG2-ZE-zDL"/>
                         <outlet property="imgLection14" destination="xeq-pD-WQi" id="OP7-d4-Pir"/>
                         <outlet property="imgLection15" destination="bvG-ja-juE" id="43M-Yn-Tzx"/>
+                        <outlet property="imgLection16" destination="wLz-sa-kwm" id="5Y3-Fj-SwV"/>
                         <outlet property="imgLection2" destination="CbS-vN-Vha" id="r4g-LN-g3A"/>
                         <outlet property="imgLection3" destination="4sI-Pc-0Rt" id="67O-X3-awO"/>
                         <outlet property="imgLection4" destination="uHg-nk-4vy" id="mEi-9C-UvU"/>
@@ -5007,24 +5008,6 @@
                                     <action selector="reloadLesson:" destination="lOP-fR-z7n" eventType="touchUpInside" id="5c9-S1-sWx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G - A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eod-Tr-peN">
-                                <rect key="frame" x="169" y="405" width="37" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOL - LA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoR-Sb-kma">
-                                <rect key="frame" x="156" y="379" width="62" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="secondsong1" translatesAutoresizingMaskIntoConstraints="NO" id="m3Y-ly-AHu">
-                                <rect key="frame" x="101" y="285" width="180" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="El Tamborilero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAU-L7-FFx">
                                 <rect key="frame" x="120" y="49" width="134" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -5048,6 +5031,24 @@
                                     <action selector="playSound:" destination="lOP-fR-z7n" eventType="touchUpInside" id="O6W-4z-wOf"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="secondsong1" translatesAutoresizingMaskIntoConstraints="NO" id="m3Y-ly-AHu">
+                                <rect key="frame" x="101" y="285" width="180" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOL - LA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoR-Sb-kma">
+                                <rect key="frame" x="156" y="379" width="62" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G - A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eod-Tr-peN">
+                                <rect key="frame" x="169" y="405" width="37" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qel-Kv-Dbn">
                                 <rect key="frame" x="329" y="528" width="23" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -5324,7 +5325,6 @@
                                 <state key="normal" title="VOLVER"/>
                                 <connections>
                                     <action selector="goBack:" destination="SKF-Mm-OCO" eventType="touchUpInside" id="CrG-HG-MWw"/>
-                                    <action selector="goBack:" destination="Tlb-fE-3rD" eventType="touchUpInside" id="suS-gg-nIZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHg-dt-70o">
@@ -5333,7 +5333,6 @@
                                 <state key="normal" title="SIGUIENTE"/>
                                 <connections>
                                     <action selector="goNext:" destination="SKF-Mm-OCO" eventType="touchUpInside" id="7VG-bI-Ws0"/>
-                                    <action selector="goNext:" destination="Tlb-fE-3rD" eventType="touchUpInside" id="TO8-TL-8pq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONCEPTO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7s-es-uiC">
@@ -5390,6 +5389,126 @@
             </objects>
             <point key="canvasLocation" x="8920.7999999999993" y="11366.748768472908"/>
         </scene>
+        <!--Lection16 View Controller-->
+        <scene sceneID="pvl-dA-2AJ">
+            <objects>
+                <viewController storyboardIdentifier="lection16" id="2Ck-AK-Bm1" customClass="Lection16ViewController" customModule="NodaTrainer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nVN-Qf-bAt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sesion_background2" translatesAutoresizingMaskIntoConstraints="NO" id="vZY-P8-hwj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QK1-Gt-0Dp">
+                                <rect key="frame" x="236" y="704" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SIGUIENTE"/>
+                                <connections>
+                                    <action selector="goNext:" destination="2Ck-AK-Bm1" eventType="touchUpInside" id="34N-0b-ute"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7u0-jo-oFa">
+                                <rect key="frame" x="57" y="522" width="260" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="4ta Justa"/>
+                                <connections>
+                                    <action selector="checkCuartaJusta:" destination="2Ck-AK-Bm1" eventType="touchUpInside" id="9Ik-Hd-Zwe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Escucha el audio, lee el pentagrama como apoyo para la identificación del intervalo, y escoje la opción correcta para validar." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zF-hG-oPR">
+                                <rect key="frame" x="23" y="89" width="328" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lección 16: Intervalos Justos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBN-gM-tuD">
+                                <rect key="frame" x="62" y="44" width="251" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.4941176471" green="0.76862745099999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0A-bb-iDt">
+                                <rect key="frame" x="153" y="182" width="62" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="PLAY"/>
+                                <connections>
+                                    <action selector="playSound:" destination="2Ck-AK-Bm1" eventType="touchUpInside" id="boN-nE-TtO"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="justas-cuarta" translatesAutoresizingMaskIntoConstraints="NO" id="cHC-pa-Swu">
+                                <rect key="frame" x="98" y="278" width="180" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DO - FA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqC-ac-XSv">
+                                <rect key="frame" x="153" y="372" width="55" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C - F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4r-xh-Kmz">
+                                <rect key="frame" x="166" y="398" width="34" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DD-oB-Oh5">
+                                <rect key="frame" x="57" y="455" width="260" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="5ta Justa"/>
+                                <connections>
+                                    <action selector="checkQuintaJusta:" destination="2Ck-AK-Bm1" eventType="touchUpInside" id="PGm-a3-JEb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0E-Pb-lGh">
+                                <rect key="frame" x="62" y="704" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="VOLVER"/>
+                                <connections>
+                                    <action selector="goBack:" destination="2Ck-AK-Bm1" eventType="touchUpInside" id="lTa-Gu-g00"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4Yd-yF-6qD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1OU-Bl-2dV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8916" y="12019.950738916257"/>
+        </scene>
+        <!--Lection16 Continue1 View Controller-->
+        <scene sceneID="zBN-6M-7qH">
+            <objects>
+                <viewController storyboardIdentifier="lection16Continue1" id="gF9-du-rLG" customClass="Lection16Continue1ViewController" customModule="NodaTrainer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a4w-TY-k8b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sesion_background2" translatesAutoresizingMaskIntoConstraints="NO" id="B96-r1-4zT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1Ko-vJ-ppf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMQ-8z-tEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9600.7999999999993" y="12022.906403940888"/>
+        </scene>
         <!--Lection15 Continue1 View Controller-->
         <scene sceneID="ZgI-zX-IYm">
             <objects>
@@ -5408,8 +5527,6 @@
                                 <state key="normal" title="VOLVER"/>
                                 <connections>
                                     <action selector="goBack:" destination="uWi-Gg-tKs" eventType="touchUpInside" id="F5U-Qe-hJp"/>
-                                    <action selector="goBack:" destination="SKF-Mm-OCO" eventType="touchUpInside" id="HTu-iY-oTH"/>
-                                    <action selector="goBack:" destination="Tlb-fE-3rD" eventType="touchUpInside" id="JEy-j1-h9z"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TONOS EN INTERVALOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igf-LT-zZn">
@@ -5471,8 +5588,6 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SIGUIENTE"/>
                                 <connections>
-                                    <action selector="goNext:" destination="SKF-Mm-OCO" eventType="touchUpInside" id="EsY-tI-rki"/>
-                                    <action selector="goNext:" destination="Tlb-fE-3rD" eventType="touchUpInside" id="eoI-Ef-ewv"/>
                                     <action selector="goNext:" destination="uWi-Gg-tKs" eventType="touchUpInside" id="gLV-m5-uim"/>
                                 </connections>
                             </button>
@@ -5503,15 +5618,14 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                 <state key="normal" title="COMPLETAR LECCIÓN"/>
                                 <connections>
                                     <action selector="completeLesson:" destination="iwQ-BX-7Tk" eventType="touchUpInside" id="EdI-ts-gWM"/>
-                                    <action selector="completeLesson:" destination="QRc-XT-hjC" eventType="touchUpInside" id="ck8-ao-lqU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mw-K0-Ugo">
                                 <rect key="frame" x="16" y="279" width="328" height="327"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">En resumen: - Si al identificar el intervalo, cuentas 8 notas naturales, es una octava. Como te habrás dado cuenta, solo queda que sea justa, no hay otra variación.
+                                <string key="text">En resumen: - Si al identificar el intervalo, cuentas 8 notas naturales, es una octava. Como te habrás dado cuenta, solo queda que sea justa, no hay otra variación.
 - A la 4ta aumentada y la 5ta disminuida también se les conoce como "tritonos"
-- En un teclado o piano, los sostenidos y bemoles se encuentran en las notas negras. Considera que de nota blanca a blanca hay un tono, y de blanca a negra, o negra a blanca hay un semitono. La excepción a esto se da cuando no hay negras entre blancas. Ejemplo: Mi-Fa. En ese caso, la distancia es de un semitono, y no tono.</mutableString>
+- En un teclado o piano, los sostenidos y bemoles se encuentran en las notas negras. Considera que de nota blanca a blanca hay un tono, y de blanca a negra, o negra a blanca hay un semitono. La excepción a esto se da cuando no hay negras entre blancas. Ejemplo: Mi-Fa. En ese caso, la distancia es de un semitono, y no tono.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -28685,6 +28799,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
         <image name="eventos" width="36" height="42"/>
         <image name="eventosSelected" width="36" height="42"/>
         <image name="inicio_Group" width="375" height="667"/>
+        <image name="justas-cuarta" width="386" height="116"/>
         <image name="lection10_0" width="992" height="83"/>
         <image name="lection10_1" width="993" height="85"/>
         <image name="lection10_2" width="992" height="84"/>
