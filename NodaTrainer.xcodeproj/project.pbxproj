@@ -128,6 +128,10 @@
 		D153B06122AA83E200A21B95 /* Lection18Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153B06022AA83E200A21B95 /* Lection18Continue1ViewController.swift */; };
 		D153B06322AA847900A21B95 /* Lection18Continue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153B06222AA847900A21B95 /* Lection18Continue2ViewController.swift */; };
 		D153B06522AA84E100A21B95 /* Lection18Continue3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153B06422AA84E100A21B95 /* Lection18Continue3ViewController.swift */; };
+		D153B06E22AA8D5500A21B95 /* 4ta aumentada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D153B06C22AA8D5400A21B95 /* 4ta aumentada.mp3 */; };
+		D153B06F22AA8D5500A21B95 /* 4ta aumentada Los Simpsons.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D153B06D22AA8D5500A21B95 /* 4ta aumentada Los Simpsons.mp3 */; };
+		D153B07222AA8D9E00A21B95 /* 5ta disminuida Amor Eterno.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D153B07022AA8D9D00A21B95 /* 5ta disminuida Amor Eterno.mp3 */; };
+		D153B07322AA8D9E00A21B95 /* 5ta disminuida.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D153B07122AA8D9D00A21B95 /* 5ta disminuida.mp3 */; };
 		D15687F1216260C80034469C /* Lection0Continue3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15687F0216260C80034469C /* Lection0Continue3ViewController.swift */; };
 		D1574C5D213C442D00078616 /* MusicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1574C5C213C442D00078616 /* MusicClass.swift */; };
 		D1574C5F213C5B9500078616 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1574C5E213C5B9500078616 /* Instrument.swift */; };
@@ -441,6 +445,10 @@
 		D153B06022AA83E200A21B95 /* Lection18Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection18Continue1ViewController.swift; sourceTree = "<group>"; };
 		D153B06222AA847900A21B95 /* Lection18Continue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection18Continue2ViewController.swift; sourceTree = "<group>"; };
 		D153B06422AA84E100A21B95 /* Lection18Continue3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection18Continue3ViewController.swift; sourceTree = "<group>"; };
+		D153B06C22AA8D5400A21B95 /* 4ta aumentada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "4ta aumentada.mp3"; sourceTree = "<group>"; };
+		D153B06D22AA8D5500A21B95 /* 4ta aumentada Los Simpsons.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "4ta aumentada Los Simpsons.mp3"; sourceTree = "<group>"; };
+		D153B07022AA8D9D00A21B95 /* 5ta disminuida Amor Eterno.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5ta disminuida Amor Eterno.mp3"; sourceTree = "<group>"; };
+		D153B07122AA8D9D00A21B95 /* 5ta disminuida.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5ta disminuida.mp3"; sourceTree = "<group>"; };
 		D15687F0216260C80034469C /* Lection0Continue3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection0Continue3ViewController.swift; sourceTree = "<group>"; };
 		D1574C5C213C442D00078616 /* MusicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClass.swift; sourceTree = "<group>"; };
 		D1574C5E213C5B9500078616 /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
@@ -801,6 +809,24 @@
 			path = MusicClasses;
 			sourceTree = "<group>";
 		};
+		D153B06622AA8CE400A21B95 /* Lection 19 */ = {
+			isa = PBXGroup;
+			children = (
+				D153B07022AA8D9D00A21B95 /* 5ta disminuida Amor Eterno.mp3 */,
+				D153B07122AA8D9D00A21B95 /* 5ta disminuida.mp3 */,
+			);
+			path = "Lection 19";
+			sourceTree = "<group>";
+		};
+		D153B06B22AA8D4500A21B95 /* Lection 20 */ = {
+			isa = PBXGroup;
+			children = (
+				D153B06D22AA8D5500A21B95 /* 4ta aumentada Los Simpsons.mp3 */,
+				D153B06C22AA8D5400A21B95 /* 4ta aumentada.mp3 */,
+			);
+			path = "Lection 20";
+			sourceTree = "<group>";
+		};
 		D1574C60213CD1F600078616 /* Lecciones */ = {
 			isa = PBXGroup;
 			children = (
@@ -1002,6 +1028,8 @@
 		D1F2F4F5213E4CD70030E2AE /* SoundFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D153B06B22AA8D4500A21B95 /* Lection 20 */,
+				D153B06622AA8CE400A21B95 /* Lection 19 */,
 				D1EDFA5822AA818300F1058C /* Lection18 */,
 				D1EDFA4222AA02CD00F1058C /* Lection17 */,
 				D1F8CA7022A478FC0048C4D1 /* Lection16 */,
@@ -1381,6 +1409,7 @@
 				D1FD942D215EEB95007EDF28 /* 0017 4.mp3 in Resources */,
 				D10BEC90215D1BE90098FD86 /* 0009 Do, re,  mi, fa, sol, la, 1.mp3 in Resources */,
 				D1E5FBE5215BE15600B7AA12 /* 0007 Remando suavemente 15.mp3 in Resources */,
+				D153B07222AA8D9E00A21B95 /* 5ta disminuida Amor Eterno.mp3 in Resources */,
 				D10BECB2215D4A180098FD86 /* Do2.mp3 in Resources */,
 				D1FD48D8214ED93200A1B204 /* 0004 Do, mi, sol, 4.mp3 in Resources */,
 				D1FD48D2214ED90B00A1B204 /* 0004 Do, mi, sol, 1.mp3 in Resources */,
@@ -1455,13 +1484,16 @@
 				D10BECA7215D3ACE0098FD86 /* 0010 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */,
 				D108AD9E2140233900CAA2C4 /* Re.mp3 in Resources */,
 				D10CE351215E8EC000E6726E /* 0014 4.mp3 in Resources */,
+				D153B06F22AA8D5500A21B95 /* 4ta aumentada Los Simpsons.mp3 in Resources */,
 				D10BECC2215D4A6E0098FD86 /* Sol#2.mp3 in Resources */,
 				D108AD922140229800CAA2C4 /* 0003 Do, mi.mp3 in Resources */,
 				D1FD48D4214ED91B00A1B204 /* 0004 Do, mi, sol, 2.mp3 in Resources */,
+				D153B06E22AA8D5500A21B95 /* 4ta aumentada.mp3 in Resources */,
 				D1EDFA4922AA02EA00F1058C /* 2da mayor descendente.mp3 in Resources */,
 				D10BECB6215D4A340098FD86 /* Re2.mp3 in Resources */,
 				D15DA028215A9FFD00F04065 /* 0005 Do, re,  mi, sol, 1.mp3 in Resources */,
 				D10BEC94215D1C000098FD86 /* 0009 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */,
+				D153B07322AA8D9E00A21B95 /* 5ta disminuida.mp3 in Resources */,
 				D1FBA4C1215D9909002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 4.mp3 in Resources */,
 				D10CE35C215EADEB00E6726E /* 0015 1.mp3 in Resources */,
 				D10BECC8215D4AA60098FD86 /* Si2.mp3 in Resources */,
