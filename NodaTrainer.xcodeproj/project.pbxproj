@@ -120,6 +120,14 @@
 		D1533F802131E91400B2C785 /* MusicClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1533F7E2131E91400B2C785 /* MusicClassCell.swift */; };
 		D1533F812131E91400B2C785 /* MusicClassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1533F7F2131E91400B2C785 /* MusicClassCell.xib */; };
 		D1533F8321338C7700B2C785 /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1533F8221338C7700B2C785 /* UpdateProfileViewController.swift */; };
+		D153B05322AA823D00A21B95 /* 3ra menor descendente.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D153B05222AA823D00A21B95 /* 3ra menor descendente.mp3 */; };
+		D153B05522AA824700A21B95 /* 3ra menor ascendente.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D153B05422AA824700A21B95 /* 3ra menor ascendente.mp3 */; };
+		D153B05722AA824F00A21B95 /* 2da menor descendente.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D153B05622AA824F00A21B95 /* 2da menor descendente.mp3 */; };
+		D153B05D22AA831100A21B95 /* 2da menor ascendente.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D153B05C22AA831000A21B95 /* 2da menor ascendente.mp3 */; };
+		D153B05F22AA833000A21B95 /* Lection18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153B05E22AA833000A21B95 /* Lection18ViewController.swift */; };
+		D153B06122AA83E200A21B95 /* Lection18Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153B06022AA83E200A21B95 /* Lection18Continue1ViewController.swift */; };
+		D153B06322AA847900A21B95 /* Lection18Continue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153B06222AA847900A21B95 /* Lection18Continue2ViewController.swift */; };
+		D153B06522AA84E100A21B95 /* Lection18Continue3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153B06422AA84E100A21B95 /* Lection18Continue3ViewController.swift */; };
 		D15687F1216260C80034469C /* Lection0Continue3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15687F0216260C80034469C /* Lection0Continue3ViewController.swift */; };
 		D1574C5D213C442D00078616 /* MusicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1574C5C213C442D00078616 /* MusicClass.swift */; };
 		D1574C5F213C5B9500078616 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1574C5E213C5B9500078616 /* Instrument.swift */; };
@@ -425,6 +433,14 @@
 		D1533F7E2131E91400B2C785 /* MusicClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClassCell.swift; sourceTree = "<group>"; };
 		D1533F7F2131E91400B2C785 /* MusicClassCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicClassCell.xib; sourceTree = "<group>"; };
 		D1533F8221338C7700B2C785 /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
+		D153B05222AA823D00A21B95 /* 3ra menor descendente.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "3ra menor descendente.mp3"; sourceTree = "<group>"; };
+		D153B05422AA824700A21B95 /* 3ra menor ascendente.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "3ra menor ascendente.mp3"; sourceTree = "<group>"; };
+		D153B05622AA824F00A21B95 /* 2da menor descendente.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2da menor descendente.mp3"; sourceTree = "<group>"; };
+		D153B05C22AA831000A21B95 /* 2da menor ascendente.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2da menor ascendente.mp3"; sourceTree = "<group>"; };
+		D153B05E22AA833000A21B95 /* Lection18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection18ViewController.swift; sourceTree = "<group>"; };
+		D153B06022AA83E200A21B95 /* Lection18Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection18Continue1ViewController.swift; sourceTree = "<group>"; };
+		D153B06222AA847900A21B95 /* Lection18Continue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection18Continue2ViewController.swift; sourceTree = "<group>"; };
+		D153B06422AA84E100A21B95 /* Lection18Continue3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection18Continue3ViewController.swift; sourceTree = "<group>"; };
 		D15687F0216260C80034469C /* Lection0Continue3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection0Continue3ViewController.swift; sourceTree = "<group>"; };
 		D1574C5C213C442D00078616 /* MusicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClass.swift; sourceTree = "<group>"; };
 		D1574C5E213C5B9500078616 /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
@@ -864,6 +880,10 @@
 				D1EDFA4D22AA03CC00F1058C /* Lection17Continue1ViewController.swift */,
 				D1EDFA5322AA052000F1058C /* Lection17Continue2ViewController.swift */,
 				D1EDFA5522AA057E00F1058C /* Lection17Continue3ViewController.swift */,
+				D153B05E22AA833000A21B95 /* Lection18ViewController.swift */,
+				D153B06022AA83E200A21B95 /* Lection18Continue1ViewController.swift */,
+				D153B06222AA847900A21B95 /* Lection18Continue2ViewController.swift */,
+				D153B06422AA84E100A21B95 /* Lection18Continue3ViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -968,9 +988,21 @@
 			path = Lection17;
 			sourceTree = "<group>";
 		};
+		D1EDFA5822AA818300F1058C /* Lection18 */ = {
+			isa = PBXGroup;
+			children = (
+				D153B05222AA823D00A21B95 /* 3ra menor descendente.mp3 */,
+				D153B05422AA824700A21B95 /* 3ra menor ascendente.mp3 */,
+				D153B05622AA824F00A21B95 /* 2da menor descendente.mp3 */,
+				D153B05C22AA831000A21B95 /* 2da menor ascendente.mp3 */,
+			);
+			path = Lection18;
+			sourceTree = "<group>";
+		};
 		D1F2F4F5213E4CD70030E2AE /* SoundFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D1EDFA5822AA818300F1058C /* Lection18 */,
 				D1EDFA4222AA02CD00F1058C /* Lection17 */,
 				D1F8CA7022A478FC0048C4D1 /* Lection16 */,
 				D13249B221EA145F000D2B66 /* Song2 */,
@@ -1330,6 +1362,7 @@
 				D1E5FBD9215BE12400B7AA12 /* 0007 Remando suavemente 9.mp3 in Resources */,
 				D10CE34F215E8EB900E6726E /* 0014 3.mp3 in Resources */,
 				D1F5F7212083D9DA0045614E /* LaunchScreen.storyboard in Resources */,
+				D153B05D22AA831100A21B95 /* 2da menor ascendente.mp3 in Resources */,
 				D10CE340215E75D600E6726E /* 0013 4.mp3 in Resources */,
 				D1FD48DA214ED93D00A1B204 /* 0004 Do, mi, sol, 5.mp3 in Resources */,
 				D1FBA4BB215D98F0002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 1.mp3 in Resources */,
@@ -1353,6 +1386,7 @@
 				D1FD48D2214ED90B00A1B204 /* 0004 Do, mi, sol, 1.mp3 in Resources */,
 				D13249D121EA15FE000D2B66 /* 6.mp3 in Resources */,
 				D13249CB21EA15FE000D2B66 /* 16.mp3 in Resources */,
+				D153B05522AA824700A21B95 /* 3ra menor ascendente.mp3 in Resources */,
 				D1E5FBD7215BE11B00B7AA12 /* 0007 Remando suavemente 8.mp3 in Resources */,
 				D1E5FBD3215BE10900B7AA12 /* 0007 Remando suavemente 6.mp3 in Resources */,
 				D1E5FBCF215BE0F800B7AA12 /* 0007 Remando suavemente 4.mp3 in Resources */,
@@ -1393,6 +1427,8 @@
 				D10CE35E215EADF200E6726E /* 0015 2.mp3 in Resources */,
 				D10BECAD215D3AE30098FD86 /* 0010 Do, re,  mi, fa, sol, la, 6.mp3 in Resources */,
 				D1E5FBD1215BE10100B7AA12 /* 0007 Remando suavemente 5.mp3 in Resources */,
+				D153B05722AA824F00A21B95 /* 2da menor descendente.mp3 in Resources */,
+				D153B05322AA823D00A21B95 /* 3ra menor descendente.mp3 in Resources */,
 				D1FD942B215EEB8F007EDF28 /* 0017 3.mp3 in Resources */,
 				D1FBA8B2215ADB9500A8CC11 /* 0006 Do, re,  mi, fa,sol, 3.mp3 in Resources */,
 				D13249C821EA15FE000D2B66 /* 9.mp3 in Resources */,
@@ -1641,10 +1677,13 @@
 				D1A2E862215C403F0052C5BD /* Song1Continue10ViewController.swift in Sources */,
 				D1ED8D74215C75A00043359A /* Song1CompletedViewController.swift in Sources */,
 				D108ADB8214074C000CAA2C4 /* Lection1Continue3ViewController.swift in Sources */,
+				D153B06322AA847900A21B95 /* Lection18Continue2ViewController.swift in Sources */,
 				D1602FF32216066F0062EC53 /* Song2Continue11ViewController.swift in Sources */,
 				D1FBE53B215C253800F58B92 /* Song1Continue6ViewController.swift in Sources */,
 				D15DA034215AB55700F04065 /* Lection3Continue2ViewController.swift in Sources */,
+				D153B06522AA84E100A21B95 /* Lection18Continue3ViewController.swift in Sources */,
 				D10CE344215E7E7E00E6726E /* Lection10Continue1ViewController.swift in Sources */,
+				D153B05F22AA833000A21B95 /* Lection18ViewController.swift in Sources */,
 				D13249DE21EB8B19000D2B66 /* Song2Continue3ViewController.swift in Sources */,
 				D1E5FBEE215BF54500B7AA12 /* Song1Continue1ViewController.swift in Sources */,
 				D10CE353215E900500E6726E /* Lection11ViewController.swift in Sources */,
@@ -1653,6 +1692,7 @@
 				D1F5F7172083D9DA0045614E /* AppDelegate.swift in Sources */,
 				D13249DA21EB82AD000D2B66 /* Song2Continue1ViewController.swift in Sources */,
 				D1FBA8BC215AE9C100A8CC11 /* Lection4Continue2ViewController.swift in Sources */,
+				D153B06122AA83E200A21B95 /* Lection18Continue1ViewController.swift in Sources */,
 				D1ED8D85215C945C0043359A /* Lection5Continue3ViewController.swift in Sources */,
 				D111E2C2215980A100E4405C /* Lection2Continue1ViewController.swift in Sources */,
 				D15DA030215AA3E400F04065 /* Lection3ViewController.swift in Sources */,
