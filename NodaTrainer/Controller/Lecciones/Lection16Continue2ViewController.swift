@@ -1,21 +1,21 @@
 //
-//  Lection16ViewController.swift
+//  Lection16Continue2ViewController.swift
 //  NodaTrainer
 //
-//  Created by sangeles on 6/2/19.
+//  Created by sangeles on 6/6/19.
 //  Copyright © 2019 SAM Creators. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class Lection16ViewController: UIViewController {
-    
-    var audioPlayer: AVAudioPlayer!
+class Lection16Continue2ViewController: UIViewController {
 
+    var audioPlayer: AVAudioPlayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     func reproduceSound(_ resource: URL) {
@@ -31,16 +31,16 @@ class Lection16ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"4ta Justa", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"Estrellita 5ta justa", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
     @IBAction func checkQuintaJusta(_ sender: Any) {
-        showMessage(correct: false)
+        showMessage(correct: true)
     }
     
     @IBAction func checkCuartaJusta(_ sender: Any) {
-        showMessage(correct: true)
+        showMessage(correct: false)
     }
     
     func showMessage(correct:Bool) {
@@ -66,9 +66,8 @@ class Lection16ViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection16Continue1") as! Lection16Continue1ViewController
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection16Continue3") as! Lection16Continue3ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
-    
 
 }

@@ -1,21 +1,22 @@
 //
-//  Lection16ViewController.swift
+//  Lection16Continue3ViewController.swift
 //  NodaTrainer
 //
-//  Created by sangeles on 6/2/19.
+//  Created by sangeles on 6/6/19.
 //  Copyright © 2019 SAM Creators. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
+import Firebase
 
-class Lection16ViewController: UIViewController {
-    
+class Lection16Continue3ViewController: UIViewController {
+
     var audioPlayer: AVAudioPlayer!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     func reproduceSound(_ resource: URL) {
@@ -31,7 +32,7 @@ class Lection16ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"4ta Justa", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"La Cucaracha", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
@@ -61,14 +62,28 @@ class Lection16ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil);
     }
     
-    @IBAction func goBack(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection16Continue1") as! Lection16Continue1ViewController
+    @IBAction func completeLesson(_ sender: Any) {
+        saveLessonsDone() { success in
+            if !success {
+                print("Error: No se pudo actualizar el fin de la leccion")
+            }
+        }
+        
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
+        controllerTravel.selectedIndex = 1
         present(controllerTravel, animated: true, completion: nil)
     }
     
+    func saveLessonsDone(completion: @escaping ((_ success: Bool) -> ()) ) -> Void{
+        guard let uid = Auth.auth().currentUser?.uid else { return}
+        print(uid)
+        let lessonsObject = [
+            "done": true
+            ] as [String:Any]
+        let childUpdates = ["/lessons/\(uid)/": lessonsObject]
+        Database.database().reference().updateChildValues(childUpdates, withCompletionBlock: { (error, ref) in
+            completion(error == nil)
+        })
+    }
 
 }
