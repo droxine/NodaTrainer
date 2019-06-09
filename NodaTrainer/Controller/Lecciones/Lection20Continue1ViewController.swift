@@ -1,15 +1,16 @@
 //
-//  Lection16Continue1ViewController.swift
+//  Lection20Continue1ViewController.swift
 //  NodaTrainer
 //
-//  Created by sangeles on 6/3/19.
+//  Created by sangeles on 6/9/19.
 //  Copyright © 2019 SAM Creators. All rights reserved.
 //
 
 import UIKit
+import Firebase
 import AVFoundation
 
-class Lection16Continue1ViewController: UIViewController {
+class Lection20Continue1ViewController: UIViewController {
 
     var audioPlayer: AVAudioPlayer!
     
@@ -31,15 +32,15 @@ class Lection16Continue1ViewController: UIViewController {
     }
     
     @IBAction func playSound(_ sender: Any) {
-        let sound = Bundle.main.url(forResource:"5ta justa", withExtension: "mp3")
+        let sound = Bundle.main.url(forResource:"4ta aumentada Los Simpsons", withExtension: "mp3")
         reproduceSound(sound!)
     }
     
-    @IBAction func checkQuintaJusta(_ sender: Any) {
+    @IBAction func checkCuartaAumentada(_ sender: Any) {
         showMessage(correct: true)
     }
     
-    @IBAction func checkCuartaJusta(_ sender: Any) {
+    @IBAction func checkCuartaSuperaumentada(_ sender: Any) {
         showMessage(correct: false)
     }
     
@@ -61,14 +62,28 @@ class Lection16Continue1ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil);
     }
     
-    @IBAction func goBack(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func goNext(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection16Continue2") as! Lection16Continue2ViewController
+    @IBAction func completeLesson(_ sender: Any) {
+        saveLessonsDone() { success in
+            if !success {
+                print("Error: No se pudo actualizar el fin de la leccion")
+            }
+        }
+        
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
+        controllerTravel.selectedIndex = 1
         present(controllerTravel, animated: true, completion: nil)
     }
     
+    func saveLessonsDone(completion: @escaping ((_ success: Bool) -> ()) ) -> Void{
+        guard let uid = Auth.auth().currentUser?.uid else { return}
+        print(uid)
+        let lessonsObject = [
+            "done": true
+            ] as [String:Any]
+        let childUpdates = ["/lessons/\(uid)/": lessonsObject]
+        Database.database().reference().updateChildValues(childUpdates, withCompletionBlock: { (error, ref) in
+            completion(error == nil)
+        })
+    }
 
 }

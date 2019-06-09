@@ -30,6 +30,10 @@ class LectionsViewController: UIViewController {
     @IBOutlet weak var imgSong2: UIImageView!
     @IBOutlet weak var imgLection15: UIImageView!
     @IBOutlet weak var imgLection16: UIImageView!
+    @IBOutlet weak var imgLection17: UIImageView!
+    @IBOutlet weak var imgLection18: UIImageView!
+    @IBOutlet weak var imgLection19: UIImageView!
+    @IBOutlet weak var imgLection20: UIImageView!
     
     var withoutLessons: Bool = true
 
@@ -135,6 +139,26 @@ class LectionsViewController: UIViewController {
         imgLection16.isUserInteractionEnabled = true
         imgLection16.addGestureRecognizer(imageTap18)
         imgLection16.clipsToBounds = true
+        
+        let imageTap19 = UITapGestureRecognizer(target: self, action: #selector(goLection17))
+        imgLection17.isUserInteractionEnabled = true
+        imgLection17.addGestureRecognizer(imageTap19)
+        imgLection17.clipsToBounds = true
+        
+        let imageTap20 = UITapGestureRecognizer(target: self, action: #selector(goLection18))
+        imgLection18.isUserInteractionEnabled = true
+        imgLection18.addGestureRecognizer(imageTap20)
+        imgLection18.clipsToBounds = true
+        
+        let imageTap21 = UITapGestureRecognizer(target: self, action: #selector(goLection19))
+        imgLection19.isUserInteractionEnabled = true
+        imgLection19.addGestureRecognizer(imageTap21)
+        imgLection19.clipsToBounds = true
+        
+        let imageTap22 = UITapGestureRecognizer(target: self, action: #selector(goLection20))
+        imgLection20.isUserInteractionEnabled = true
+        imgLection20.addGestureRecognizer(imageTap22)
+        imgLection20.clipsToBounds = true
     }
     
     func loadLessonsDone() {
@@ -251,6 +275,26 @@ class LectionsViewController: UIViewController {
     
     @objc func goLection16(_ sender: Any) {
         let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection16") as! Lection16ViewController
+        present(controllerTravel, animated: true, completion: nil)
+    }
+    
+    @objc func goLection17(_ sender: Any) {
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection17") as! Lection17ViewController
+        present(controllerTravel, animated: true, completion: nil)
+    }
+    
+    @objc func goLection18(_ sender: Any) {
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection18") as! Lection18ViewController
+        present(controllerTravel, animated: true, completion: nil)
+    }
+    
+    @objc func goLection19(_ sender: Any) {
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection19") as! Lection19ViewController
+        present(controllerTravel, animated: true, completion: nil)
+    }
+    
+    @objc func goLection20(_ sender: Any) {
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection20") as! Lection20ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
 

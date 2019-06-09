@@ -132,6 +132,10 @@
 		D153B06F22AA8D5500A21B95 /* 4ta aumentada Los Simpsons.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D153B06D22AA8D5500A21B95 /* 4ta aumentada Los Simpsons.mp3 */; };
 		D153B07222AA8D9E00A21B95 /* 5ta disminuida Amor Eterno.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D153B07022AA8D9D00A21B95 /* 5ta disminuida Amor Eterno.mp3 */; };
 		D153B07322AA8D9E00A21B95 /* 5ta disminuida.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D153B07122AA8D9D00A21B95 /* 5ta disminuida.mp3 */; };
+		D155615922AC832000C95EB8 /* Lection19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155615822AC832000C95EB8 /* Lection19ViewController.swift */; };
+		D155615B22AD8FF800C95EB8 /* Lection19Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155615A22AD8FF800C95EB8 /* Lection19Continue1ViewController.swift */; };
+		D155615D22AD948D00C95EB8 /* Lection20ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155615C22AD948D00C95EB8 /* Lection20ViewController.swift */; };
+		D155615F22AD94FE00C95EB8 /* Lection20Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155615E22AD94FE00C95EB8 /* Lection20Continue1ViewController.swift */; };
 		D15687F1216260C80034469C /* Lection0Continue3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15687F0216260C80034469C /* Lection0Continue3ViewController.swift */; };
 		D1574C5D213C442D00078616 /* MusicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1574C5C213C442D00078616 /* MusicClass.swift */; };
 		D1574C5F213C5B9500078616 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1574C5E213C5B9500078616 /* Instrument.swift */; };
@@ -449,6 +453,10 @@
 		D153B06D22AA8D5500A21B95 /* 4ta aumentada Los Simpsons.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "4ta aumentada Los Simpsons.mp3"; sourceTree = "<group>"; };
 		D153B07022AA8D9D00A21B95 /* 5ta disminuida Amor Eterno.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5ta disminuida Amor Eterno.mp3"; sourceTree = "<group>"; };
 		D153B07122AA8D9D00A21B95 /* 5ta disminuida.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5ta disminuida.mp3"; sourceTree = "<group>"; };
+		D155615822AC832000C95EB8 /* Lection19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection19ViewController.swift; sourceTree = "<group>"; };
+		D155615A22AD8FF800C95EB8 /* Lection19Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection19Continue1ViewController.swift; sourceTree = "<group>"; };
+		D155615C22AD948D00C95EB8 /* Lection20ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection20ViewController.swift; sourceTree = "<group>"; };
+		D155615E22AD94FE00C95EB8 /* Lection20Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection20Continue1ViewController.swift; sourceTree = "<group>"; };
 		D15687F0216260C80034469C /* Lection0Continue3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection0Continue3ViewController.swift; sourceTree = "<group>"; };
 		D1574C5C213C442D00078616 /* MusicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClass.swift; sourceTree = "<group>"; };
 		D1574C5E213C5B9500078616 /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
@@ -910,6 +918,10 @@
 				D153B06022AA83E200A21B95 /* Lection18Continue1ViewController.swift */,
 				D153B06222AA847900A21B95 /* Lection18Continue2ViewController.swift */,
 				D153B06422AA84E100A21B95 /* Lection18Continue3ViewController.swift */,
+				D155615822AC832000C95EB8 /* Lection19ViewController.swift */,
+				D155615A22AD8FF800C95EB8 /* Lection19Continue1ViewController.swift */,
+				D155615C22AD948D00C95EB8 /* Lection20ViewController.swift */,
+				D155615E22AD94FE00C95EB8 /* Lection20Continue1ViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -1661,6 +1673,7 @@
 				D1DA7506209CF7E4001AB742 /* LectionsNavigationController.swift in Sources */,
 				D1F5F7192083D9DA0045614E /* ViewController.swift in Sources */,
 				D1A2E864215C45A10052C5BD /* Song1Continue11ViewController.swift in Sources */,
+				D155615F22AD94FE00C95EB8 /* Lection20Continue1ViewController.swift in Sources */,
 				D10BEC9C215D2B6A0098FD86 /* Lection6Continue2ViewController.swift in Sources */,
 				D166D76220A2949F00C29E24 /* TestResultsViewController.swift in Sources */,
 				D15DA025215A94F000F04065 /* Lection2Continue4ViewController.swift in Sources */,
@@ -1698,6 +1711,7 @@
 				D1FD940F215EC396007EDF28 /* Lection12Continue1ViewController.swift in Sources */,
 				D1F85414215DCEA500C4E7F6 /* Lection9Continue3ViewController.swift in Sources */,
 				D1A2E860215C39C60052C5BD /* Song1Continue9ViewController.swift in Sources */,
+				D155615922AC832000C95EB8 /* Lection19ViewController.swift in Sources */,
 				D141F1542137A1140053F661 /* MusicClassFormViewController.swift in Sources */,
 				D13249E621EE0D9E000D2B66 /* Song2Continue7ViewController.swift in Sources */,
 				D1574C62213CED2700078616 /* Lection0ViewController.swift in Sources */,
@@ -1729,6 +1743,7 @@
 				D111E2C2215980A100E4405C /* Lection2Continue1ViewController.swift in Sources */,
 				D15DA030215AA3E400F04065 /* Lection3ViewController.swift in Sources */,
 				D13249E421EC3818000D2B66 /* Song2Continue6ViewController.swift in Sources */,
+				D155615D22AD948D00C95EB8 /* Lection20ViewController.swift in Sources */,
 				D1A2E866215C4B630052C5BD /* Song1Continue12ViewController.swift in Sources */,
 				D1A2E86A215C57DF0052C5BD /* Song1Continue14ViewController.swift in Sources */,
 				D1E5FBEC215BEA4400B7AA12 /* Song1ViewController.swift in Sources */,
@@ -1755,6 +1770,7 @@
 				D1B7165B22A2B514004B8548 /* Lection15Continue1ViewController.swift in Sources */,
 				D1F8CA7A22A481050048C4D1 /* Lection16ViewController.swift in Sources */,
 				D1F1387A2096AD2300A43D4B /* RegisterViewController.swift in Sources */,
+				D155615B22AD8FF800C95EB8 /* Lection19Continue1ViewController.swift in Sources */,
 				D15DA023215A8D7100F04065 /* Lection2Continue3ViewController.swift in Sources */,
 				D1FBA4B8215D92CC002FC2E8 /* Lection7Continue5ViewController.swift in Sources */,
 				D1ED8D81215C87A60043359A /* Lection5Continue1ViewController.swift in Sources */,
