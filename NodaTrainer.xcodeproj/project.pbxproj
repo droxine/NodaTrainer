@@ -31,6 +31,18 @@
 		D108ADB4214049A200CAA2C4 /* Lection1Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108ADB3214049A200CAA2C4 /* Lection1Continue1ViewController.swift */; };
 		D108ADB62140595B00CAA2C4 /* Lection1Continue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108ADB52140595B00CAA2C4 /* Lection1Continue2ViewController.swift */; };
 		D108ADB8214074C000CAA2C4 /* Lection1Continue3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108ADB7214074C000CAA2C4 /* Lection1Continue3ViewController.swift */; };
+		D10A97C622ADA3180049E763 /* Lection21ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10A97C522ADA3180049E763 /* Lection21ViewController.swift */; };
+		D10A97CC22ADA65D0049E763 /* extra-2-yesterday.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D10A97C822ADA65C0049E763 /* extra-2-yesterday.mp3 */; };
+		D10A97CD22ADA65D0049E763 /* extra-1-noche-de-paz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D10A97C922ADA65C0049E763 /* extra-1-noche-de-paz.mp3 */; };
+		D10A97CE22ADA65D0049E763 /* extra-4-ave-maria.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D10A97CA22ADA65C0049E763 /* extra-4-ave-maria.mp3 */; };
+		D10A97CF22ADA65D0049E763 /* extra-3-la-reina-de-espania.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D10A97CB22ADA65D0049E763 /* extra-3-la-reina-de-espania.mp3 */; };
+		D10A97D122ADA73C0049E763 /* extra-5-me-enamore-de-ti.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D10A97D022ADA73B0049E763 /* extra-5-me-enamore-de-ti.mp3 */; };
+		D10A97D322ADA7B30049E763 /* extra-6-cielito-lindo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D10A97D222ADA7B30049E763 /* extra-6-cielito-lindo.mp3 */; };
+		D10A97D522ADA8740049E763 /* Lection21Continue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10A97D422ADA8740049E763 /* Lection21Continue1ViewController.swift */; };
+		D10A97D722ADA8DB0049E763 /* Lection21Continue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10A97D622ADA8DB0049E763 /* Lection21Continue2ViewController.swift */; };
+		D10A97D922ADA93A0049E763 /* Lection21Continue3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10A97D822ADA93A0049E763 /* Lection21Continue3ViewController.swift */; };
+		D10A97DB22ADA98C0049E763 /* Lection21Continue4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10A97DA22ADA98C0049E763 /* Lection21Continue4ViewController.swift */; };
+		D10A97DD22ADA9FB0049E763 /* Lection21Continue5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10A97DC22ADA9FB0049E763 /* Lection21Continue5ViewController.swift */; };
 		D10BEC90215D1BE90098FD86 /* 0009 Do, re,  mi, fa, sol, la, 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D10BEC8F215D1BE80098FD86 /* 0009 Do, re,  mi, fa, sol, la, 1.mp3 */; };
 		D10BEC92215D1BF60098FD86 /* 0009 Do, re,  mi, fa, sol, la, 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D10BEC91215D1BF60098FD86 /* 0009 Do, re,  mi, fa, sol, la, 2.mp3 */; };
 		D10BEC94215D1C000098FD86 /* 0009 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D10BEC93215D1C000098FD86 /* 0009 Do, re,  mi, fa, sol, la, 3.mp3 */; };
@@ -352,6 +364,18 @@
 		D108ADB3214049A200CAA2C4 /* Lection1Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection1Continue1ViewController.swift; sourceTree = "<group>"; };
 		D108ADB52140595B00CAA2C4 /* Lection1Continue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection1Continue2ViewController.swift; sourceTree = "<group>"; };
 		D108ADB7214074C000CAA2C4 /* Lection1Continue3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection1Continue3ViewController.swift; sourceTree = "<group>"; };
+		D10A97C522ADA3180049E763 /* Lection21ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection21ViewController.swift; sourceTree = "<group>"; };
+		D10A97C822ADA65C0049E763 /* extra-2-yesterday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "extra-2-yesterday.mp3"; sourceTree = "<group>"; };
+		D10A97C922ADA65C0049E763 /* extra-1-noche-de-paz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "extra-1-noche-de-paz.mp3"; sourceTree = "<group>"; };
+		D10A97CA22ADA65C0049E763 /* extra-4-ave-maria.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "extra-4-ave-maria.mp3"; sourceTree = "<group>"; };
+		D10A97CB22ADA65D0049E763 /* extra-3-la-reina-de-espania.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "extra-3-la-reina-de-espania.mp3"; sourceTree = "<group>"; };
+		D10A97D022ADA73B0049E763 /* extra-5-me-enamore-de-ti.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "extra-5-me-enamore-de-ti.mp3"; sourceTree = "<group>"; };
+		D10A97D222ADA7B30049E763 /* extra-6-cielito-lindo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "extra-6-cielito-lindo.mp3"; sourceTree = "<group>"; };
+		D10A97D422ADA8740049E763 /* Lection21Continue1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection21Continue1ViewController.swift; sourceTree = "<group>"; };
+		D10A97D622ADA8DB0049E763 /* Lection21Continue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection21Continue2ViewController.swift; sourceTree = "<group>"; };
+		D10A97D822ADA93A0049E763 /* Lection21Continue3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection21Continue3ViewController.swift; sourceTree = "<group>"; };
+		D10A97DA22ADA98C0049E763 /* Lection21Continue4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection21Continue4ViewController.swift; sourceTree = "<group>"; };
+		D10A97DC22ADA9FB0049E763 /* Lection21Continue5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection21Continue5ViewController.swift; sourceTree = "<group>"; };
 		D10BEC8F215D1BE80098FD86 /* 0009 Do, re,  mi, fa, sol, la, 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0009 Do, re,  mi, fa, sol, la, 1.mp3"; sourceTree = "<group>"; };
 		D10BEC91215D1BF60098FD86 /* 0009 Do, re,  mi, fa, sol, la, 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0009 Do, re,  mi, fa, sol, la, 2.mp3"; sourceTree = "<group>"; };
 		D10BEC93215D1C000098FD86 /* 0009 Do, re,  mi, fa, sol, la, 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "0009 Do, re,  mi, fa, sol, la, 3.mp3"; sourceTree = "<group>"; };
@@ -705,6 +729,19 @@
 			path = Notes;
 			sourceTree = "<group>";
 		};
+		D10A97C722ADA60F0049E763 /* Lection21 */ = {
+			isa = PBXGroup;
+			children = (
+				D10A97C922ADA65C0049E763 /* extra-1-noche-de-paz.mp3 */,
+				D10A97C822ADA65C0049E763 /* extra-2-yesterday.mp3 */,
+				D10A97CB22ADA65D0049E763 /* extra-3-la-reina-de-espania.mp3 */,
+				D10A97CA22ADA65C0049E763 /* extra-4-ave-maria.mp3 */,
+				D10A97D022ADA73B0049E763 /* extra-5-me-enamore-de-ti.mp3 */,
+				D10A97D222ADA7B30049E763 /* extra-6-cielito-lindo.mp3 */,
+			);
+			path = Lection21;
+			sourceTree = "<group>";
+		};
 		D10BEC8E215D1BCA0098FD86 /* Lection6 */ = {
 			isa = PBXGroup;
 			children = (
@@ -922,6 +959,12 @@
 				D155615A22AD8FF800C95EB8 /* Lection19Continue1ViewController.swift */,
 				D155615C22AD948D00C95EB8 /* Lection20ViewController.swift */,
 				D155615E22AD94FE00C95EB8 /* Lection20Continue1ViewController.swift */,
+				D10A97C522ADA3180049E763 /* Lection21ViewController.swift */,
+				D10A97D422ADA8740049E763 /* Lection21Continue1ViewController.swift */,
+				D10A97D622ADA8DB0049E763 /* Lection21Continue2ViewController.swift */,
+				D10A97D822ADA93A0049E763 /* Lection21Continue3ViewController.swift */,
+				D10A97DA22ADA98C0049E763 /* Lection21Continue4ViewController.swift */,
+				D10A97DC22ADA9FB0049E763 /* Lection21Continue5ViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -1040,6 +1083,7 @@
 		D1F2F4F5213E4CD70030E2AE /* SoundFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D10A97C722ADA60F0049E763 /* Lection21 */,
 				D153B06B22AA8D4500A21B95 /* Lection 20 */,
 				D153B06622AA8CE400A21B95 /* Lection 19 */,
 				D1EDFA5822AA818300F1058C /* Lection18 */,
@@ -1441,9 +1485,11 @@
 				D108AD9C2140232200CAA2C4 /* Do#.mp3 in Resources */,
 				D1FBA4CE215DB2F7002FC2E8 /* 0012 Do, re,  mi, fa, sol, la, 2.mp3 in Resources */,
 				D1FBA4CC215DB2EF002FC2E8 /* 0012 Do, re,  mi, fa, sol, la, 1.mp3 in Resources */,
+				D10A97CF22ADA65D0049E763 /* extra-3-la-reina-de-espania.mp3 in Resources */,
 				D1F8CA7422A4792C0048C4D1 /* Estrellita 5ta justa.mp3 in Resources */,
 				D1F5F71E2083D9DA0045614E /* Assets.xcassets in Resources */,
 				D10BECCA215D4AB00098FD86 /* Do5.mp3 in Resources */,
+				D10A97CE22ADA65D0049E763 /* extra-4-ave-maria.mp3 in Resources */,
 				D13249CA21EA15FE000D2B66 /* 11.mp3 in Resources */,
 				D108ADAC214023E400CAA2C4 /* Sol#.mp3 in Resources */,
 				D108ADA02140234600CAA2C4 /* Re#.mp3 in Resources */,
@@ -1459,6 +1505,7 @@
 				D1FBA4BF215D9901002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */,
 				D1E5FBDB215BE12D00B7AA12 /* 0007 Remando suavemente 10.mp3 in Resources */,
 				D1E5FBE7215BE15E00B7AA12 /* 0007 Remando suavemente 16.mp3 in Resources */,
+				D10A97D122ADA73C0049E763 /* extra-5-me-enamore-de-ti.mp3 in Resources */,
 				D15DA02C215AA01100F04065 /* 0005 Do, re,  mi, sol, 3.mp3 in Resources */,
 				D1E5FBDD215BE13600B7AA12 /* 0007 Remando suavemente 11.mp3 in Resources */,
 				D1C946B9209E61290000757C /* ProgressHUD.bundle in Resources */,
@@ -1512,6 +1559,7 @@
 				D1533F812131E91400B2C785 /* MusicClassCell.xib in Resources */,
 				D1F8CA7822A479580048C4D1 /* La Cucaracha.mp3 in Resources */,
 				D108ADB02140240F00CAA2C4 /* La#.mp3 in Resources */,
+				D10A97D322ADA7B30049E763 /* extra-6-cielito-lindo.mp3 in Resources */,
 				D1FD9418215ED559007EDF28 /* 0016 2.mp3 in Resources */,
 				D10CE360215EADF900E6726E /* 0015 3.mp3 in Resources */,
 				D10CE33C215E75C600E6726E /* 0013 2.mp3 in Resources */,
@@ -1536,12 +1584,14 @@
 				D1FBA8AE215ADB7E00A8CC11 /* 0006 Do, re,  mi, fa,sol, 1.mp3 in Resources */,
 				D10BECA3215D3ABF0098FD86 /* 0010 Do, re,  mi, fa, sol, la, 1.mp3 in Resources */,
 				D10BECBC215D4A500098FD86 /* Fa2.mp3 in Resources */,
+				D10A97CD22ADA65D0049E763 /* extra-1-noche-de-paz.mp3 in Resources */,
 				D1FBA4D0215DB2FF002FC2E8 /* 0012 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */,
 				D10BECA9215D3AD50098FD86 /* 0010 Do, re,  mi, fa, sol, la, 4.mp3 in Resources */,
 				D1E5FBE1215BE14600B7AA12 /* 0007 Remando suavemente 13.mp3 in Resources */,
 				D10CE34D215E8EB100E6726E /* 0014 2.mp3 in Resources */,
 				D12198FE2222DB5000180956 /* SceneKit Piano.scnassets in Resources */,
 				D1FD941C215ED566007EDF28 /* 0016 4.mp3 in Resources */,
+				D10A97CC22ADA65D0049E763 /* extra-2-yesterday.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1666,6 +1716,7 @@
 				D10CE346215E840900E6726E /* Lection10Continue2ViewController.swift in Sources */,
 				D1DA750C209D13FA001AB742 /* TestBeganViewController.swift in Sources */,
 				D1FD9433215EF775007EDF28 /* Lection14Continue2ViewController.swift in Sources */,
+				D10A97D522ADA8740049E763 /* Lection21Continue1ViewController.swift in Sources */,
 				D1FD942F215EECD7007EDF28 /* Lection14ViewController.swift in Sources */,
 				D10BECAF215D3FA80098FD86 /* Lection7ViewController.swift in Sources */,
 				D108AD8E214021C900CAA2C4 /* Lection1ViewController.swift in Sources */,
@@ -1687,6 +1738,7 @@
 				D10CE348215E893700E6726E /* Lection10Continue3ViewController.swift in Sources */,
 				D10BEC9A215D265E0098FD86 /* Lection6Continue1ViewController.swift in Sources */,
 				D1DA7504209CEF7F001AB742 /* MainTabBarController.swift in Sources */,
+				D10A97C622ADA3180049E763 /* Lection21ViewController.swift in Sources */,
 				D1B7165D22A2B53C004B8548 /* Lection15Continue2ViewController.swift in Sources */,
 				D1E5FBF0215BFCD900B7AA12 /* Song1Continue2ViewController.swift in Sources */,
 				D1F2F4F9213E4D1A0030E2AE /* Lection0Continue2ViewController.swift in Sources */,
@@ -1736,6 +1788,7 @@
 				D141F1562137A13F0053F661 /* InstrumentFormViewController.swift in Sources */,
 				D1FD9413215ECE9C007EDF28 /* Lection12Continue3ViewController.swift in Sources */,
 				D1F5F7172083D9DA0045614E /* AppDelegate.swift in Sources */,
+				D10A97D922ADA93A0049E763 /* Lection21Continue3ViewController.swift in Sources */,
 				D13249DA21EB82AD000D2B66 /* Song2Continue1ViewController.swift in Sources */,
 				D1FBA8BC215AE9C100A8CC11 /* Lection4Continue2ViewController.swift in Sources */,
 				D153B06122AA83E200A21B95 /* Lection18Continue1ViewController.swift in Sources */,
@@ -1746,6 +1799,7 @@
 				D155615D22AD948D00C95EB8 /* Lection20ViewController.swift in Sources */,
 				D1A2E866215C4B630052C5BD /* Song1Continue12ViewController.swift in Sources */,
 				D1A2E86A215C57DF0052C5BD /* Song1Continue14ViewController.swift in Sources */,
+				D10A97DB22ADA98C0049E763 /* Lection21Continue4ViewController.swift in Sources */,
 				D1E5FBEC215BEA4400B7AA12 /* Song1ViewController.swift in Sources */,
 				D1EDFA5622AA057E00F1058C /* Lection17Continue3ViewController.swift in Sources */,
 				D1574C5F213C5B9500078616 /* Instrument.swift in Sources */,
@@ -1759,6 +1813,7 @@
 				D1F8540E215DBF0800C4E7F6 /* Lection9ViewController.swift in Sources */,
 				D1533F802131E91400B2C785 /* MusicClassCell.swift in Sources */,
 				D1C946BA209E61290000757C /* ProgressHUD.m in Sources */,
+				D10A97D722ADA8DB0049E763 /* Lection21Continue2ViewController.swift in Sources */,
 				D1DA7510209D330E001AB742 /* Question.swift in Sources */,
 				D1EDFA3F22A9F93E00F1058C /* Lection16Continue2ViewController.swift in Sources */,
 				D16030012217912D0062EC53 /* Song2CompletedViewController.swift in Sources */,
@@ -1786,6 +1841,7 @@
 				D1FBA4C9215DAC59002FC2E8 /* Lection8Continue3ViewController.swift in Sources */,
 				D1F2F4F4213E43450030E2AE /* Lection0Continue1ViewController.swift in Sources */,
 				D1ED8D7F215C805F0043359A /* Lection5ViewController.swift in Sources */,
+				D10A97DD22ADA9FB0049E763 /* Lection21Continue5ViewController.swift in Sources */,
 				D15687F1216260C80034469C /* Lection0Continue3ViewController.swift in Sources */,
 				D1EDFA5422AA052000F1058C /* Lection17Continue2ViewController.swift in Sources */,
 				D1DA7508209CFC10001AB742 /* UserProfile.swift in Sources */,
