@@ -20,6 +20,11 @@ class NodaTrainerUITests: XCTestCase {
         super.tearDown()
     }
     
+    func testSong2() {
+        
+        
+    }
+    
     func testLection21() {
         
         let app = XCUIApplication()

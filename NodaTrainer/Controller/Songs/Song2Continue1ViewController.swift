@@ -253,7 +253,8 @@ class Song2Continue1ViewController: UIViewController {
         labelResult2.isHidden = true
         btnReload.isHidden = true
         btnNext.isEnabled = true
-        btnTi.backgroundColor = UIColor.white
+        btnSol.backgroundColor = UIColor.white
+        btnLa.backgroundColor = UIColor.white
     }
     
     func reproduceSound(_ resource: URL) {

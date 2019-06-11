@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11597,7 +11598,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
         <!--Song2 Continue13 View Controller-->
         <scene sceneID="7Rf-aP-IZr">
             <objects>
-                <viewController id="Goj-q9-CF8" customClass="Song2Continue13ViewController" customModule="NodaTrainer" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="song2Continue13" id="Goj-q9-CF8" customClass="Song2Continue13ViewController" customModule="NodaTrainer" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f5L-b2-9E6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
