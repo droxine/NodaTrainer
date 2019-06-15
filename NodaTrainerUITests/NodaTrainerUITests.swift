@@ -189,6 +189,171 @@ class NodaTrainerUITests: XCTestCase {
         
     }
     
+    func testLection17() {
+        XCUIDevice.shared.orientation = .portrait
+        
+        let app = XCUIApplication()
+        app.tabBars.children(matching: .button).element(boundBy: 1).tap()
+        
+        let scrollViewsQuery = app.scrollViews
+        scrollViewsQuery.otherElements.containing(.button, identifier:"MENUIMG HOMECLICKED").element.tap()
+        scrollViewsQuery.children(matching: .image).matching(identifier: "avatar").element(boundBy: 5).tap()
+        
+        let playButton = app.buttons["PLAY"]
+        playButton.tap()
+        
+        let button = app.buttons["2da Mayor"]
+        button.tap()
+        
+        let okButton = app.alerts["Resultado"].buttons["OK"]
+        okButton.tap()
+        
+        let button2 = app.buttons["3ra Mayor"]
+        button2.tap()
+        okButton.tap()
+        
+        let siguienteButton = app.buttons["SIGUIENTE"]
+        siguienteButton.tap()
+        playButton.tap()
+        button.tap()
+        okButton.tap()
+        button2.tap()
+        okButton.tap()
+        siguienteButton.tap()
+        playButton.tap()
+        button.tap()
+        okButton.tap()
+        button2.tap()
+        okButton.tap()
+        siguienteButton.tap()
+        playButton.tap()
+        button.tap()
+        okButton.tap()
+        button2.tap()
+        okButton.tap()
+        app.buttons["COMPLETAR LECCIÓN"].tap()
+        
+    }
+    
+    func testLection18() {
+        XCUIDevice.shared.orientation = .portrait
+        
+        let app = XCUIApplication()
+        app.tabBars.children(matching: .button).element(boundBy: 1).tap()
+        
+        let scrollViewsQuery = app.scrollViews
+        let menuimgHomeclickedElement = scrollViewsQuery.otherElements.containing(.button, identifier:"MENUIMG HOMECLICKED").element
+        menuimgHomeclickedElement.tap()
+        XCUIDevice.shared.orientation = .faceUp
+        menuimgHomeclickedElement.tap()
+        XCUIDevice.shared.orientation = .portrait
+        scrollViewsQuery.children(matching: .image).matching(identifier: "avatar").element(boundBy: 6).tap()
+        
+        let playButton = app.buttons["PLAY"]
+        playButton.tap()
+        
+        let button = app.buttons["2da Menor"]
+        button.tap()
+        
+        let okButton = app.alerts["Resultado"].buttons["OK"]
+        okButton.tap()
+        
+        let button2 = app.buttons["3ra Menor"]
+        button2.tap()
+        okButton.tap()
+        
+        let siguienteButton = app.buttons["SIGUIENTE"]
+        siguienteButton.tap()
+        playButton.tap()
+        button.tap()
+        okButton.tap()
+        button2.tap()
+        okButton.tap()
+        XCUIDevice.shared.orientation = .faceUp
+        siguienteButton.tap()
+        XCUIDevice.shared.orientation = .portrait
+        playButton.tap()
+        XCUIDevice.shared.orientation = .faceUp
+        button.tap()
+        okButton.tap()
+        button2.tap()
+        okButton.tap()
+        siguienteButton.tap()
+        playButton.tap()
+        XCUIDevice.shared.orientation = .portrait
+        XCUIDevice.shared.orientation = .faceUp
+        button.tap()
+        XCUIDevice.shared.orientation = .portrait
+        okButton.tap()
+        button2.tap()
+        okButton.tap()
+        XCUIDevice.shared.orientation = .faceUp
+        app.buttons["COMPLETAR LECCIÓN"].tap()
+        
+    }
+    
+    func testLection19() {
+        
+        let app = XCUIApplication()
+        app.tabBars.children(matching: .button).element(boundBy: 1).tap()
+        
+        let scrollViewsQuery = app.scrollViews
+        scrollViewsQuery.otherElements.containing(.button, identifier:"MENUIMG HOMECLICKED").element.swipeUp()
+        scrollViewsQuery.children(matching: .image).matching(identifier: "avatar").element(boundBy: 7).tap()
+        
+        let playButton = app.buttons["PLAY"]
+        playButton.tap()
+        
+        let button = app.buttons["5ta Disminuida"]
+        button.tap()
+        
+        let okButton = app.alerts["Resultado"].buttons["OK"]
+        okButton.tap()
+        
+        let button2 = app.buttons["5ta Subdisminuida"]
+        button2.tap()
+        okButton.tap()
+        app.buttons["SIGUIENTE"].tap()
+        playButton.tap()
+        button.tap()
+        okButton.tap()
+        button2.tap()
+        okButton.tap()
+        app.buttons["COMPLETAR LECCIÓN"].tap()
+        
+    }
+    
+    func testLection20() {
+        
+        let app = XCUIApplication()
+        app.tabBars.children(matching: .button).element(boundBy: 1).tap()
+        
+        let scrollViewsQuery = app.scrollViews
+        scrollViewsQuery.otherElements.containing(.button, identifier:"MENUIMG HOMECLICKED").element.tap()
+        scrollViewsQuery.children(matching: .image).matching(identifier: "avatar").element(boundBy: 8).tap()
+        
+        let playButton = app.buttons["PLAY"]
+        playButton.tap()
+        
+        let button = app.buttons["4ta Aumentada"]
+        button.tap()
+        
+        let okButton = app.alerts["Resultado"].buttons["OK"]
+        okButton.tap()
+        
+        let button2 = app.buttons["4ta Superaumentada"]
+        button2.tap()
+        okButton.tap()
+        app.buttons["SIGUIENTE"].tap()
+        playButton.tap()
+        button.tap()
+        okButton.tap()
+        button2.tap()
+        okButton.tap()
+        app.buttons["COMPLETAR LECCIÓN"].tap()
+        
+    }
+    
     func testLection21() {
         
         let app = XCUIApplication()
