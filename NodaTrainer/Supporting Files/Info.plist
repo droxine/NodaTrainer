@@ -75,5 +75,7 @@
 	</array>
 	<key>Privacy - Photo Library Usage Description</key>
 	<string>$(PRODUCT_NAME) photo use</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Photo Library Access Warning</string>
 </dict>
 </plist>

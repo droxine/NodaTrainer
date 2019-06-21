@@ -96,7 +96,9 @@ class InitViewController: UIViewController {
         guard let uid = Auth.auth().currentUser?.uid else { return lblUser.text = ""}
         print(uid)
         let email = Auth.auth().currentUser?.email
-        print(email!)
+        if email != nil {
+            print(email!)
+        }
         
         let userProfileRef = Database.database().reference().child("users").child("profile").child(uid)
         print(userProfileRef)

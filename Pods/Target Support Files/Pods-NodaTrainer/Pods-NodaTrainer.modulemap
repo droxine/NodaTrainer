@@ -1,0 +1,6 @@
+module Pods_NodaTrainer {
+  umbrella header "Pods-NodaTrainer-umbrella.h"
+
+  export *
+  module * { export * }
+}
