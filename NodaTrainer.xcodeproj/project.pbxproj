@@ -124,6 +124,27 @@
 		D13249E621EE0D9E000D2B66 /* Song2Continue7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13249E521EE0D9E000D2B66 /* Song2Continue7ViewController.swift */; };
 		D13249E821EF7864000D2B66 /* Song2Continue8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13249E721EF7864000D2B66 /* Song2Continue8ViewController.swift */; };
 		D13249EA21F0C26F000D2B66 /* Song2Continue9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13249E921F0C26F000D2B66 /* Song2Continue9ViewController.swift */; };
+		D1333A9822BCF8F600C233EC /* aristogatos-008.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A8322BCF8F400C233EC /* aristogatos-008.mp3 */; };
+		D1333A9922BCF8F600C233EC /* aristogatos-020.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A8422BCF8F400C233EC /* aristogatos-020.mp3 */; };
+		D1333A9A22BCF8F600C233EC /* aristogatos-011.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A8522BCF8F400C233EC /* aristogatos-011.mp3 */; };
+		D1333A9B22BCF8F600C233EC /* aristogatos-003.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A8622BCF8F400C233EC /* aristogatos-003.mp3 */; };
+		D1333A9C22BCF8F600C233EC /* aristogatos-010.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A8722BCF8F400C233EC /* aristogatos-010.mp3 */; };
+		D1333A9D22BCF8F600C233EC /* aristogatos-001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A8822BCF8F400C233EC /* aristogatos-001.mp3 */; };
+		D1333A9E22BCF8F600C233EC /* aristogatos-007.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A8922BCF8F500C233EC /* aristogatos-007.mp3 */; };
+		D1333A9F22BCF8F600C233EC /* aristogatos-013.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A8A22BCF8F500C233EC /* aristogatos-013.mp3 */; };
+		D1333AA022BCF8F600C233EC /* aristogatos-016.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A8B22BCF8F500C233EC /* aristogatos-016.mp3 */; };
+		D1333AA122BCF8F600C233EC /* aristogatos-006.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A8C22BCF8F500C233EC /* aristogatos-006.mp3 */; };
+		D1333AA222BCF8F600C233EC /* aristogatos-009.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A8D22BCF8F500C233EC /* aristogatos-009.mp3 */; };
+		D1333AA322BCF8F600C233EC /* aristogatos-014.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A8E22BCF8F500C233EC /* aristogatos-014.mp3 */; };
+		D1333AA422BCF8F600C233EC /* aristogatos-005.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A8F22BCF8F500C233EC /* aristogatos-005.mp3 */; };
+		D1333AA522BCF8F600C233EC /* aristogatos-015.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A9022BCF8F500C233EC /* aristogatos-015.mp3 */; };
+		D1333AA622BCF8F600C233EC /* aristogatos-017.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A9122BCF8F500C233EC /* aristogatos-017.mp3 */; };
+		D1333AA722BCF8F600C233EC /* aristogatos-004.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A9222BCF8F600C233EC /* aristogatos-004.mp3 */; };
+		D1333AA822BCF8F600C233EC /* aristogatos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A9322BCF8F600C233EC /* aristogatos.mp3 */; };
+		D1333AA922BCF8F600C233EC /* aristogatos-019.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A9422BCF8F600C233EC /* aristogatos-019.mp3 */; };
+		D1333AAA22BCF8F600C233EC /* aristogatos-018.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A9522BCF8F600C233EC /* aristogatos-018.mp3 */; };
+		D1333AAB22BCF8F600C233EC /* aristogatos-012.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A9622BCF8F600C233EC /* aristogatos-012.mp3 */; };
+		D1333AAC22BCF8F600C233EC /* aristogatos-002.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1333A9722BCF8F600C233EC /* aristogatos-002.mp3 */; };
 		D141F1542137A1140053F661 /* MusicClassFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141F1532137A1140053F661 /* MusicClassFormViewController.swift */; };
 		D141F1562137A13F0053F661 /* InstrumentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141F1552137A13F0053F661 /* InstrumentFormViewController.swift */; };
 		D14637FF2159D72D007EF722 /* Lection2Continue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14637FE2159D72D007EF722 /* Lection2Continue2ViewController.swift */; };
@@ -457,6 +478,27 @@
 		D13249E521EE0D9E000D2B66 /* Song2Continue7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2Continue7ViewController.swift; sourceTree = "<group>"; };
 		D13249E721EF7864000D2B66 /* Song2Continue8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2Continue8ViewController.swift; sourceTree = "<group>"; };
 		D13249E921F0C26F000D2B66 /* Song2Continue9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2Continue9ViewController.swift; sourceTree = "<group>"; };
+		D1333A8322BCF8F400C233EC /* aristogatos-008.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-008.mp3"; sourceTree = "<group>"; };
+		D1333A8422BCF8F400C233EC /* aristogatos-020.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-020.mp3"; sourceTree = "<group>"; };
+		D1333A8522BCF8F400C233EC /* aristogatos-011.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-011.mp3"; sourceTree = "<group>"; };
+		D1333A8622BCF8F400C233EC /* aristogatos-003.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-003.mp3"; sourceTree = "<group>"; };
+		D1333A8722BCF8F400C233EC /* aristogatos-010.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-010.mp3"; sourceTree = "<group>"; };
+		D1333A8822BCF8F400C233EC /* aristogatos-001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-001.mp3"; sourceTree = "<group>"; };
+		D1333A8922BCF8F500C233EC /* aristogatos-007.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-007.mp3"; sourceTree = "<group>"; };
+		D1333A8A22BCF8F500C233EC /* aristogatos-013.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-013.mp3"; sourceTree = "<group>"; };
+		D1333A8B22BCF8F500C233EC /* aristogatos-016.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-016.mp3"; sourceTree = "<group>"; };
+		D1333A8C22BCF8F500C233EC /* aristogatos-006.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-006.mp3"; sourceTree = "<group>"; };
+		D1333A8D22BCF8F500C233EC /* aristogatos-009.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-009.mp3"; sourceTree = "<group>"; };
+		D1333A8E22BCF8F500C233EC /* aristogatos-014.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-014.mp3"; sourceTree = "<group>"; };
+		D1333A8F22BCF8F500C233EC /* aristogatos-005.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-005.mp3"; sourceTree = "<group>"; };
+		D1333A9022BCF8F500C233EC /* aristogatos-015.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-015.mp3"; sourceTree = "<group>"; };
+		D1333A9122BCF8F500C233EC /* aristogatos-017.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-017.mp3"; sourceTree = "<group>"; };
+		D1333A9222BCF8F600C233EC /* aristogatos-004.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-004.mp3"; sourceTree = "<group>"; };
+		D1333A9322BCF8F600C233EC /* aristogatos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aristogatos.mp3; sourceTree = "<group>"; };
+		D1333A9422BCF8F600C233EC /* aristogatos-019.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-019.mp3"; sourceTree = "<group>"; };
+		D1333A9522BCF8F600C233EC /* aristogatos-018.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-018.mp3"; sourceTree = "<group>"; };
+		D1333A9622BCF8F600C233EC /* aristogatos-012.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-012.mp3"; sourceTree = "<group>"; };
+		D1333A9722BCF8F600C233EC /* aristogatos-002.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "aristogatos-002.mp3"; sourceTree = "<group>"; };
 		D141F1532137A1140053F661 /* MusicClassFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClassFormViewController.swift; sourceTree = "<group>"; };
 		D141F1552137A13F0053F661 /* InstrumentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentFormViewController.swift; sourceTree = "<group>"; };
 		D14637FE2159D72D007EF722 /* Lection2Continue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection2Continue2ViewController.swift; sourceTree = "<group>"; };
@@ -845,6 +887,34 @@
 			path = Song2;
 			sourceTree = "<group>";
 		};
+		D1333A8222BCF86D00C233EC /* Lection22 */ = {
+			isa = PBXGroup;
+			children = (
+				D1333A8822BCF8F400C233EC /* aristogatos-001.mp3 */,
+				D1333A9722BCF8F600C233EC /* aristogatos-002.mp3 */,
+				D1333A8622BCF8F400C233EC /* aristogatos-003.mp3 */,
+				D1333A9222BCF8F600C233EC /* aristogatos-004.mp3 */,
+				D1333A8F22BCF8F500C233EC /* aristogatos-005.mp3 */,
+				D1333A8C22BCF8F500C233EC /* aristogatos-006.mp3 */,
+				D1333A8922BCF8F500C233EC /* aristogatos-007.mp3 */,
+				D1333A8322BCF8F400C233EC /* aristogatos-008.mp3 */,
+				D1333A8D22BCF8F500C233EC /* aristogatos-009.mp3 */,
+				D1333A8722BCF8F400C233EC /* aristogatos-010.mp3 */,
+				D1333A8522BCF8F400C233EC /* aristogatos-011.mp3 */,
+				D1333A9622BCF8F600C233EC /* aristogatos-012.mp3 */,
+				D1333A8A22BCF8F500C233EC /* aristogatos-013.mp3 */,
+				D1333A8E22BCF8F500C233EC /* aristogatos-014.mp3 */,
+				D1333A9022BCF8F500C233EC /* aristogatos-015.mp3 */,
+				D1333A8B22BCF8F500C233EC /* aristogatos-016.mp3 */,
+				D1333A9122BCF8F500C233EC /* aristogatos-017.mp3 */,
+				D1333A9522BCF8F600C233EC /* aristogatos-018.mp3 */,
+				D1333A9422BCF8F600C233EC /* aristogatos-019.mp3 */,
+				D1333A8422BCF8F400C233EC /* aristogatos-020.mp3 */,
+				D1333A9322BCF8F600C233EC /* aristogatos.mp3 */,
+			);
+			path = Lection22;
+			sourceTree = "<group>";
+		};
 		D1533F7D2131E8BE00B2C785 /* MusicClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -1083,6 +1153,7 @@
 		D1F2F4F5213E4CD70030E2AE /* SoundFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D1333A8222BCF86D00C233EC /* Lection22 */,
 				D10A97C722ADA60F0049E763 /* Lection21 */,
 				D153B06B22AA8D4500A21B95 /* Lection 20 */,
 				D153B06622AA8CE400A21B95 /* Lection 19 */,
@@ -1458,6 +1529,7 @@
 				D10CE33A215E75BE00E6726E /* 0013 1.mp3 in Resources */,
 				D1FD941A215ED55F007EDF28 /* 0016 3.mp3 in Resources */,
 				D10BECB8215D4A3D0098FD86 /* Re#2.mp3 in Resources */,
+				D1333AA122BCF8F600C233EC /* aristogatos-006.mp3 in Resources */,
 				D10BECB4215D4A280098FD86 /* Do#2.mp3 in Resources */,
 				D13249C721EA15FE000D2B66 /* 10.mp3 in Resources */,
 				D108ADB22140242300CAA2C4 /* Si.mp3 in Resources */,
@@ -1477,6 +1549,8 @@
 				D1E5FBCF215BE0F800B7AA12 /* 0007 Remando suavemente 4.mp3 in Resources */,
 				D1FD9429215EEB88007EDF28 /* 0017 2.mp3 in Resources */,
 				D108AD9A2140231100CAA2C4 /* Do.mp3 in Resources */,
+				D1333AAC22BCF8F600C233EC /* aristogatos-002.mp3 in Resources */,
+				D1333AA822BCF8F600C233EC /* aristogatos.mp3 in Resources */,
 				D1EDFA5122AA045600F1058C /* 3ra mayor descendente.mp3 in Resources */,
 				D10BECC0215D4A640098FD86 /* Sol2.mp3 in Resources */,
 				D1EDFA4822AA02EA00F1058C /* 2da mayor ascendente.mp3 in Resources */,
@@ -1491,6 +1565,7 @@
 				D10BECCA215D4AB00098FD86 /* Do5.mp3 in Resources */,
 				D10A97CE22ADA65D0049E763 /* extra-4-ave-maria.mp3 in Resources */,
 				D13249CA21EA15FE000D2B66 /* 11.mp3 in Resources */,
+				D1333A9C22BCF8F600C233EC /* aristogatos-010.mp3 in Resources */,
 				D108ADAC214023E400CAA2C4 /* Sol#.mp3 in Resources */,
 				D108ADA02140234600CAA2C4 /* Re#.mp3 in Resources */,
 				D13249D621EA15FE000D2B66 /* 17.mp3 in Resources */,
@@ -1498,8 +1573,10 @@
 				D108AD98214022CD00CAA2C4 /* 0003 Do, mi 3.mp3 in Resources */,
 				D13249CD21EA15FE000D2B66 /* 1.mp3 in Resources */,
 				D10BECBA215D4A470098FD86 /* Mi2.mp3 in Resources */,
+				D1333A9922BCF8F600C233EC /* aristogatos-020.mp3 in Resources */,
 				D15DA02E215AA01A00F04065 /* 0005 Do, re,  mi, sol, 4.mp3 in Resources */,
 				D10BECC4215D4A950098FD86 /* La2.mp3 in Resources */,
+				D1333A9822BCF8F600C233EC /* aristogatos-008.mp3 in Resources */,
 				D10CE34B215E8EAA00E6726E /* 0014 1.mp3 in Resources */,
 				D13249D421EA15FE000D2B66 /* 18.mp3 in Resources */,
 				D1FBA4BF215D9901002FC2E8 /* 0011 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */,
@@ -1512,12 +1589,14 @@
 				D1FD9427215EEB81007EDF28 /* 0017 1.mp3 in Resources */,
 				D10BECBE215D4A5A0098FD86 /* Fa#2.mp3 in Resources */,
 				D1ED8D77215C7ED60043359A /* 0008 Do, re,  mi, fa, sol, la, 1.mp3 in Resources */,
+				D1333AA522BCF8F600C233EC /* aristogatos-015.mp3 in Resources */,
 				D10CE35E215EADF200E6726E /* 0015 2.mp3 in Resources */,
 				D10BECAD215D3AE30098FD86 /* 0010 Do, re,  mi, fa, sol, la, 6.mp3 in Resources */,
 				D1E5FBD1215BE10100B7AA12 /* 0007 Remando suavemente 5.mp3 in Resources */,
 				D153B05722AA824F00A21B95 /* 2da menor descendente.mp3 in Resources */,
 				D153B05322AA823D00A21B95 /* 3ra menor descendente.mp3 in Resources */,
 				D1FD942B215EEB8F007EDF28 /* 0017 3.mp3 in Resources */,
+				D1333AA922BCF8F600C233EC /* aristogatos-019.mp3 in Resources */,
 				D1FBA8B2215ADB9500A8CC11 /* 0006 Do, re,  mi, fa,sol, 3.mp3 in Resources */,
 				D13249C821EA15FE000D2B66 /* 9.mp3 in Resources */,
 				D10BECA5215D3AC60098FD86 /* 0010 Do, re,  mi, fa, sol, la, 2.mp3 in Resources */,
@@ -1527,16 +1606,21 @@
 				D1EDFA5222AA045600F1058C /* 3ra mayor Ascendente.mp3 in Resources */,
 				D13249C921EA15FE000D2B66 /* 12.mp3 in Resources */,
 				D1ED8D79215C7EE40043359A /* 0008 Do, re,  mi, fa, sol, la, 2.mp3 in Resources */,
+				D1333AA322BCF8F600C233EC /* aristogatos-014.mp3 in Resources */,
 				D10BECAB215D3ADC0098FD86 /* 0010 Do, re,  mi, fa, sol, la, 5.mp3 in Resources */,
 				D16030032217923A0062EC53 /* El tamborilero.mp3 in Resources */,
+				D1333AA022BCF8F600C233EC /* aristogatos-016.mp3 in Resources */,
 				D1ED8D7B215C7EEF0043359A /* 0008 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */,
 				D1E5FBC9215BE0D900B7AA12 /* 0007 Remando suavemente 1.mp3 in Resources */,
+				D1333A9B22BCF8F600C233EC /* aristogatos-003.mp3 in Resources */,
+				D1333AA222BCF8F600C233EC /* aristogatos-009.mp3 in Resources */,
 				D10CE362215EAE0000E6726E /* 0015 4.mp3 in Resources */,
 				D108ADA22140235000CAA2C4 /* Mi.mp3 in Resources */,
 				D13249CE21EA15FE000D2B66 /* 8.mp3 in Resources */,
 				D13249D521EA15FE000D2B66 /* 15.mp3 in Resources */,
 				D10BEC96215D1C0C0098FD86 /* 0009 Do, re,  mi, fa, sol, la, 4.mp3 in Resources */,
 				D1E5FBDF215BE13D00B7AA12 /* 0007 Remando suavemente 12.mp3 in Resources */,
+				D1333AA422BCF8F600C233EC /* aristogatos-005.mp3 in Resources */,
 				D108ADAE214023FD00CAA2C4 /* La.mp3 in Resources */,
 				D1E5FBE9215BE16600B7AA12 /* 0007 Remando suavemente 17.mp3 in Resources */,
 				D1E5FBE3215BE14D00B7AA12 /* 0007 Remando suavemente 14.mp3 in Resources */,
@@ -1548,6 +1632,7 @@
 				D108AD922140229800CAA2C4 /* 0003 Do, mi.mp3 in Resources */,
 				D1FD48D4214ED91B00A1B204 /* 0004 Do, mi, sol, 2.mp3 in Resources */,
 				D153B06E22AA8D5500A21B95 /* 4ta aumentada.mp3 in Resources */,
+				D1333AAA22BCF8F600C233EC /* aristogatos-018.mp3 in Resources */,
 				D1EDFA4922AA02EA00F1058C /* 2da mayor descendente.mp3 in Resources */,
 				D10BECB6215D4A340098FD86 /* Re2.mp3 in Resources */,
 				D15DA028215A9FFD00F04065 /* 0005 Do, re,  mi, sol, 1.mp3 in Resources */,
@@ -1557,6 +1642,7 @@
 				D10CE35C215EADEB00E6726E /* 0015 1.mp3 in Resources */,
 				D10BECC8215D4AA60098FD86 /* Si2.mp3 in Resources */,
 				D1533F812131E91400B2C785 /* MusicClassCell.xib in Resources */,
+				D1333AA622BCF8F600C233EC /* aristogatos-017.mp3 in Resources */,
 				D1F8CA7822A479580048C4D1 /* La Cucaracha.mp3 in Resources */,
 				D108ADB02140240F00CAA2C4 /* La#.mp3 in Resources */,
 				D10A97D322ADA7B30049E763 /* extra-6-cielito-lindo.mp3 in Resources */,
@@ -1566,6 +1652,8 @@
 				D13249CC21EA15FE000D2B66 /* 13.mp3 in Resources */,
 				D1FD48DC214ED94700A1B204 /* 0004 Do, mi, sol, 6.mp3 in Resources */,
 				D1FD9416215ED552007EDF28 /* 0016 1.mp3 in Resources */,
+				D1333A9F22BCF8F600C233EC /* aristogatos-013.mp3 in Resources */,
+				D1333AAB22BCF8F600C233EC /* aristogatos-012.mp3 in Resources */,
 				D10CE33E215E75CF00E6726E /* 0013 3.mp3 in Resources */,
 				D10BEC92215D1BF60098FD86 /* 0009 Do, re,  mi, fa, sol, la, 2.mp3 in Resources */,
 				D13249D221EA15FE000D2B66 /* 2.mp3 in Resources */,
@@ -1585,11 +1673,15 @@
 				D10BECA3215D3ABF0098FD86 /* 0010 Do, re,  mi, fa, sol, la, 1.mp3 in Resources */,
 				D10BECBC215D4A500098FD86 /* Fa2.mp3 in Resources */,
 				D10A97CD22ADA65D0049E763 /* extra-1-noche-de-paz.mp3 in Resources */,
+				D1333A9D22BCF8F600C233EC /* aristogatos-001.mp3 in Resources */,
+				D1333A9A22BCF8F600C233EC /* aristogatos-011.mp3 in Resources */,
 				D1FBA4D0215DB2FF002FC2E8 /* 0012 Do, re,  mi, fa, sol, la, 3.mp3 in Resources */,
 				D10BECA9215D3AD50098FD86 /* 0010 Do, re,  mi, fa, sol, la, 4.mp3 in Resources */,
 				D1E5FBE1215BE14600B7AA12 /* 0007 Remando suavemente 13.mp3 in Resources */,
+				D1333AA722BCF8F600C233EC /* aristogatos-004.mp3 in Resources */,
 				D10CE34D215E8EB100E6726E /* 0014 2.mp3 in Resources */,
 				D12198FE2222DB5000180956 /* SceneKit Piano.scnassets in Resources */,
+				D1333A9E22BCF8F600C233EC /* aristogatos-007.mp3 in Resources */,
 				D1FD941C215ED566007EDF28 /* 0016 4.mp3 in Resources */,
 				D10A97CC22ADA65D0049E763 /* extra-2-yesterday.mp3 in Resources */,
 			);
