@@ -42,7 +42,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mk4-aG-eag">
-                                <rect key="frame" x="179.66666666666666" y="489" width="16" height="53"/>
+                                <rect key="frame" x="66.666666666666686" y="489" width="242" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="Hot-ZO-s9g"/>
                                 </constraints>
@@ -6211,7 +6211,7 @@ Es indispensable seguir practicando, tanto estas lecciones como las tonalidades 
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbR-3h-dMQ">
-                                <rect key="frame" x="16" y="425" width="328" height="233"/>
+                                <rect key="frame" x="23" y="425" width="328" height="233"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Esta aplicación es 100% gratis. No existe el "Pague X para desbloquear X lecciones adicionales". Así como nosotros, también existen otros recursos que ofrecen lecciones de manera gratuita. A continuación, algunas recomendaciones como complemento para estudiar desde la Web.
 
@@ -31418,8 +31418,8 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sesion_background2" translatesAutoresizingMaskIntoConstraints="NO" id="6wY-Ux-G9j">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8T-Vi-Ip5">
-                                <rect key="frame" x="179.66666666666666" y="698" width="16" height="52"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8T-Vi-Ip5">
+                                <rect key="frame" x="66.666666666666686" y="698" width="242" height="52"/>
                                 <state key="normal" backgroundImage="BTNVOLVER"/>
                                 <connections>
                                     <action selector="goBack:" destination="bl7-c0-eKc" eventType="touchUpInside" id="7BH-R1-wlN"/>
@@ -31467,8 +31467,8 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox2-9d-Lm5">
-                                <rect key="frame" x="179.66666666666666" y="638" width="16" height="52"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox2-9d-Lm5">
+                                <rect key="frame" x="66.666666666666686" y="638" width="242" height="52"/>
                                 <state key="normal" backgroundImage="BTNREGISTRARSE-1"/>
                                 <connections>
                                     <action selector="registerUser:" destination="bl7-c0-eKc" eventType="touchUpInside" id="wy9-sm-96L"/>
@@ -31501,7 +31501,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PERFIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTZ-Si-fEV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERFIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTZ-Si-fEV">
                                 <rect key="frame" x="45" y="464" width="48" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.49411764705882355" green="0.76862745098039209" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -31521,20 +31521,20 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alg-5J-99K">
-                                <rect key="frame" x="139" y="504" width="40" height="22"/>
+                                <rect key="frame" x="139" y="504" width="40" height="40"/>
                                 <state key="normal" image="CHECKBOX_UNCHECKED"/>
                                 <state key="selected" image="CHECKBOX_CHECKED"/>
                                 <connections>
                                     <action selector="checkingBusiness:" destination="bl7-c0-eKc" eventType="touchUpInside" id="MvV-2R-mqn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MÚSICO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At2-K8-onJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MÚSICO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At2-K8-onJ">
                                 <rect key="frame" x="197" y="464" width="59" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.4941176471" green="0.76862745099999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="NEGOCIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCx-nY-vuh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEGOCIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCx-nY-vuh">
                                 <rect key="frame" x="197" y="514" width="68" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.4941176471" green="0.76862745099999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -31547,13 +31547,13 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSTRUMENTO FAVORITO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdE-LC-Teg">
-                                <rect key="frame" x="45" y="542" width="182" height="18"/>
+                                <rect key="frame" x="45" y="560" width="182" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.4941176471" green="0.76862745099999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ht-Jw-9Nf">
-                                <rect key="frame" x="45" y="568" width="285" height="30"/>
+                                <rect key="frame" x="45" y="586" width="285" height="30"/>
                                 <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -31991,7 +31991,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGs-5F-eWB">
-                                <rect key="frame" x="188" y="254" width="16" height="46"/>
+                                <rect key="frame" x="158" y="254" width="46" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="iMp-Xp-pdi"/>
                                 </constraints>
@@ -32002,7 +32002,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFV-Xd-pYw">
-                                <rect key="frame" x="188" y="311" width="16" height="46"/>
+                                <rect key="frame" x="158" y="311" width="46" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="4tW-L9-mZc"/>
                                 </constraints>
