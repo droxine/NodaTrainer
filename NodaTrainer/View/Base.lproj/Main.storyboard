@@ -6061,7 +6061,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T12-PD-aIs">
                                 <rect key="frame" x="23" y="119" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -6139,7 +6139,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwK-zB-4xQ">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -6162,6 +6162,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rrt-tG-n2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8916" y="16645.566502463054"/>
+        </scene>
+        <!--Lection23 View Controller-->
+        <scene sceneID="7Wv-uq-HDn">
+            <objects>
+                <viewController storyboardIdentifier="lection23" id="3BI-Tv-MEJ" customClass="Lection23ViewController" customModule="NodaTrainer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zYb-Zn-mX0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sesion_background2" translatesAutoresizingMaskIntoConstraints="NO" id="lgD-oj-q7I">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3h-vp-Tq6">
+                                <rect key="frame" x="109" y="718" width="157" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="COMPLETAR LECCIÓN"/>
+                                <connections>
+                                    <action selector="completeLesson:" destination="iwQ-BX-7Tk" eventType="touchUpInside" id="8FO-lN-xmK"/>
+                                    <action selector="completeLesson:" destination="5eI-OX-yaC" eventType="touchUpInside" id="GPp-YM-aQn"/>
+                                    <action selector="completeLesson:" destination="M3f-Xd-99b" eventType="touchUpInside" id="aen-R9-KwY"/>
+                                    <action selector="completeLesson:" destination="3BI-Tv-MEJ" eventType="touchUpInside" id="ipv-Og-F14"/>
+                                    <action selector="completeLesson:" destination="470-xw-eDW" eventType="touchUpInside" id="z9R-fa-Fgx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OTROS RECURSOS GRATUITOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laa-1a-Flr">
+                                <rect key="frame" x="23" y="396" width="258" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KK2-gt-Ny4">
+                                <rect key="frame" x="23" y="92" width="328" height="287"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Felicitaciones por terminar las lecciones de entrenamiento auditivo musical. Recuerda que ninguna se bloquea, para que el usuario pueda practicar libremente con la lección que requiera, según vea conveniente.
+Es indispensable seguir practicando, tanto estas lecciones como las tonalidades que escuche diariamente. Siempre trate de identificar las notas, intervalos y así, eventualmente, podrá tocar canciones con solo haberlas escuchado ("de oído"), acompañar con acordes instintivamente, e incluso componer.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lección 23: Consejos Finales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sg-gj-cA1">
+                                <rect key="frame" x="53" y="44" width="254" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.4941176471" green="0.76862745099999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbR-3h-dMQ">
+                                <rect key="frame" x="16" y="425" width="328" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Esta aplicación es 100% gratis. No existe el "Pague X para desbloquear X lecciones adicionales". Así como nosotros, también existen otros recursos que ofrecen lecciones de manera gratuita. A continuación, algunas recomendaciones como complemento para estudiar desde la Web.
+
+- Musycom: https://www.musycom.com
+- Teoría: https://www.teoria.com</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Dsz-GU-1Tv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OvW-aa-Ef7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8916" y="17329.802955665025"/>
         </scene>
         <!--Lection22 Continue11 View Controller-->
         <scene sceneID="MFw-QA-yhp">
@@ -6217,7 +6284,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCO-Yr-5EP">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -6295,7 +6362,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiW-PR-ukq">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -6373,7 +6440,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0Z-mq-qA3">
                                 <rect key="frame" x="27" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -6451,7 +6518,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tC-LI-vum">
                                 <rect key="frame" x="23" y="127" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -6529,7 +6596,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RR-p7-oba">
                                 <rect key="frame" x="23" y="127" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -6607,7 +6674,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsF-Zr-Y9T">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -6685,7 +6752,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syE-yY-p3p">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -6763,7 +6830,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cO4-Ti-qWI">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -6841,7 +6908,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVR-Dt-iUe">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -6919,7 +6986,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYe-xM-MJe">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -6997,7 +7064,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjP-rp-8is">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -7075,7 +7142,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gST-J8-bKD">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -7153,7 +7220,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkG-Us-jCw">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -7231,7 +7298,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AL-En-1OE">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -32254,7 +32321,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWm-ZR-sF2">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -32332,7 +32399,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSn-UQ-bSi">
                                 <rect key="frame" x="23" y="127" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -32410,7 +32477,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z7-Yc-1ul">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -32472,7 +32539,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnI-yd-iHY">
                                 <rect key="frame" x="23" y="125" width="328" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Has llegado a tu última lección  práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
+                                <string key="text">Has llegado a tu última lección práctica, por lo que debes ser capaz de identificar las notas sin ver pentagrama ni opciones. Intenta el tiempo que requieras, y luego presiona el botón de "Mostrar resultado" para ver el pentagrama. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

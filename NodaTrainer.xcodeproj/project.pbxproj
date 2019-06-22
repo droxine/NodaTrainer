@@ -213,6 +213,7 @@
 		D183723B22BE905500EF2930 /* Lection22Continue17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D183723A22BE905500EF2930 /* Lection22Continue17ViewController.swift */; };
 		D183723D22BE90E800EF2930 /* Lection22Continue18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D183723C22BE90E800EF2930 /* Lection22Continue18ViewController.swift */; };
 		D183723F22BE912C00EF2930 /* Lection22Continue19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D183723E22BE912C00EF2930 /* Lection22Continue19ViewController.swift */; };
+		D183724122BEAD6800EF2930 /* Lection23ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D183724022BEAD6800EF2930 /* Lection23ViewController.swift */; };
 		D1A2E860215C39C60052C5BD /* Song1Continue9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2E85F215C39C60052C5BD /* Song1Continue9ViewController.swift */; };
 		D1A2E862215C403F0052C5BD /* Song1Continue10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2E861215C403F0052C5BD /* Song1Continue10ViewController.swift */; };
 		D1A2E864215C45A10052C5BD /* Song1Continue11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2E863215C45A10052C5BD /* Song1Continue11ViewController.swift */; };
@@ -588,6 +589,7 @@
 		D183723A22BE905500EF2930 /* Lection22Continue17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection22Continue17ViewController.swift; sourceTree = "<group>"; };
 		D183723C22BE90E800EF2930 /* Lection22Continue18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection22Continue18ViewController.swift; sourceTree = "<group>"; };
 		D183723E22BE912C00EF2930 /* Lection22Continue19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection22Continue19ViewController.swift; sourceTree = "<group>"; };
+		D183724022BEAD6800EF2930 /* Lection23ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lection23ViewController.swift; sourceTree = "<group>"; };
 		D1A2E85F215C39C60052C5BD /* Song1Continue9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1Continue9ViewController.swift; sourceTree = "<group>"; };
 		D1A2E861215C403F0052C5BD /* Song1Continue10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1Continue10ViewController.swift; sourceTree = "<group>"; };
 		D1A2E863215C45A10052C5BD /* Song1Continue11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song1Continue11ViewController.swift; sourceTree = "<group>"; };
@@ -1095,6 +1097,7 @@
 				D183723A22BE905500EF2930 /* Lection22Continue17ViewController.swift */,
 				D183723C22BE90E800EF2930 /* Lection22Continue18ViewController.swift */,
 				D183723E22BE912C00EF2930 /* Lection22Continue19ViewController.swift */,
+				D183724022BEAD6800EF2930 /* Lection23ViewController.swift */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -1947,6 +1950,7 @@
 				D153B05F22AA833000A21B95 /* Lection18ViewController.swift in Sources */,
 				D183722722BE8DF300EF2930 /* Lection22Continue7ViewController.swift in Sources */,
 				D13249DE21EB8B19000D2B66 /* Song2Continue3ViewController.swift in Sources */,
+				D183724122BEAD6800EF2930 /* Lection23ViewController.swift in Sources */,
 				D1E5FBEE215BF54500B7AA12 /* Song1Continue1ViewController.swift in Sources */,
 				D10CE353215E900500E6726E /* Lection11ViewController.swift in Sources */,
 				D141F1562137A13F0053F661 /* InstrumentFormViewController.swift in Sources */,

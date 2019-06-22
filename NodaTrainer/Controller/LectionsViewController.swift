@@ -327,7 +327,7 @@ class LectionsViewController: UIViewController {
     }
     
     @objc func goLection23(_ sender: Any) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection23") as! Lection22ViewController
+        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "lection23") as! Lection23ViewController
         present(controllerTravel, animated: true, completion: nil)
     }
 
