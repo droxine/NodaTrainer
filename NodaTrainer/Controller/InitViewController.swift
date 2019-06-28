@@ -23,6 +23,7 @@ class InitViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        FirebaseAPI.sharedInstance.loadSignedInUser(Auth.auth().currentUser)
         lblUser.text = ""
         btnUpload.isHidden = true
         imgProfile.isHidden = true
@@ -93,12 +94,17 @@ class InitViewController: UIViewController {
     }
     
     func loadUser() {
-        guard let uid = Auth.auth().currentUser?.uid else { return lblUser.text = ""}
-        print(uid)
-        let email = Auth.auth().currentUser?.email
-        if email != nil {
-            print(email!)
+        //guard let uid = Auth.auth().currentUser?.uid else { return lblUser.text = ""}
+        let uid = FirebaseAPI.sharedInstance.retrieveUserId()
+        if uid.isEmpty {
+            lblUser.text = ""
         }
+        print(uid)
+        //let email = Auth.auth().currentUser?.email
+        let email = FirebaseAPI.sharedInstance.retrieveUserMail()
+        //if email != nil {
+            print(email)
+        //}
         
         let userProfileRef = Database.database().reference().child("users").child("profile").child(uid)
         print(userProfileRef)

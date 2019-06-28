@@ -44,7 +44,7 @@ class LectionsViewController: UIViewController {
         print("viewDidLoad")
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden=false
-        
+        FirebaseAPI.sharedInstance.loadSignedInUser(Auth.auth().currentUser)
         loadLessonsDone()
         
         //lessons navigation
@@ -181,7 +181,8 @@ class LectionsViewController: UIViewController {
     
     func loadLessonsDone() {
         print("loadLessonsDone")
-        guard let uid = Auth.auth().currentUser?.uid else { return}
+        //guard let uid = Auth.auth().currentUser?.uid else { return}
+        let uid = FirebaseAPI.sharedInstance.retrieveUserId()
         print(uid)
         
         let lessonsRef = Database.database().reference().child("lessons").child(uid)
