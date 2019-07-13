@@ -1,5 +1,5 @@
 # NodaTrainer
-Ear training for musicians. Available in Spanish for Camerata Perú company.
+Ear training for musicians. Available in Spanish for Camerata Perú company on the App Store.
 
 # Specs
 - Programming Language: Swift 4.0
