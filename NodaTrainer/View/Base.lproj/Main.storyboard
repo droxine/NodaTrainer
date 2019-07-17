@@ -263,7 +263,6 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="MENUIMG_HOMECLICKED"/>
                                                 <connections>
-                                                    <action selector="startAugmentedReality:" destination="btJ-wx-NMY" eventType="touchUpInside" id="jhI-i3-kl5"/>
                                                     <segue destination="Khf-qq-g9m" kind="show" identifier="goAR" id="nTY-fu-U01"/>
                                                 </connections>
                                             </button>
