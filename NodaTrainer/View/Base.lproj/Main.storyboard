@@ -35,7 +35,7 @@
                                     <action selector="goRegister:" destination="adG-cx-4Dl" eventType="touchUpInside" id="i4W-TK-RZW"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nodaTrainerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="vVI-R1-lC8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_camerata_peru_sin_fondo" translatesAutoresizingMaskIntoConstraints="NO" id="vVI-R1-lC8">
                                 <rect key="frame" x="48" y="122" width="279" height="252"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="252" id="1l9-A1-HQN"/>
@@ -32586,6 +32586,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
         <image name="Icon-Small-50x50" width="50" height="50"/>
         <image name="Inicio-1" width="24" height="40"/>
         <image name="InicioSelected" width="24" height="38"/>
+        <image name="Logo_camerata_peru_sin_fondo" width="554" height="391"/>
         <image name="MAGICIAN" width="59" height="101"/>
         <image name="MENUIMG_CLASSESCLICKED" width="24" height="23"/>
         <image name="MENUIMG_HOMECLICKED" width="46" height="50"/>
@@ -32701,7 +32702,6 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
         <image name="menor-segunda-descendente" width="435" height="76"/>
         <image name="menor-tercera-ascendente" width="428" height="67"/>
         <image name="menor-tercera-descendente" width="434" height="76"/>
-        <image name="nodaTrainerLogo" width="1492" height="1394"/>
         <image name="notas" width="846" height="77"/>
         <image name="piano_notas" width="269" height="187"/>
         <image name="secondsong1" width="214" height="80"/>
