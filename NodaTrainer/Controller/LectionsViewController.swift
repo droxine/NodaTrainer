@@ -349,8 +349,9 @@ class LectionsViewController: UIViewController {
     }
     
     @IBAction func startAugmentedReality(_ sender: UIButton) {
-        let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "pianoAR") as! PianoARViewController
-        present(controllerTravel, animated: true, completion: nil)
+        //let controllerTravel = self.storyboard?.instantiateViewController(withIdentifier: "pianoAR") as! PianoARViewController
+        //present(controllerTravel, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "goAR", sender: self)
     }
     
     @IBAction func logOutUser(_ sender: Any) {

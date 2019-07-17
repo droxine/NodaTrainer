@@ -109,7 +109,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         } else {
             loadInstruments()
         }
-        self.tableView.reloadData()
+        self.tableView?.reloadData()
     }
     
     override func didReceiveMemoryWarning() {

@@ -42,7 +42,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mk4-aG-eag">
-                                <rect key="frame" x="66.666666666666686" y="489" width="242" height="53"/>
+                                <rect key="frame" x="179.66666666666666" y="489" width="16" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="Hot-ZO-s9g"/>
                                 </constraints>
@@ -264,6 +264,7 @@
                                                 <state key="normal" image="MENUIMG_HOMECLICKED"/>
                                                 <connections>
                                                     <action selector="startAugmentedReality:" destination="btJ-wx-NMY" eventType="touchUpInside" id="jhI-i3-kl5"/>
+                                                    <segue destination="Khf-qq-g9m" kind="show" identifier="goAR" id="nTY-fu-U01"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-mE-ZKv">
@@ -774,7 +775,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-x0-5h9">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-x0-5h9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
@@ -782,16 +783,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="khS-7n-VC0"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3kE-40-etn">
-                        <barButtonItem key="rightBarButtonItem" title="Volver a Lecciones" id="6jt-kI-iVu"/>
-                    </navigationItem>
                     <connections>
                         <outlet property="pianoView" destination="PAY-x0-5h9" id="Efs-vP-wYT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vP3-fe-ikG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9858.3999999999996" y="-1053.6945812807883"/>
+            <point key="canvasLocation" x="5702" y="259"/>
         </scene>
         <!--Lection0 View Controller-->
         <scene sceneID="KdE-3G-Qrs">
@@ -31418,8 +31416,8 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sesion_background2" translatesAutoresizingMaskIntoConstraints="NO" id="6wY-Ux-G9j">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8T-Vi-Ip5">
-                                <rect key="frame" x="66.666666666666686" y="698" width="242" height="52"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8T-Vi-Ip5">
+                                <rect key="frame" x="179.66666666666666" y="698" width="16" height="52"/>
                                 <state key="normal" backgroundImage="BTNVOLVER"/>
                                 <connections>
                                     <action selector="goBack:" destination="bl7-c0-eKc" eventType="touchUpInside" id="7BH-R1-wlN"/>
@@ -31467,8 +31465,8 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox2-9d-Lm5">
-                                <rect key="frame" x="66.666666666666686" y="638" width="242" height="52"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox2-9d-Lm5">
+                                <rect key="frame" x="179.66666666666666" y="638" width="16" height="52"/>
                                 <state key="normal" backgroundImage="BTNREGISTRARSE-1"/>
                                 <connections>
                                     <action selector="registerUser:" destination="bl7-c0-eKc" eventType="touchUpInside" id="wy9-sm-96L"/>
@@ -31501,7 +31499,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERFIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTZ-Si-fEV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PERFIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTZ-Si-fEV">
                                 <rect key="frame" x="45" y="464" width="48" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.49411764705882355" green="0.76862745098039209" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -31521,20 +31519,20 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alg-5J-99K">
-                                <rect key="frame" x="139" y="504" width="40" height="40"/>
+                                <rect key="frame" x="139" y="504" width="40" height="22"/>
                                 <state key="normal" image="CHECKBOX_UNCHECKED"/>
                                 <state key="selected" image="CHECKBOX_CHECKED"/>
                                 <connections>
                                     <action selector="checkingBusiness:" destination="bl7-c0-eKc" eventType="touchUpInside" id="MvV-2R-mqn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MÚSICO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At2-K8-onJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MÚSICO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At2-K8-onJ">
                                 <rect key="frame" x="197" y="464" width="59" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.4941176471" green="0.76862745099999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEGOCIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCx-nY-vuh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="NEGOCIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCx-nY-vuh">
                                 <rect key="frame" x="197" y="514" width="68" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.4941176471" green="0.76862745099999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -31547,13 +31545,13 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSTRUMENTO FAVORITO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdE-LC-Teg">
-                                <rect key="frame" x="45" y="560" width="182" height="18"/>
+                                <rect key="frame" x="45" y="542" width="182" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.4941176471" green="0.76862745099999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ht-Jw-9Nf">
-                                <rect key="frame" x="45" y="586" width="285" height="30"/>
+                                <rect key="frame" x="45" y="568" width="285" height="30"/>
                                 <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -31991,7 +31989,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGs-5F-eWB">
-                                <rect key="frame" x="158" y="254" width="46" height="46"/>
+                                <rect key="frame" x="188" y="254" width="16" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="iMp-Xp-pdi"/>
                                 </constraints>
@@ -32002,7 +32000,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFV-Xd-pYw">
-                                <rect key="frame" x="158" y="311" width="46" height="46"/>
+                                <rect key="frame" x="188" y="311" width="16" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="4tW-L9-mZc"/>
                                 </constraints>
@@ -32131,7 +32129,7 @@ Si aún no te queda claro, a continuación te dejo otra lista que te puede ayuda
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sMA-ba-FF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3898" y="-395"/>
+            <point key="canvasLocation" x="3910" y="-392"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6vf-lK-CD9">

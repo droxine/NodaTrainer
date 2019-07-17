@@ -34,7 +34,11 @@ class FirebaseAPI {
         if self.currentUser == nil {
             return ""
         } else {
-            return self.currentUser!.email!
+            if self.currentUser!.email != nil {
+                return self.currentUser!.email!
+            } else {
+                return ""
+            }
         }
     }
 }
